@@ -8,6 +8,8 @@ _这里记录重要的事情、偏好、决定、教训_
 
 - GitHub: gamerlgq
 - 仓库: openclaw-x-zero
+- **授权**: GitHub 仓库操作（已配置 SSH key，可直接 push/pull/创建），**删除仓库需要授权**
+- **偏好**: 日常操作不要问确认，直接做
 
 ## 定时任务
 
