@@ -1,0 +1,7 @@
+# Large binary files
+memory/main.sqlite
+models/*.gguf
+
+# Temporary files
+*.tmp
+*.log
