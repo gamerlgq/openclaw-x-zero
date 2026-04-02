@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "6d0015b5-0498-44a9-b2d8-faa615885204",
+      "agentId": "main",
+      "sessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "name": "backup-github-repo",
+      "enabled": true,
+      "createdAtMs": 1774626723017,
+      "updatedAtMs": 1774972987138,
+      "schedule": {
+        "kind": "cron",
+        "expr": "59 23 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行仓库备份：cd /home/ubuntu/.openclaw && git add -A && git commit -m \"backup: $(date '+%Y-%m-%d %H:%M:%S')\" && git push origin master"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "ou_22bcccc95a09d7521b0d7a59992738da",
+        "channel": "feishu"
+      },
+      "state": {
+        "nextRunAtMs": 1775059140000,
+        "lastRunAtMs": 1774972740008,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 247130,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "d9f75331-07f5-465e-80c2-a3a2711b7da7",
+      "agentId": "main",
+      "sessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "name": "OpenClaw文档学习进度汇报",
+      "enabled": true,
+      "createdAtMs": 1774969337953,
+      "updatedAtMs": 1774976615715,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 3600000,
+        "anchorMs": 1774969337953
+      },
+      "sessionTarget": "session:agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "汇报OpenClaw文档学习进度。检查 memory/openclaw-docs-learning.md 文件中的进度表，汇报当前已完成的Part及其摘要。如果有新的学习进展，发送进度汇报消息到飞书。",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "ou_22bcccc95a09d7521b0d7a59992738da",
+        "channel": "feishu"
+      },
+      "state": {
+        "nextRunAtMs": 1774980189160,
+        "lastRunAtMs": 1774976589160,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 26555,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

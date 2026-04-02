@@ -1,7 +1,9 @@
-# Large binary files
-memory/main.sqlite
-models/*.gguf
-
-# Temporary files
-*.tmp
-*.log
+agents/
+workspace/
+node_modules/
+*.sqlite
+*.node
+*.pack
+*.idx
+*.rev
+!.gitkeep
