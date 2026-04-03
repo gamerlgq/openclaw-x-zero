@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-26T16:16:04.306Z"
+    "lastTouchedAt": "2026-03-26T16:16:38.280Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-26T16:16:04.269Z",
+    "lastRunAt": "2026-03-26T16:16:38.245Z",
     "lastRunVersion": "2026.3.24",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -48,6 +48,22 @@
             },
             "contextWindow": 16000,
             "maxTokens": 4096
+          },
+          {
+            "id": "kimi-k2.5",
+            "name": "kimi-k2.5 (Custom Provider)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 16000,
+            "maxTokens": 4096
           }
         ]
       }
@@ -56,7 +72,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "custom-coding-dashscope-aliyuncs-com/glm-5"
+        "primary": "custom-coding-dashscope-aliyuncs-com/kimi-k2.5"
       },
       "models": {
         "custom-coding-dashscope-aliyuncs-com/qwen3.5-plus": {
@@ -64,6 +80,9 @@
         },
         "custom-coding-dashscope-aliyuncs-com/glm-5": {
           "alias": "glm-5"
+        },
+        "custom-coding-dashscope-aliyuncs-com/kimi-k2.5": {
+          "alias": "kimi-k2.5"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace",

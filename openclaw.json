@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-26T16:17:06.114Z"
+    "lastTouchedAt": "2026-04-03T11:38:38.402Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-26T16:17:06.079Z",
@@ -103,21 +103,21 @@
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace",
-      "compaction": {
-        "mode": "safeguard"
-      },
       "memorySearch": {
         "provider": "openai",
-        "model": "Qwen/Qwen3-Embedding-8B",
         "remote": {
           "baseUrl": "https://api.siliconflow.cn/v1",
           "apiKey": "sk-bsrrsptjuewjrljbprzgnyuocbkkwtcnuevhobyrwidkgamg"
-        }
+        },
+        "model": "Qwen/Qwen3-Embedding-8B"
+      },
+      "compaction": {
+        "mode": "safeguard"
       }
     }
   },
   "tools": {
-    "profile": "coding",
+    "profile": "full",
     "alsoAllow": [
       "feishu_bitable_app",
       "feishu_bitable_app_table",

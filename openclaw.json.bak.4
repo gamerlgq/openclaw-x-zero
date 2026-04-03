@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.23",
-    "lastTouchedAt": "2026-03-25T16:19:04.409Z"
+    "lastTouchedAt": "2026-03-25T16:23:47.106Z"
   },
   "agents": {
     "defaults": {
@@ -108,10 +108,24 @@
     }
   },
   "plugins": {
-    "allow": [],
+    "allow": [
+      "openclaw-lark"
+    ],
     "entries": {
       "feishu": {
         "enabled": false
+      },
+      "openclaw-lark": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-lark": {
+        "source": "archive",
+        "sourcePath": "/tmp/openclaw-lark-gxwVzJ/larksuite-openclaw-lark-2026.3.25.tgz",
+        "installPath": "/home/ubuntu/.openclaw/extensions/openclaw-lark",
+        "version": "2026.3.25",
+        "installedAt": "2026-03-25T16:23:42.149Z"
       }
     }
   }

@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-26T16:15:26.106Z"
+    "lastTouchedAt": "2026-03-26T16:16:04.306Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-26T16:15:26.091Z",
+    "lastRunAt": "2026-03-26T16:16:04.269Z",
     "lastRunVersion": "2026.3.24",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -32,6 +32,22 @@
             },
             "contextWindow": 16000,
             "maxTokens": 4096
+          },
+          {
+            "id": "glm-5",
+            "name": "glm-5 (Custom Provider)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 16000,
+            "maxTokens": 4096
           }
         ]
       }
@@ -40,11 +56,14 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "custom-coding-dashscope-aliyuncs-com/qwen3.5-plus"
+        "primary": "custom-coding-dashscope-aliyuncs-com/glm-5"
       },
       "models": {
         "custom-coding-dashscope-aliyuncs-com/qwen3.5-plus": {
           "alias": "qwen3.5-plus"
+        },
+        "custom-coding-dashscope-aliyuncs-com/glm-5": {
+          "alias": "glm-5"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace",
