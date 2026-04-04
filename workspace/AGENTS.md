@@ -45,6 +45,16 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+### ⚠️ 强制要求：每次会话必须更新每日记忆
+
+**原因**：会话历史会被 compacted（压缩），只保留摘要，丢失细节。每日记忆文件是唯一能保留对话细节的方式。
+
+**规则**：
+- 每次有重要对话后，立即写入 `memory/YYYY-MM-DD.md`
+- 不要等到会话结束才写 — compacting 可能随时发生
+- 写完后 git commit + push（确保备份到 GitHub）
+- 如果当天文件不存在，先创建它
+
 ## Red Lines
 
 - Don't exfiltrate private data. Ever.
