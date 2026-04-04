@@ -1,5 +1,4 @@
-# Large binary files and memory
-memory/
+# Large binary files
 models/*.gguf
 
 # Temporary files
