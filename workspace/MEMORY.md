@@ -34,4 +34,41 @@ _这里记录重要的事情、偏好、决定、教训_
 
 ---
 
+## 多 Agent 架构讨论 (2026.4.4)
+
+### 两种方案
+
+**方案一**: 私人助理 + sessions_spawn 子 agent
+- 子 agent 临时执行任务，完成后销毁
+- **隔离**: 完全独立 session，不会污染父 agent 的 MEMORY.md
+- **缺点**: 子 agent 没有 SOUL.md/个性化配置
+
+**方案二**: 多个独立 agent (视频管理员、新闻管理员等)
+- 每个 agent 有独立 workspace + agentDir + SOUL.md
+- **通信**: `tools.agentToAgent` + `sessions_send`
+- **文档共享**: 需要创建共享目录 `shared-output/`
+
+### 推荐方案
+
+混合方案：
+```
+用户 → 私人助理(agent:main) → sessions_send → 专业agent → 共享目录 → 私人助理回复
+```
+
+### 关键配置点
+
+1. `tools.agentToAgent.enabled: true` + `allow: [...]`
+2. 共享输出目录: `/home/ubuntu/.openclaw/shared-output/`
+3. 每个 agent 用绝对路径访问共享目录
+4. 视频管理员/新闻管理员需要第二个飞书机器人账号
+
+---
+
+## 飞书私聊绑定
+
+- **当前**: 用户 ou_22bcccc95a09d7521b0d7a59992738da 绑定到 agent:main
+- **通道**: feishu accountId: default
+
+---
+
 *每次会话结束，我会自动更新这个文件。*
