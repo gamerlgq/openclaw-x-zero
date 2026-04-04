@@ -1,5 +1,4 @@
-agents/
-workspace/
+
 node_modules/
 *.sqlite
 *.node
@@ -7,3 +6,8 @@ node_modules/
 *.idx
 *.rev
 !.gitkeep
+
+# Session files may contain secrets
+agents/main/sessions/*.jsonl
+agents/main/sessions/*.jsonl.*
+agents/main/sessions/*.lock

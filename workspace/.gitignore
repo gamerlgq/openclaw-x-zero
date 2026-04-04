@@ -1,0 +1,7 @@
+# Large binary files and memory
+memory/
+models/*.gguf
+
+# Temporary files
+*.tmp
+*.log
