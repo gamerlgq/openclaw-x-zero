@@ -3,8 +3,8 @@
     "deviceId": "1e97034d83553185d21a7c1b41e0f69f6b880bbafd563cdf2295f5be00c94579",
     "publicKey": "xWwAf0j1dLA_fjeou2FCIYCBcsRIWlZ4Y2OkI1SDUt0",
     "platform": "linux",
-    "clientId": "cli",
-    "clientMode": "cli",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
     "role": "operator",
     "roles": [
       "operator"

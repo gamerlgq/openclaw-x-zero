@@ -8,7 +8,7 @@
       "name": "backup-github-repo",
       "enabled": true,
       "createdAtMs": 1774626723017,
-      "updatedAtMs": 1774972987138,
+      "updatedAtMs": 1775380557573,
       "schedule": {
         "kind": "cron",
         "expr": "59 23 * * *",
@@ -26,35 +26,34 @@
         "channel": "feishu"
       },
       "state": {
-        "nextRunAtMs": 1775059140000,
-        "lastRunAtMs": 1774972740008,
+        "nextRunAtMs": 1775404740000,
+        "lastRunAtMs": 1775380534665,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 247130,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 22908,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
       }
     },
     {
-      "id": "d9f75331-07f5-465e-80c2-a3a2711b7da7",
+      "id": "143574d5-1bad-4194-bd22-3d37a96f3f99",
       "agentId": "main",
       "sessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
-      "name": "OpenClaw文档学习进度汇报",
+      "name": "尝试安装 self-improving-agent",
       "enabled": true,
-      "createdAtMs": 1774969337953,
-      "updatedAtMs": 1774976615715,
+      "createdAtMs": 1775386494985,
+      "updatedAtMs": 1775386494985,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
-        "anchorMs": 1774969337953
+        "anchorMs": 1775386494985
       },
-      "sessionTarget": "session:agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "汇报OpenClaw文档学习进度。检查 memory/openclaw-docs-learning.md 文件中的进度表，汇报当前已完成的Part及其摘要。如果有新的学习进展，发送进度汇报消息到飞书。",
-        "timeoutSeconds": 120
+        "message": "尝试安装 self-improving-agent 技能：openclaw skills install self-improving-agent"
       },
       "delivery": {
         "mode": "announce",
@@ -62,14 +61,7 @@
         "channel": "feishu"
       },
       "state": {
-        "nextRunAtMs": 1774980189160,
-        "lastRunAtMs": 1774976589160,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 26555,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1775390094985
       }
     }
   ]
