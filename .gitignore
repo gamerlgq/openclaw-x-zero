@@ -6,6 +6,7 @@ node_modules/
 *.idx
 *.rev
 !.gitkeep
+.DS_Store
 
 # Session files may contain secrets
 agents/main/sessions/*.jsonl
