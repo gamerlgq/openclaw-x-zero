@@ -121,6 +121,81 @@
         }
       ],
       "apiKey": "sk-9b8b40b0e710477e9dda4bdbff3b8989"
+    },
+    "custom-ark-cn-beijing-volces-com": {
+      "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
+      "apiKey": "30e157c7-3139-430f-a886-cf6d23b0e875",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "Doubao-Seed-2.0-Code",
+          "name": "Doubao-Seed-2.0-Code (Custom Provider)",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 16000,
+          "maxTokens": 4096,
+          "api": "openai-completions"
+        },
+        {
+          "id": "MiniMax-M2.5",
+          "name": "MiniMax-M2.5 (Custom Provider)",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 16000,
+          "maxTokens": 4096,
+          "api": "openai-completions"
+        },
+        {
+          "id": "Kimi-K2.5",
+          "name": "Kimi-K2.5 (Custom Provider)",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 16000,
+          "maxTokens": 4096,
+          "api": "openai-completions"
+        },
+        {
+          "id": "Doubao-Seed-2.0-pro",
+          "name": "Doubao-Seed-2.0-pro (Custom Provider)",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 16000,
+          "maxTokens": 4096,
+          "api": "openai-completions"
+        }
+      ]
     }
   }
 }

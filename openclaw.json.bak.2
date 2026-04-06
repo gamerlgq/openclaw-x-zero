@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-26T16:16:38.280Z"
+    "lastTouchedVersion": "2026.4.2",
+    "lastTouchedAt": "2026-04-06T02:15:13.806Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-26T16:16:38.245Z",
-    "lastRunVersion": "2026.3.24",
+    "lastRunAt": "2026-04-06T02:15:13.669Z",
+    "lastRunVersion": "2026.4.2",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
@@ -64,6 +64,91 @@
             },
             "contextWindow": 16000,
             "maxTokens": 4096
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5 (Custom Provider)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 16000,
+            "maxTokens": 4096
+          }
+        ]
+      },
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "DeepSeek Chat",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0.28,
+              "output": 0.42,
+              "cacheRead": 0.028,
+              "cacheWrite": 0
+            },
+            "compat": {
+              "supportsUsageInStreaming": true
+            },
+            "api": "openai-completions"
+          },
+          {
+            "id": "deepseek-reasoner",
+            "name": "DeepSeek Reasoner",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 65536,
+            "cost": {
+              "input": 0.28,
+              "output": 0.42,
+              "cacheRead": 0.028,
+              "cacheWrite": 0
+            },
+            "compat": {
+              "supportsUsageInStreaming": true
+            },
+            "api": "openai-completions"
+          }
+        ]
+      },
+      "custom-ark-cn-beijing-volces-com": {
+        "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
+        "api": "openai-completions",
+        "apiKey": "30e157c7-3139-430f-a886-cf6d23b0e875",
+        "models": [
+          {
+            "id": "Doubao-Seed-2.0-Code",
+            "name": "Doubao-Seed-2.0-Code (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
           }
         ]
       }
@@ -72,27 +157,36 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "custom-coding-dashscope-aliyuncs-com/kimi-k2.5"
+        "primary": "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code",
+        "fallbacks": [
+          "deepseek/deepseek-reasoner"
+        ]
       },
       "models": {
-        "custom-coding-dashscope-aliyuncs-com/qwen3.5-plus": {
-          "alias": "qwen3.5-plus"
+        "deepseek/deepseek-chat": {
+          "alias": "DeepSeek"
         },
-        "custom-coding-dashscope-aliyuncs-com/glm-5": {
-          "alias": "glm-5"
-        },
-        "custom-coding-dashscope-aliyuncs-com/kimi-k2.5": {
-          "alias": "kimi-k2.5"
+        "deepseek/deepseek-reasoner": {},
+        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
+          "alias": "seed-code-2.0"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace",
+      "memorySearch": {
+        "provider": "openai",
+        "remote": {
+          "baseUrl": "https://api.siliconflow.cn/v1",
+          "apiKey": "sk-bsrrsptjuewjrljbprzgnyuocbkkwtcnuevhobyrwidkgamg"
+        },
+        "model": "Qwen/Qwen3-Embedding-8B"
+      },
       "compaction": {
         "mode": "safeguard"
       }
     }
   },
   "tools": {
-    "profile": "coding",
+    "profile": "full",
     "alsoAllow": [
       "feishu_bitable_app",
       "feishu_bitable_app_table",
@@ -206,6 +300,14 @@
         "installPath": "/home/ubuntu/.openclaw/extensions/openclaw-lark",
         "version": "2026.3.25",
         "installedAt": "2026-03-25T16:23:42.149Z"
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "deepseek:default": {
+        "provider": "deepseek",
+        "mode": "api_key"
       }
     }
   }

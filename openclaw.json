@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.2",
-    "lastTouchedAt": "2026-04-05T10:33:33.572Z"
+    "lastTouchedAt": "2026-04-06T02:17:40.764Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-05T10:33:33.466Z",
+    "lastRunAt": "2026-04-06T02:17:40.651Z",
     "lastRunVersion": "2026.4.2",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -128,13 +128,84 @@
             "api": "openai-completions"
           }
         ]
+      },
+      "custom-ark-cn-beijing-volces-com": {
+        "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
+        "api": "openai-completions",
+        "apiKey": "30e157c7-3139-430f-a886-cf6d23b0e875",
+        "models": [
+          {
+            "id": "Doubao-Seed-2.0-Code",
+            "name": "Doubao-Seed-2.0-Code (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5 (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
+          },
+          {
+            "id": "Kimi-K2.5",
+            "name": "Kimi-K2.5 (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
+          },
+          {
+            "id": "Doubao-Seed-2.0-pro",
+            "name": "Doubao-Seed-2.0-pro (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
+          }
+        ]
       }
     }
   },
   "agents": {
     "defaults": {
       "model": {
-        "primary": "deepseek/deepseek-chat",
+        "primary": "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-pro",
         "fallbacks": [
           "deepseek/deepseek-reasoner"
         ]
@@ -143,7 +214,19 @@
         "deepseek/deepseek-chat": {
           "alias": "DeepSeek"
         },
-        "deepseek/deepseek-reasoner": {}
+        "deepseek/deepseek-reasoner": {},
+        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
+          "alias": "seed-code-2.0"
+        },
+        "custom-ark-cn-beijing-volces-com/MiniMax-M2.5": {
+          "alias": "minimax-2.5"
+        },
+        "custom-ark-cn-beijing-volces-com/Kimi-K2.5": {
+          "alias": "kimi-2.5"
+        },
+        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-pro": {
+          "alias": "seed-pro-2.0"
+        }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace",
       "memorySearch": {
