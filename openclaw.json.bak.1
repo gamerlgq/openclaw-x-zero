@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.2",
-    "lastTouchedAt": "2026-04-06T02:15:56.500Z"
+    "lastTouchedAt": "2026-04-06T02:16:53.436Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-06T02:15:56.375Z",
+    "lastRunAt": "2026-04-06T02:16:53.314Z",
     "lastRunVersion": "2026.4.2",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -165,6 +165,22 @@
               "cacheWrite": 0
             },
             "reasoning": false
+          },
+          {
+            "id": "Kimi-K2.5",
+            "name": "Kimi-K2.5 (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
           }
         ]
       }
@@ -173,7 +189,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "custom-ark-cn-beijing-volces-com/MiniMax-M2.5",
+        "primary": "custom-ark-cn-beijing-volces-com/Kimi-K2.5",
         "fallbacks": [
           "deepseek/deepseek-reasoner"
         ]
@@ -188,6 +204,9 @@
         },
         "custom-ark-cn-beijing-volces-com/MiniMax-M2.5": {
           "alias": "minimax-2.5"
+        },
+        "custom-ark-cn-beijing-volces-com/Kimi-K2.5": {
+          "alias": "kimi-2.5"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace",

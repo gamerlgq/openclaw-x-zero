@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.2",
-    "lastTouchedAt": "2026-04-06T02:16:53.436Z"
+    "lastTouchedAt": "2026-04-06T02:17:40.764Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-06T02:16:53.314Z",
+    "lastRunAt": "2026-04-06T02:17:40.651Z",
     "lastRunVersion": "2026.4.2",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -181,6 +181,22 @@
               "cacheWrite": 0
             },
             "reasoning": false
+          },
+          {
+            "id": "Doubao-Seed-2.0-pro",
+            "name": "Doubao-Seed-2.0-pro (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
           }
         ]
       }
@@ -189,7 +205,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "custom-ark-cn-beijing-volces-com/Kimi-K2.5",
+        "primary": "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-pro",
         "fallbacks": [
           "deepseek/deepseek-reasoner"
         ]
@@ -207,6 +223,9 @@
         },
         "custom-ark-cn-beijing-volces-com/Kimi-K2.5": {
           "alias": "kimi-2.5"
+        },
+        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-pro": {
+          "alias": "seed-pro-2.0"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace",

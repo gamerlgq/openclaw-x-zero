@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.2",
-    "lastTouchedAt": "2026-04-06T02:15:13.806Z"
+    "lastTouchedAt": "2026-04-06T02:15:56.500Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-06T02:15:13.669Z",
+    "lastRunAt": "2026-04-06T02:15:56.375Z",
     "lastRunVersion": "2026.4.2",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -149,6 +149,22 @@
               "cacheWrite": 0
             },
             "reasoning": false
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5 (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
           }
         ]
       }
@@ -157,7 +173,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code",
+        "primary": "custom-ark-cn-beijing-volces-com/MiniMax-M2.5",
         "fallbacks": [
           "deepseek/deepseek-reasoner"
         ]
@@ -169,6 +185,9 @@
         "deepseek/deepseek-reasoner": {},
         "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
           "alias": "seed-code-2.0"
+        },
+        "custom-ark-cn-beijing-volces-com/MiniMax-M2.5": {
+          "alias": "minimax-2.5"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace",
