@@ -2,19 +2,19 @@
   "entries": {
     "/home/ubuntu/.openclaw/openclaw.json": {
       "lastKnownGood": {
-        "hash": "15019483efca636ca44510b52f861620e7d75a53bf62493a51a662e0a11de957",
-        "bytes": 9680,
-        "mtimeMs": 1775529764017.9585,
-        "ctimeMs": 1775529764019.9585,
+        "hash": "f456685d5df247de4422cb51dd542716d1377ebdbe619b8f81ef9a069539e61a",
+        "bytes": 10896,
+        "mtimeMs": 1776000290170.3489,
+        "ctimeMs": 1776000290175.3489,
         "dev": "64770",
-        "ino": "793313",
+        "ino": "788958",
         "mode": 384,
         "nlink": 1,
         "uid": 1000,
         "gid": 1001,
         "hasMeta": true,
         "gatewayMode": "local",
-        "observedAt": "2026-04-07T02:42:44.050Z"
+        "observedAt": "2026-04-12T13:24:50.702Z"
       },
       "lastObservedSuspiciousSignature": null
     }

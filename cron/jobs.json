@@ -8,7 +8,7 @@
       "name": "backup-github-repo",
       "enabled": true,
       "createdAtMs": 1774626723017,
-      "updatedAtMs": 1775491161749,
+      "updatedAtMs": 1776000743786,
       "schedule": {
         "kind": "cron",
         "expr": "59 23 * * *",
@@ -18,7 +18,9 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "执行仓库备份：cd /home/ubuntu/.openclaw && git add -A && git commit -m \"backup: $(date '+%Y-%m-%d %H:%M:%S')\" && git push origin master"
+        "message": "执行仓库备份：cd /home/ubuntu/.openclaw && git add -A && git commit -m \"backup: $(date '+%Y-%m-%d %H:%M:%S')\" && git push origin master",
+        "model": "deepseek/deepseek-chat",
+        "lightContext": true
       },
       "delivery": {
         "mode": "announce",
@@ -26,15 +28,16 @@
         "channel": "feishu"
       },
       "state": {
-        "nextRunAtMs": 1775577540000,
-        "lastRunAtMs": 1775491140009,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 21740,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1775667720435
+        "lastRunAtMs": 1775669219287,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 1094175,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 1,
+        "lastError": "Context overflow: prompt too large for the model. Try /reset (or /new) to start a fresh session, or use a larger-context model.",
+        "lastDeliveryError": "Context overflow: prompt too large for the model. Try /reset (or /new) to start a fresh session, or use a larger-context model.",
+        "nextRunAtMs": 1776009540000
       }
     }
   ]

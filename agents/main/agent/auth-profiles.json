@@ -11,20 +11,5 @@
       "provider": "deepseek",
       "key": "sk-9b8b40b0e710477e9dda4bdbff3b8989"
     }
-  },
-  "lastGood": {
-    "google": "google:default",
-    "deepseek": "deepseek:default"
-  },
-  "usageStats": {
-    "google:default": {
-      "errorCount": 0,
-      "lastFailureAt": 1775371491731,
-      "lastUsed": 1775371498216
-    },
-    "deepseek:default": {
-      "errorCount": 0,
-      "lastUsed": 1775493230281
-    }
   }
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.11",
-    "lastTouchedAt": "2026-04-12T12:29:00.657Z"
+    "lastTouchedAt": "2026-04-12T10:38:03.839Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-12T12:29:00.029Z",
-    "lastRunVersion": "2026.4.11",
-    "lastRunCommand": "doctor",
+    "lastRunAt": "2026-04-12T10:04:23.112Z",
+    "lastRunVersion": "2026.4.9",
+    "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
   "models": {
@@ -265,6 +265,9 @@
       },
       "compaction": {
         "mode": "safeguard"
+ 	"rese":{
+   	    	"rveTokensFloor":20000
+	}
       }
     }
   },

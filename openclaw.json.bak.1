@@ -1,12 +1,12 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.4.2",
-    "lastTouchedAt": "2026-04-06T02:16:53.436Z"
+    "lastTouchedVersion": "2026.4.11",
+    "lastTouchedAt": "2026-04-12T12:38:08.024Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-06T02:16:53.314Z",
-    "lastRunVersion": "2026.4.2",
-    "lastRunCommand": "configure",
+    "lastRunAt": "2026-04-12T12:29:00.029Z",
+    "lastRunVersion": "2026.4.11",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
   "models": {
@@ -181,6 +181,45 @@
               "cacheWrite": 0
             },
             "reasoning": false
+          },
+          {
+            "id": "Doubao-Seed-2.0-pro",
+            "name": "Doubao-Seed-2.0-pro (Custom Provider)",
+            "contextWindow": 16000,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
+          }
+        ]
+      },
+      "custom-dashscope-aliyuncs-com": {
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "api": "openai-completions",
+        "apiKey": "sk-4fd188310bdf4646befb9993bde914c9",
+        "models": [
+          {
+            "id": "glm-5",
+            "name": "glm-5 (Custom Provider)",
+            "contextWindow": 131072,
+            "maxTokens": 4096,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
           }
         ]
       }
@@ -189,7 +228,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "custom-ark-cn-beijing-volces-com/Kimi-K2.5",
+        "primary": "custom-dashscope-aliyuncs-com/glm-5",
         "fallbacks": [
           "deepseek/deepseek-reasoner"
         ]
@@ -207,6 +246,12 @@
         },
         "custom-ark-cn-beijing-volces-com/Kimi-K2.5": {
           "alias": "kimi-2.5"
+        },
+        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-pro": {
+          "alias": "seed-pro-2.0"
+        },
+        "custom-dashscope-aliyuncs-com/glm-5": {
+          "alias": "glm-5"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace",
@@ -219,7 +264,8 @@
         "model": "Qwen/Qwen3-Embedding-8B"
       },
       "compaction": {
-        "mode": "safeguard"
+        "mode": "safeguard",
+        "reserveTokensFloor": 20000
       }
     }
   },
@@ -321,13 +367,18 @@
   },
   "plugins": {
     "allow": [
-      "openclaw-lark"
+      "openclaw-lark",
+      "deepseek",
+      "memory-core"
     ],
     "entries": {
       "feishu": {
         "enabled": false
       },
       "openclaw-lark": {
+        "enabled": true
+      },
+      "deepseek": {
         "enabled": true
       }
     },
