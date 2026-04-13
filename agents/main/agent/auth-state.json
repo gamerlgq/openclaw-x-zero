@@ -2,7 +2,8 @@
   "version": 1,
   "lastGood": {
     "google": "google:default",
-    "deepseek": "deepseek:default"
+    "deepseek": "deepseek:default",
+    "ollama": "ollama:default"
   },
   "usageStats": {
     "google:default": {
@@ -19,6 +20,17 @@
       "lastFailureAt": 1776000499334,
       "disabledUntil": 1776018499334,
       "disabledReason": "billing"
+    },
+    "ollama:default": {
+      "errorCount": 1,
+      "lastUsed": 1776089056483,
+      "cooldownUntil": 1776090075136,
+      "cooldownReason": "rate_limit",
+      "cooldownModel": "glm-5.1:cloud",
+      "failureCounts": {
+        "rate_limit": 1
+      },
+      "lastFailureAt": 1776090045136
     }
   }
 }

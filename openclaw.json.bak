@@ -1,284 +1,406 @@
 {
-  "meta": {
-    "lastTouchedVersion": "2026.4.11",
-    "lastTouchedAt": "2026-04-12T13:19:43.101Z"
-  },
-  "wizard": {
-    "lastRunAt": "2026-04-12T12:29:00.029Z",
-    "lastRunVersion": "2026.4.11",
-    "lastRunCommand": "doctor",
-    "lastRunMode": "local"
-  },
-  "models": {
-    "mode": "merge",
-    "providers": {
-      "custom-coding-dashscope-aliyuncs-com": {
-        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
-        "apiKey": "sk-sp-6a123554a69448308a2b2e0825dc596b",
-        "api": "openai-completions",
-        "models": [
-          {
-            "id": "qwen3.5-plus",
-            "name": "qwen3.5-plus (Custom Provider)",
-            "api": "openai-completions",
-            "reasoning": false,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "contextWindow": 131072,
-            "maxTokens": 8192
-          },
-          {
-            "id": "glm-5",
-            "name": "glm-5 (Custom Provider)",
-            "api": "openai-completions",
-            "reasoning": false,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "contextWindow": 131072,
-            "maxTokens": 8192
-          },
-          {
-            "id": "kimi-k2.5",
-            "name": "kimi-k2.5 (Custom Provider)",
-            "api": "openai-completions",
-            "reasoning": false,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "contextWindow": 131072,
-            "maxTokens": 8192
-          },
-          {
-            "id": "MiniMax-M2.5",
-            "name": "MiniMax-M2.5 (Custom Provider)",
-            "api": "openai-completions",
-            "reasoning": false,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "contextWindow": 131072,
-            "maxTokens": 8192
-          }
-        ]
-      },
-      "deepseek": {
-        "baseUrl": "https://api.deepseek.com",
-        "api": "openai-completions",
-        "models": [
-          {
-            "id": "deepseek-chat",
-            "name": "DeepSeek Chat",
-            "reasoning": false,
-            "input": [
-              "text"
-            ],
-            "contextWindow": 131072,
-            "maxTokens": 8192,
-            "cost": {
-              "input": 0.28,
-              "output": 0.42,
-              "cacheRead": 0.028,
-              "cacheWrite": 0
-            },
-            "compat": {
-              "supportsUsageInStreaming": true
-            },
-            "api": "openai-completions"
-          },
-          {
-            "id": "deepseek-reasoner",
-            "name": "DeepSeek Reasoner",
-            "reasoning": true,
-            "input": [
-              "text"
-            ],
-            "contextWindow": 131072,
-            "maxTokens": 65536,
-            "cost": {
-              "input": 0.28,
-              "output": 0.42,
-              "cacheRead": 0.028,
-              "cacheWrite": 0
-            },
-            "compat": {
-              "supportsUsageInStreaming": true
-            },
-            "api": "openai-completions"
-          }
-        ]
-      },
-      "custom-ark-cn-beijing-volces-com": {
-        "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
-        "api": "openai-completions",
-        "apiKey": "30e157c7-3139-430f-a886-cf6d23b0e875",
-        "models": [
-          {
-            "id": "Doubao-Seed-2.0-Code",
-            "name": "Doubao-Seed-2.0-Code (Custom Provider)",
-            "api": "openai-completions",
-            "reasoning": false,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "contextWindow": 131072,
-            "maxTokens": 8192
-          },
-          {
-            "id": "MiniMax-M2.5",
-            "name": "MiniMax-M2.5 (Custom Provider)",
-            "api": "openai-completions",
-            "reasoning": false,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "contextWindow": 131072,
-            "maxTokens": 8192
-          },
-          {
-            "id": "Kimi-K2.5",
-            "name": "Kimi-K2.5 (Custom Provider)",
-            "api": "openai-completions",
-            "reasoning": false,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "contextWindow": 131072,
-            "maxTokens": 8192
-          },
-          {
-            "id": "Doubao-Seed-2.0-pro",
-            "name": "Doubao-Seed-2.0-pro (Custom Provider)",
-            "api": "openai-completions",
-            "reasoning": false,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "contextWindow": 131072,
-            "maxTokens": 8192
-          }
-        ]
-      },
-      "custom-dashscope-aliyuncs-com": {
-        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "api": "openai-completions",
-        "apiKey": "sk-4fd188310bdf4646befb9993bde914c9",
-        "models": [
-          {
-            "id": "glm-5",
-            "name": "glm-5 (Custom Provider)",
-            "contextWindow": 131072,
-            "maxTokens": 4096,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0,
-              "output": 0,
-              "cacheRead": 0,
-              "cacheWrite": 0
-            },
-            "reasoning": false
-          }
-        ]
-      }
-    }
-  },
   "agents": {
     "defaults": {
+      "compaction": {
+        "keepRecentTokens": 15000,
+        "maxHistoryShare": 0.6,
+        "mode": "safeguard",
+        "recentTurnsPreserve": 5,
+        "reserveTokensFloor": 20000
+      },
+      "memorySearch": {
+        "model": "Qwen/Qwen3-Embedding-8B",
+        "provider": "openai",
+        "remote": {
+          "apiKey": "sk-bsrrsptjuewjrljbprzgnyuocbkkwtcnuevhobyrwidkgamg",
+          "baseUrl": "https://api.siliconflow.cn/v1"
+        }
+      },
       "model": {
         "primary": "custom-dashscope-aliyuncs-com/glm-5",
         "fallbacks": [
-          "deepseek/deepseek-reasoner"
+          "custom-ark-cn-beijing-volces-com/Kimi-K2.5"
         ]
       },
       "models": {
-        "deepseek/deepseek-chat": {
-          "alias": "DeepSeek"
-        },
-        "deepseek/deepseek-reasoner": {},
         "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
           "alias": "seed-code-2.0"
-        },
-        "custom-ark-cn-beijing-volces-com/MiniMax-M2.5": {
-          "alias": "minimax-2.5"
-        },
-        "custom-ark-cn-beijing-volces-com/Kimi-K2.5": {
-          "alias": "kimi-2.5"
         },
         "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-pro": {
           "alias": "seed-pro-2.0"
         },
+        "custom-ark-cn-beijing-volces-com/Kimi-K2.5": {
+          "alias": "kimi-2.5"
+        },
+        "custom-ark-cn-beijing-volces-com/MiniMax-M2.5": {
+          "alias": "minimax-2.5"
+        },
         "custom-dashscope-aliyuncs-com/glm-5": {
           "alias": "glm-5"
-        }
-      },
-      "workspace": "/home/ubuntu/.openclaw/workspace",
-      "memorySearch": {
-        "provider": "openai",
-        "remote": {
-          "baseUrl": "https://api.siliconflow.cn/v1",
-          "apiKey": "sk-bsrrsptjuewjrljbprzgnyuocbkkwtcnuevhobyrwidkgamg"
         },
-        "model": "Qwen/Qwen3-Embedding-8B"
+        "deepseek/deepseek-chat": {
+          "alias": "DeepSeek"
+        },
+        "deepseek/deepseek-reasoner": {}
       },
-      "compaction": {
-        "mode": "safeguard",
-        "reserveTokensFloor": 20000
+      "workspace": "/home/ubuntu/.openclaw/workspace"
+    }
+  },
+  "auth": {
+    "profiles": {
+      "deepseek:default": {
+        "mode": "api_key",
+        "provider": "deepseek"
       }
     }
   },
+  "channels": {
+    "feishu": {
+      "allowFrom": [
+        "ou_22bcccc95a09d7521b0d7a59992738da"
+      ],
+      "appId": "cli_a9238b7334b85bc2",
+      "appSecret": "BmR06Umor2FhunsSSeZhhh8nmDML4LjH",
+      "connectionMode": "websocket",
+      "dmPolicy": "allowlist",
+      "domain": "feishu",
+      "enabled": true,
+      "groupAllowFrom": [
+        "ou_22bcccc95a09d7521b0d7a59992738da"
+      ],
+      "groupPolicy": "allowlist",
+      "groups": {
+        "*": {
+          "enabled": true
+        }
+      },
+      "requireMention": true
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "ownerDisplay": "raw",
+    "restart": true
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "eb0f505b1ce83a47d306e5f5a3a3cfed373da22485f218f4"
+    },
+    "bind": "loopback",
+    "mode": "local",
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    },
+    "port": 18789,
+    "tailscale": {
+      "mode": "serve",
+      "resetOnExit": true
+    }
+  },
+  "meta": {
+    "lastTouchedAt": "2026-04-13T13:04:50.512Z",
+    "lastTouchedVersion": "2026.4.11"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "custom-ark-cn-beijing-volces-com": {
+        "api": "openai-completions",
+        "apiKey": "30e157c7-3139-430f-a886-cf6d23b0e875",
+        "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
+        "models": [
+          {
+            "api": "openai-completions",
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "Doubao-Seed-2.0-Code",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "Doubao-Seed-2.0-Code (Custom Provider)",
+            "reasoning": false
+          },
+          {
+            "api": "openai-completions",
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "MiniMax-M2.5",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "MiniMax-M2.5 (Custom Provider)",
+            "reasoning": false
+          },
+          {
+            "api": "openai-completions",
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "Kimi-K2.5",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "Kimi-K2.5 (Custom Provider)",
+            "reasoning": false
+          },
+          {
+            "api": "openai-completions",
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "Doubao-Seed-2.0-pro",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "Doubao-Seed-2.0-pro (Custom Provider)",
+            "reasoning": false
+          }
+        ]
+      },
+      "custom-coding-dashscope-aliyuncs-com": {
+        "api": "openai-completions",
+        "apiKey": "sk-sp-6a123554a69448308a2b2e0825dc596b",
+        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
+        "models": [
+          {
+            "api": "openai-completions",
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "qwen3.5-plus",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "qwen3.5-plus (Custom Provider)",
+            "reasoning": false
+          },
+          {
+            "api": "openai-completions",
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "glm-5",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "glm-5 (Custom Provider)",
+            "reasoning": false
+          },
+          {
+            "api": "openai-completions",
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "kimi-k2.5",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "kimi-k2.5 (Custom Provider)",
+            "reasoning": false
+          },
+          {
+            "api": "openai-completions",
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "MiniMax-M2.5",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "MiniMax-M2.5 (Custom Provider)",
+            "reasoning": false
+          }
+        ]
+      },
+      "custom-dashscope-aliyuncs-com": {
+        "api": "openai-completions",
+        "apiKey": "sk-4fd188310bdf4646befb9993bde914c9",
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "models": [
+          {
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "glm-5",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 4096,
+            "name": "glm-5 (Custom Provider)",
+            "reasoning": false
+          }
+        ]
+      },
+      "deepseek": {
+        "api": "openai-completions",
+        "baseUrl": "https://api.deepseek.com",
+        "models": [
+          {
+            "api": "openai-completions",
+            "compat": {
+              "supportsUsageInStreaming": true
+            },
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0.028,
+              "cacheWrite": 0,
+              "input": 0.28,
+              "output": 0.42
+            },
+            "id": "deepseek-chat",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192,
+            "name": "DeepSeek Chat",
+            "reasoning": false
+          },
+          {
+            "api": "openai-completions",
+            "compat": {
+              "supportsUsageInStreaming": true
+            },
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0.028,
+              "cacheWrite": 0,
+              "input": 0.28,
+              "output": 0.42
+            },
+            "id": "deepseek-reasoner",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 65536,
+            "name": "DeepSeek Reasoner",
+            "reasoning": true
+          }
+        ]
+      },
+      "ollama": {
+        "api": "ollama",
+        "apiKey": "ollama-local",
+        "baseUrl": "http://127.0.0.1:11434",
+        "models": [
+          {
+            "contextWindow": 202752,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "glm-5.1:cloud",
+            "input": [
+              "text"
+            ],
+            "name": "glm-5.1:cloud",
+            "reasoning": true
+          }
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-lark",
+      "deepseek",
+      "memory-core",
+      "openclaw-web-search",
+      "ollama"
+    ],
+    "entries": {
+      "deepseek": {
+        "enabled": true
+      },
+      "feishu": {
+        "enabled": false
+      },
+      "ollama": {
+        "enabled": true
+      },
+      "openclaw-lark": {
+        "enabled": true
+      },
+      "openclaw-web-search": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-lark": {
+        "installPath": "/home/ubuntu/.openclaw/extensions/openclaw-lark",
+        "installedAt": "2026-03-25T16:23:42.149Z",
+        "source": "archive",
+        "sourcePath": "/tmp/openclaw-lark-gxwVzJ/larksuite-openclaw-lark-2026.3.25.tgz",
+        "version": "2026.3.25"
+      },
+      "openclaw-web-search": {
+        "installPath": "/home/ubuntu/.openclaw/extensions/openclaw-web-search",
+        "source": "npm",
+        "spec": "@ollama/openclaw-web-search"
+      }
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
   "tools": {
-    "profile": "full",
     "alsoAllow": [
       "feishu_bitable_app",
       "feishu_bitable_app_table",
@@ -314,98 +436,24 @@
       "feishu_task_tasklist",
       "feishu_update_doc",
       "feishu_wiki_space",
-      "feishu_wiki_space_node"
-    ]
-  },
-  "commands": {
-    "native": "auto",
-    "nativeSkills": "auto",
-    "restart": true,
-    "ownerDisplay": "raw"
-  },
-  "session": {
-    "dmScope": "per-channel-peer"
-  },
-  "channels": {
-    "feishu": {
-      "enabled": true,
-      "appId": "cli_a9238b7334b85bc2",
-      "appSecret": "BmR06Umor2FhunsSSeZhhh8nmDML4LjH",
-      "domain": "feishu",
-      "connectionMode": "websocket",
-      "requireMention": true,
-      "dmPolicy": "allowlist",
-      "allowFrom": [
-        "ou_22bcccc95a09d7521b0d7a59992738da"
-      ],
-      "groupAllowFrom": [
-        "ou_22bcccc95a09d7521b0d7a59992738da"
-      ],
-      "groupPolicy": "allowlist",
-      "groups": {
-        "*": {
-          "enabled": true
-        }
-      }
-    }
-  },
-  "gateway": {
-    "port": 18789,
-    "mode": "local",
-    "bind": "loopback",
-    "auth": {
-      "mode": "token",
-      "token": "eb0f505b1ce83a47d306e5f5a3a3cfed373da22485f218f4"
-    },
-    "tailscale": {
-      "mode": "off",
-      "resetOnExit": false
-    },
-    "nodes": {
-      "denyCommands": [
-        "camera.snap",
-        "camera.clip",
-        "screen.record",
-        "contacts.add",
-        "calendar.add",
-        "reminders.add",
-        "sms.send"
-      ]
-    }
-  },
-  "plugins": {
-    "allow": [
-      "openclaw-lark",
-      "deepseek",
-      "memory-core"
+      "feishu_wiki_space_node",
+      "ollama_web_search",
+      "ollama_web_fetch"
     ],
-    "entries": {
-      "feishu": {
+    "profile": "full",
+    "web": {
+      "fetch": {
         "enabled": false
       },
-      "openclaw-lark": {
-        "enabled": true
-      },
-      "deepseek": {
-        "enabled": true
-      }
-    },
-    "installs": {
-      "openclaw-lark": {
-        "source": "archive",
-        "sourcePath": "/tmp/openclaw-lark-gxwVzJ/larksuite-openclaw-lark-2026.3.25.tgz",
-        "installPath": "/home/ubuntu/.openclaw/extensions/openclaw-lark",
-        "version": "2026.3.25",
-        "installedAt": "2026-03-25T16:23:42.149Z"
+      "search": {
+        "enabled": false
       }
     }
   },
-  "auth": {
-    "profiles": {
-      "deepseek:default": {
-        "provider": "deepseek",
-        "mode": "api_key"
-      }
-    }
+  "wizard": {
+    "lastRunAt": "2026-04-12T12:29:00.029Z",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.4.11"
   }
 }

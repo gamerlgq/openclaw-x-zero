@@ -10,6 +10,11 @@
       "type": "api_key",
       "provider": "deepseek",
       "key": "sk-9b8b40b0e710477e9dda4bdbff3b8989"
+    },
+    "ollama:default": {
+      "type": "api_key",
+      "provider": "ollama",
+      "key": "ollama-local"
     }
   }
 }

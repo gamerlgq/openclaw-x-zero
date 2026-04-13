@@ -17,3 +17,6 @@
 {"timestamp":"2026-04-12T13:03:25.125Z","action":"reset","sessionKey":"agent:main:main","senderId":"unknown","source":"gateway:sessions.reset"}
 {"timestamp":"2026-04-12T13:29:22.570Z","action":"new","sessionKey":"agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da","senderId":"ou_22bcccc95a09d7521b0d7a59992738da","source":"feishu"}
 {"timestamp":"2026-04-12T13:30:13.074Z","action":"reset","sessionKey":"agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da","senderId":"ou_22bcccc95a09d7521b0d7a59992738da","source":"feishu"}
+{"timestamp":"2026-04-13T12:59:27.417Z","action":"reset","sessionKey":"agent:main:main","senderId":"unknown","source":"gateway:sessions.reset"}
+{"timestamp":"2026-04-13T12:59:31.149Z","action":"reset","sessionKey":"agent:main:main","senderId":"unknown","source":"gateway:sessions.reset"}
+{"timestamp":"2026-04-13T15:29:22.720Z","action":"reset","sessionKey":"agent:main:main","senderId":"unknown","source":"gateway:sessions.reset"}
