@@ -7,8 +7,8 @@
       "operator.approvals",
       "operator.pairing"
     ],
-    "clientId": "openclaw-tui",
-    "clientMode": "ui",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
     "createdAtMs": 1774539567984,
     "deviceId": "1e97034d83553185d21a7c1b41e0f69f6b880bbafd563cdf2295f5be00c94579",
     "platform": "linux",
@@ -39,7 +39,7 @@
         "token": "0geYP6YsI1awMwnDBi4UMXPiz1TbwtURB79gPzE6uzI"
       }
     },
-    "displayName": "openclaw-tui"
+    "displayName": "gateway:sessions.list"
   },
   "9ef037002f25c705ea544ecf591b74ffa703b05eb5648980c1eb5858401ab414": {
     "approvedAtMs": 1775998224207,

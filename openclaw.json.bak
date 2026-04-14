@@ -17,7 +17,7 @@
         }
       },
       "model": {
-        "primary": "custom-dashscope-aliyuncs-com/glm-5",
+        "primary": "ollama/glm-5.1:cloud",
         "fallbacks": [
           "custom-ark-cn-beijing-volces-com/Kimi-K2.5"
         ]
@@ -37,11 +37,7 @@
         },
         "custom-dashscope-aliyuncs-com/glm-5": {
           "alias": "glm-5"
-        },
-        "deepseek/deepseek-chat": {
-          "alias": "DeepSeek"
-        },
-        "deepseek/deepseek-reasoner": {}
+        }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
     }
@@ -108,7 +104,7 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-04-13T13:04:50.512Z",
+    "lastTouchedAt": "2026-04-13T13:47:39.381Z",
     "lastTouchedVersion": "2026.4.11"
   },
   "models": {
