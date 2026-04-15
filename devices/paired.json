@@ -7,8 +7,8 @@
       "operator.approvals",
       "operator.pairing"
     ],
-    "clientId": "gateway-client",
-    "clientMode": "backend",
+    "clientId": "cli",
+    "clientMode": "cli",
     "createdAtMs": 1774539567984,
     "deviceId": "1e97034d83553185d21a7c1b41e0f69f6b880bbafd563cdf2295f5be00c94579",
     "platform": "linux",
@@ -38,8 +38,7 @@
         ],
         "token": "0geYP6YsI1awMwnDBi4UMXPiz1TbwtURB79gPzE6uzI"
       }
-    },
-    "displayName": "gateway:sessions.list"
+    }
   },
   "9ef037002f25c705ea544ecf591b74ffa703b05eb5648980c1eb5858401ab414": {
     "approvedAtMs": 1775998224207,
@@ -81,5 +80,107 @@
         "token": "zY1h4fIXjWo2KmBzIoczZU4A4gps4iqFIRU4xZ_WpZo"
       }
     }
+  },
+  "459df5ca065277f8138cd980b466a8c1bc98b7666ec71b62030147be1b33ed16": {
+    "deviceId": "459df5ca065277f8138cd980b466a8c1bc98b7666ec71b62030147be1b33ed16",
+    "publicKey": "gLCMoHOf9YZofuZfBntlg0s-O6zOKCgpZ3ZojsovORg",
+    "displayName": "StevenGerrard的Mac Studio",
+    "platform": "macOS 15.6.1",
+    "deviceFamily": "Mac",
+    "clientId": "openclaw-macos",
+    "clientMode": "node",
+    "role": "node",
+    "roles": [
+      "operator",
+      "node"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "UTnOuxUl9mUEfU7w1aAIGZyAY9RELv5z9-zlY91r4F0",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.write"
+        ],
+        "createdAtMs": 1776185951485
+      },
+      "node": {
+        "token": "MulQJaBckNU_1_coJHkJLel7jJO5hUjjCVGvmAe4mVI",
+        "role": "node",
+        "scopes": [],
+        "createdAtMs": 1776187885840
+      }
+    },
+    "createdAtMs": 1776185951485,
+    "approvedAtMs": 1776187885840
+  },
+  "7600a807e028343e96196473f5ccb47ad0ffaf82383aea34073d9a5d441e82f5": {
+    "deviceId": "7600a807e028343e96196473f5ccb47ad0ffaf82383aea34073d9a5d441e82f5",
+    "publicKey": "AHhnt8jErk9WOvWFz0E69CiSbztgdq0zPqULtvV-txE",
+    "platform": "darwin",
+    "clientId": "cli",
+    "clientMode": "probe",
+    "role": "operator",
+    "roles": [
+      "operator",
+      "node"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.admin",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing",
+      "operator.talk.secrets"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.admin",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing",
+      "operator.talk.secrets"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "NCyekP--5ldpEJ4hdjxAvhwcfNdsZXMumxCGst-KM7w",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1776188228243,
+        "rotatedAtMs": 1776223394847
+      },
+      "node": {
+        "token": "sY8FvM0uEheiLA2mO78lz2SJu5tzuuldvKJBxXcljDw",
+        "role": "node",
+        "scopes": [],
+        "createdAtMs": 1776188248076
+      }
+    },
+    "createdAtMs": 1776188228243,
+    "approvedAtMs": 1776223394847
   }
 }
