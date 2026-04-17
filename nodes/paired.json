@@ -2,7 +2,7 @@
   "459df5ca065277f8138cd980b466a8c1bc98b7666ec71b62030147be1b33ed16": {
     "nodeId": "459df5ca065277f8138cd980b466a8c1bc98b7666ec71b62030147be1b33ed16",
     "token": "rnDV-o3Z0MhLTTTgEjvL8_MpE16xyr1__HdiapTb88E",
-    "displayName": "StevenGerrard的Mac Studio",
+    "displayName": "StevenGerrerrard的Mac Studio",
     "platform": "macOS 15.6.1",
     "version": "2026.4.14",
     "deviceFamily": "Mac",
@@ -28,25 +28,6 @@
     ],
     "createdAtMs": 1776187888430,
     "approvedAtMs": 1776187888430,
-    "lastConnectedAtMs": 1776268376872
-  },
-  "7600a807e028343e96196473f5ccb47ad0ffaf82383aea34073d9a5d441e82f5": {
-    "nodeId": "7600a807e028343e96196473f5ccb47ad0ffaf82383aea34073d9a5d441e82f5",
-    "token": "MZCSQz6Pe_NriQuf2dNlgjCYvsxwdLN86_EZr_WB3bw",
-    "displayName": "MacStudio",
-    "platform": "darwin",
-    "version": "2026.4.11",
-    "caps": [
-      "system",
-      "browser"
-    ],
-    "commands": [
-      "system.run.prepare",
-      "system.run",
-      "system.which",
-      "browser.proxy"
-    ],
-    "createdAtMs": 1776188434814,
-    "approvedAtMs": 1776188434814
+    "lastConnectedAtMs": 1776442547924
   }
 }

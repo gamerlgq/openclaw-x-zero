@@ -17,7 +17,7 @@
         }
       },
       "model": {
-        "primary": "ollama/glm-5.1:cloud",
+        "primary": "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code",
         "fallbacks": [
           "custom-ark-cn-beijing-volces-com/Kimi-K2.5"
         ]
@@ -90,16 +90,26 @@
         "calendar.add",
         "reminders.add",
         "sms.send"
-      ]
+      ],
+      "browser": {
+        "mode": "manual",
+        "node": "StevenGerrerrard的Mac Studio"
+      }
     },
     "port": 18789,
     "tailscale": {
       "mode": "serve",
       "resetOnExit": true
+    },
+    "tools": {
+      "allow": [
+        "exec"
+      ],
+      "deny": []
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-04-13T16:43:28.426Z",
+    "lastTouchedAt": "2026-04-16T16:52:03.254Z",
     "lastTouchedVersion": "2026.4.11"
   },
   "models": {
@@ -347,6 +357,7 @@
   },
   "tools": {
     "alsoAllow": [
+      "exec",
       "feishu_bitable_app",
       "feishu_bitable_app_table",
       "feishu_bitable_app_table_field",
@@ -393,7 +404,11 @@
       "search": {
         "enabled": false
       }
-    }
+    },
+    "exec": {
+      "host": "gateway"
+    },
+    "deny": []
   },
   "wizard": {
     "lastRunAt": "2026-04-12T12:29:00.029Z",

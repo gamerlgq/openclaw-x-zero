@@ -8,7 +8,7 @@
       "name": "backup-github-repo",
       "enabled": true,
       "createdAtMs": 1774626723017,
-      "updatedAtMs": 1776009540555,
+      "updatedAtMs": 1776442199737,
       "schedule": {
         "kind": "cron",
         "expr": "59 23 * * *",
@@ -19,7 +19,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "执行仓库备份：cd /home/ubuntu/.openclaw && git add -A && git commit -m \"backup: $(date '+%Y-%m-%d %H:%M:%S')\" && git push origin master",
-        "model": "deepseek/deepseek-chat",
+        "model": "kimi-2.5",
         "lightContext": true
       },
       "delivery": {
@@ -28,14 +28,14 @@
         "channel": "feishu"
       },
       "state": {
-        "lastRunAtMs": 1776009540006,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 549,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
-        "nextRunAtMs": 1776095940000,
-        "lastError": "FallbackSummaryError: All models failed (2): deepseek/deepseek-chat: Provider deepseek has billing issue (skipping all models) (billing) | deepseek/deepseek-reasoner: Provider deepseek has billing issue (skipping all models) (billing)"
+        "lastRunAtMs": 1776442185975,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 13762,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1776527940000,
+        "lastDelivered": true
       }
     }
   ]

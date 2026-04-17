@@ -17,7 +17,10 @@
         }
       },
       "model": {
-        "primary": "custom-dashscope-aliyuncs-com/glm-5"
+        "primary": "ollama/glm-5.1:cloud",
+        "fallbacks": [
+          "custom-ark-cn-beijing-volces-com/Kimi-K2.5"
+        ]
       },
       "models": {
         "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
@@ -34,22 +37,13 @@
         },
         "custom-dashscope-aliyuncs-com/glm-5": {
           "alias": "glm-5"
-        },
-        "deepseek/deepseek-chat": {
-          "alias": "DeepSeek"
-        },
-        "deepseek/deepseek-reasoner": {}
+        }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
     }
   },
   "auth": {
-    "profiles": {
-      "deepseek:default": {
-        "mode": "api_key",
-        "provider": "deepseek"
-      }
-    }
+    "profiles": {}
   },
   "channels": {
     "feishu": {
@@ -96,16 +90,26 @@
         "calendar.add",
         "reminders.add",
         "sms.send"
-      ]
+      ],
+      "browser": {
+        "mode": "manual",
+        "node": "StevenGerrerrard的Mac Studio"
+      }
     },
     "port": 18789,
     "tailscale": {
       "mode": "serve",
       "resetOnExit": true
+    },
+    "tools": {
+      "allow": [
+        "exec"
+      ],
+      "deny": []
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-04-13T13:03:15.954Z",
+    "lastTouchedAt": "2026-04-16T03:04:31.822Z",
     "lastTouchedVersion": "2026.4.11"
   },
   "models": {
@@ -284,52 +288,6 @@
           }
         ]
       },
-      "deepseek": {
-        "api": "openai-completions",
-        "baseUrl": "https://api.deepseek.com",
-        "models": [
-          {
-            "api": "openai-completions",
-            "compat": {
-              "supportsUsageInStreaming": true
-            },
-            "contextWindow": 131072,
-            "cost": {
-              "cacheRead": 0.028,
-              "cacheWrite": 0,
-              "input": 0.28,
-              "output": 0.42
-            },
-            "id": "deepseek-chat",
-            "input": [
-              "text"
-            ],
-            "maxTokens": 8192,
-            "name": "DeepSeek Chat",
-            "reasoning": false
-          },
-          {
-            "api": "openai-completions",
-            "compat": {
-              "supportsUsageInStreaming": true
-            },
-            "contextWindow": 131072,
-            "cost": {
-              "cacheRead": 0.028,
-              "cacheWrite": 0,
-              "input": 0.28,
-              "output": 0.42
-            },
-            "id": "deepseek-reasoner",
-            "input": [
-              "text"
-            ],
-            "maxTokens": 65536,
-            "name": "DeepSeek Reasoner",
-            "reasoning": true
-          }
-        ]
-      },
       "ollama": {
         "api": "ollama",
         "apiKey": "ollama-local",
@@ -399,6 +357,7 @@
   },
   "tools": {
     "alsoAllow": [
+      "exec",
       "feishu_bitable_app",
       "feishu_bitable_app_table",
       "feishu_bitable_app_table_field",
@@ -445,7 +404,12 @@
       "search": {
         "enabled": false
       }
-    }
+    },
+    "exec": {
+      "host": "node",
+      "node": "StevenGerrard的Mac Studio"
+    },
+    "deny": []
   },
   "wizard": {
     "lastRunAt": "2026-04-12T12:29:00.029Z",
