@@ -37,6 +37,37 @@
         "nextRunAtMs": 1776527940000,
         "lastDelivered": true
       }
+    },
+    {
+      "id": "2894ff0d-519d-4926-9a1f-3d372a4839b5",
+      "agentId": "main",
+      "sessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "name": "git-backup-now",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1776442454117,
+      "updatedAtMs": 1776442454117,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-17T16:20:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行完整的 git 备份：cd /home/ubuntu/.openclaw && git status && echo '---' && git add -A && git commit -m \"backup: $(date '+%Y-%m-%d %H:%M:%S')\" && git push origin master && echo '---' && git log --oneline -3",
+        "model": "kimi-2.5",
+        "lightContext": true
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "ou_22bcccc95a09d7521b0d7a59992738da",
+        "channel": "feishu"
+      },
+      "state": {
+        "nextRunAtMs": 1776442800000,
+        "runningAtMs": 1776442800004
+      }
     }
   ]
 }

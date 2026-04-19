@@ -24,11 +24,11 @@
     "ollama:default": {
       "errorCount": 1,
       "lastUsed": 1776128656614,
-      "lastFailureAt": 1776309812204,
+      "lastFailureAt": 1776568653631,
       "failureCounts": {
         "auth": 1
       },
-      "cooldownUntil": 1776309842204,
+      "cooldownUntil": 1776568683631,
       "cooldownReason": "auth"
     }
   }

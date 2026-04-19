@@ -17,7 +17,7 @@
         }
       },
       "model": {
-        "primary": "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code",
+        "primary": "ollama/glm-5.1:cloud",
         "fallbacks": [
           "custom-ark-cn-beijing-volces-com/Kimi-K2.5"
         ]
@@ -37,6 +37,9 @@
         },
         "custom-dashscope-aliyuncs-com/glm-5": {
           "alias": "glm-5"
+        },
+        "ollama/glm-5.1:cloud": {
+          "alias": "ollama-glm5"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
