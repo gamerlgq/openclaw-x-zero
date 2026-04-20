@@ -3,7 +3,7 @@
     "label": "Cron: backup-github-repo",
     "model": "Kimi-K2.5",
     "modelProvider": "custom-ark-cn-beijing-volces-com",
-    "sessionId": "bc407856-d539-40a1-bf48-d7945c4d7602",
+    "sessionId": "ca93dd54-a2db-402f-b415-96ab20af9178",
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-bitable</name>\n    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;\n(5) 需要批量导入数据或批量更新多维表格</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-calendar</name>\n    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-channel-rules</name>\n    <description>Lark/Feishu channel output rules. Always active in Lark conversations.</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-create-doc</name>\n    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-fetch-doc</name>\n    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-im-read</name>\n    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;\n(6) 需要按时间范围过滤消息、分页获取更多消息</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-task</name>\n    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;\n(5) 需要设置任务负责人、关注人、截止时间</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-troubleshoot</name>\n    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-update-doc</name>\n    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Use when work should span one or more detached tasks but still behave like one job with a single owner context. TaskFlow is the durable flow substrate under authoring layers like Lobster, ACPX, plugins, or plain code. Keep conditional logic in the caller; use TaskFlow for flow identity, child-task linkage, waiting state, revision-checked mutations, and user-facing emergence.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
@@ -375,14 +375,14 @@
           "disableModelInvocation": false
         }
       ],
-      "version": 1776568610340
+      "version": 1776620621189
     },
     "systemSent": true,
-    "updatedAt": 1776614345882,
+    "updatedAt": 1776700745781,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1776527942242,
-      "sessionId": "ad418b92-c9ff-4308-8845-79cd153cdb57",
+      "generatedAt": 1776614345828,
+      "sessionId": "bc407856-d539-40a1-bf48-d7945c4d7602",
       "sessionKey": "agent:main:cron:6d0015b5-0498-44a9-b2d8-faa615885204",
       "provider": "custom-ark-cn-beijing-volces-com",
       "model": "Kimi-K2.5",
@@ -401,9 +401,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 15805,
+        "chars": 15772,
         "projectContextChars": 0,
-        "nonProjectContextChars": 15805
+        "nonProjectContextChars": 15772
       },
       "injectedWorkspaceFiles": [],
       "skills": {
@@ -860,12 +860,12 @@
     },
     "contextTokens": 131072,
     "status": "running",
-    "startedAt": 1776614345858,
+    "startedAt": 1776700745754,
     "abortedLastRun": false
   },
   "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da": {
     "sessionId": "da913ee3-841c-4750-8437-1f4306c2f98e",
-    "updatedAt": 1776568676102,
+    "updatedAt": 1776620666151,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -1259,16 +1259,16 @@
           "disableModelInvocation": false
         }
       ],
-      "version": 1776568610340
+      "version": 1776620621189
     },
     "status": "done",
-    "startedAt": 1776568663621,
+    "startedAt": 1776620662845,
     "modelOverrideSource": "auto",
     "modelProvider": "custom-ark-cn-beijing-volces-com",
     "model": "Kimi-K2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1776568663598,
+      "generatedAt": 1776620662800,
       "sessionId": "da913ee3-841c-4750-8437-1f4306c2f98e",
       "sessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
       "provider": "custom-ark-cn-beijing-volces-com",
@@ -1818,11 +1818,8 @@
     "contextTokens": 131072,
     "providerOverride": "custom-ark-cn-beijing-volces-com",
     "modelOverride": "Kimi-K2.5",
-    "endedAt": 1776568676057,
-    "runtimeMs": 12436,
-    "fallbackNoticeSelectedModel": "ollama/glm-5.1:cloud",
-    "fallbackNoticeActiveModel": "custom-ark-cn-beijing-volces-com/Kimi-K2.5",
-    "fallbackNoticeReason": "auth"
+    "endedAt": 1776620666122,
+    "runtimeMs": 3277
   },
   "agent:main:feishu:group:ou_22bcccc95a09d7521b0d7a59992738da": {
     "channel": "feishu",
@@ -2851,11 +2848,11 @@
     "fallbackNoticeActiveModel": "custom-ark-cn-beijing-volces-com/Kimi-K2.5",
     "fallbackNoticeReason": "auth"
   },
-  "agent:main:cron:6d0015b5-0498-44a9-b2d8-faa615885204:run:ad418b92-c9ff-4308-8845-79cd153cdb57": {
+  "agent:main:cron:6d0015b5-0498-44a9-b2d8-faa615885204:run:bc407856-d539-40a1-bf48-d7945c4d7602": {
     "label": "Cron: backup-github-repo",
     "model": "Kimi-K2.5",
     "modelProvider": "custom-ark-cn-beijing-volces-com",
-    "sessionId": "ad418b92-c9ff-4308-8845-79cd153cdb57",
+    "sessionId": "bc407856-d539-40a1-bf48-d7945c4d7602",
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-bitable</name>\n    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;\n(5) 需要批量导入数据或批量更新多维表格</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-calendar</name>\n    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-channel-rules</name>\n    <description>Lark/Feishu channel output rules. Always active in Lark conversations.</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-create-doc</name>\n    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-fetch-doc</name>\n    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-im-read</name>\n    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;\n(6) 需要按时间范围过滤消息、分页获取更多消息</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-task</name>\n    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;\n(5) 需要设置任务负责人、关注人、截止时间</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-troubleshoot</name>\n    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-update-doc</name>\n    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Use when work should span one or more detached tasks but still behave like one job with a single owner context. TaskFlow is the durable flow substrate under authoring layers like Lobster, ACPX, plugins, or plain code. Keep conditional logic in the caller; use TaskFlow for flow identity, child-task linkage, waiting state, revision-checked mutations, and user-facing emergence.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
@@ -3227,14 +3224,14 @@
           "disableModelInvocation": false
         }
       ],
-      "version": 1776442533359
+      "version": 1776568610340
     },
     "systemSent": true,
-    "updatedAt": 1776527940310,
+    "updatedAt": 1776614343735,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1776527942242,
-      "sessionId": "ad418b92-c9ff-4308-8845-79cd153cdb57",
+      "generatedAt": 1776614345828,
+      "sessionId": "bc407856-d539-40a1-bf48-d7945c4d7602",
       "sessionKey": "agent:main:cron:6d0015b5-0498-44a9-b2d8-faa615885204",
       "provider": "custom-ark-cn-beijing-volces-com",
       "model": "Kimi-K2.5",
@@ -3253,9 +3250,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 15805,
+        "chars": 15772,
         "projectContextChars": 0,
-        "nonProjectContextChars": 15805
+        "nonProjectContextChars": 15772
       },
       "injectedWorkspaceFiles": [],
       "skills": {
@@ -3712,11 +3709,11 @@
     },
     "contextTokens": 131072
   },
-  "agent:main:cron:6d0015b5-0498-44a9-b2d8-faa615885204:run:bc407856-d539-40a1-bf48-d7945c4d7602": {
+  "agent:main:cron:6d0015b5-0498-44a9-b2d8-faa615885204:run:ca93dd54-a2db-402f-b415-96ab20af9178": {
     "label": "Cron: backup-github-repo",
     "model": "Kimi-K2.5",
     "modelProvider": "custom-ark-cn-beijing-volces-com",
-    "sessionId": "bc407856-d539-40a1-bf48-d7945c4d7602",
+    "sessionId": "ca93dd54-a2db-402f-b415-96ab20af9178",
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-bitable</name>\n    <description>飞书多维表格（Bitable）的创建、查询、编辑和管理工具。包含 27 种字段类型支持、高级筛选、批量操作和视图管理。\n\n**当以下情况时使用此 Skill**：\n(1) 需要创建或管理飞书多维表格 App\n(2) 需要在多维表格中新增、查询、修改、删除记录（行数据）\n(3) 需要管理字段（列）、视图、数据表\n(4) 用户提到&quot;多维表格&quot;、&quot;bitable&quot;、&quot;数据表&quot;、&quot;记录&quot;、&quot;字段&quot;\n(5) 需要批量导入数据或批量更新多维表格</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-bitable/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-calendar</name>\n    <description>飞书日历与日程管理工具集。包含日历管理、日程管理、参会人管理、忙闲查询。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-channel-rules</name>\n    <description>Lark/Feishu channel output rules. Always active in Lark conversations.</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-channel-rules/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-create-doc</name>\n    <description>创建飞书云文档。从 Lark-flavored Markdown 内容创建新的飞书云文档，支持指定创建位置（文件夹/知识库/知识空间）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-create-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-fetch-doc</name>\n    <description>获取飞书云文档内容。返回文档的 Markdown 内容，支持处理文档中的图片、文件和画板（需配合 feishu_doc_media 工具）。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-fetch-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-im-read</name>\n    <description>飞书 IM 消息读取工具使用指南，覆盖会话消息获取、话题回复读取、跨会话消息搜索、图片/文件资源下载。\n\n**当以下情况时使用此 Skill**:\n(1) 需要获取群聊或单聊的历史消息\n(2) 需要读取话题（thread）内的回复消息\n(3) 需要跨会话搜索消息（按关键词、发送者、时间等条件）\n(4) 消息中包含图片、文件、音频、视频，需要下载\n(5) 用户提到&quot;聊天记录&quot;、&quot;消息&quot;、&quot;群里说了什么&quot;、&quot;话题回复&quot;、&quot;搜索消息&quot;、&quot;图片&quot;、&quot;文件下载&quot;\n(6) 需要按时间范围过滤消息、分页获取更多消息</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-im-read/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-task</name>\n    <description>飞书任务管理工具,用于创建、查询、更新任务和清单。\n\n**当以下情况时使用此 Skill**:\n(1) 需要创建、查询、更新任务\n(2) 需要创建、管理任务清单\n(3) 需要查看任务列表或清单内的任务\n(4) 用户提到&quot;任务&quot;、&quot;待办&quot;、&quot;to-do&quot;、&quot;清单&quot;、&quot;task&quot;\n(5) 需要设置任务负责人、关注人、截止时间</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-troubleshoot</name>\n    <description>飞书插件问题排查工具。包含常见问题 FAQ 和深度诊断命令（/feishu_doctor）。\n\n常见问题可随时查阅。诊断命令用于排查复杂问题（多次授权仍失败、自动授权无法解决等），\n会检查账户配置、API 连通性、应用权限、用户授权状态，并生成详细的诊断报告和解决方案。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-troubleshoot/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-update-doc</name>\n    <description>更新飞书云文档。支持 7 种更新模式：追加、覆盖、定位替换、全文替换、前/后插入、删除。</description>\n    <location>~/.openclaw/extensions/openclaw-lark/skills/feishu-update-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Use when work should span one or more detached tasks but still behave like one job with a single owner context. TaskFlow is the durable flow substrate under authoring layers like Lobster, ACPX, plugins, or plain code. Keep conditional logic in the caller; use TaskFlow for flow identity, child-task linkage, waiting state, revision-checked mutations, and user-facing emergence.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
@@ -4088,14 +4085,14 @@
           "disableModelInvocation": false
         }
       ],
-      "version": 1776568610340
+      "version": 1776620621189
     },
     "systemSent": true,
-    "updatedAt": 1776614343735,
+    "updatedAt": 1776700743660,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1776527942242,
-      "sessionId": "ad418b92-c9ff-4308-8845-79cd153cdb57",
+      "generatedAt": 1776614345828,
+      "sessionId": "bc407856-d539-40a1-bf48-d7945c4d7602",
       "sessionKey": "agent:main:cron:6d0015b5-0498-44a9-b2d8-faa615885204",
       "provider": "custom-ark-cn-beijing-volces-com",
       "model": "Kimi-K2.5",
@@ -4114,9 +4111,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 15805,
+        "chars": 15772,
         "projectContextChars": 0,
-        "nonProjectContextChars": 15805
+        "nonProjectContextChars": 15772
       },
       "injectedWorkspaceFiles": [],
       "skills": {

@@ -4,8 +4,8 @@
       "lastKnownGood": {
         "hash": "1347cf0fcd1aad712cd94e8fc88e7f3be2228a24c1b1cf63c7516382fcf0413a",
         "bytes": 10840,
-        "mtimeMs": 1776568274836.933,
-        "ctimeMs": 1776568274836.933,
+        "mtimeMs": 1776620301850.4934,
+        "ctimeMs": 1776620301850.4934,
         "dev": "64770",
         "ino": "793275",
         "mode": 384,
@@ -14,7 +14,7 @@
         "gid": 1001,
         "hasMeta": true,
         "gatewayMode": "local",
-        "observedAt": "2026-04-19T03:11:15.578Z"
+        "observedAt": "2026-04-19T17:38:22.644Z"
       },
       "lastObservedSuspiciousSignature": null
     }
