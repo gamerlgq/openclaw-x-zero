@@ -8,7 +8,7 @@
       "name": "backup-github-repo",
       "enabled": true,
       "createdAtMs": 1774626723017,
-      "updatedAtMs": 1776614418985,
+      "updatedAtMs": 1776700801345,
       "schedule": {
         "kind": "cron",
         "expr": "59 23 * * *",
@@ -28,15 +28,15 @@
         "channel": "feishu"
       },
       "state": {
-        "lastRunAtMs": 1776614340011,
+        "lastRunAtMs": 1776700740014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 78974,
-        "lastDeliveryStatus": "not-delivered",
+        "lastDurationMs": 61331,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "nextRunAtMs": 1776700740000,
-        "lastDelivered": false,
-        "runningAtMs": 1776700740006
+        "nextRunAtMs": 1776787140000,
+        "lastDelivered": true,
+        "runningAtMs": 1776787140004
       }
     }
   ]
