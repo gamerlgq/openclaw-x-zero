@@ -145,8 +145,8 @@
           "maxTokens": 8192
         },
         {
-          "id": "MiniMax-M2.5",
-          "name": "MiniMax-M2.5 (Custom Provider)",
+          "id": "MiniMax-M2.7",
+          "name": "MiniMax-M2.7 (Custom Provider)",
           "api": "openai-completions",
           "reasoning": false,
           "input": [
@@ -162,8 +162,8 @@
           "maxTokens": 8192
         },
         {
-          "id": "Kimi-K2.5",
-          "name": "Kimi-K2.5 (Custom Provider)",
+          "id": "Kimi-K2.6",
+          "name": "Kimi-K2.6 (Custom Provider)",
           "api": "openai-completions",
           "reasoning": false,
           "input": [

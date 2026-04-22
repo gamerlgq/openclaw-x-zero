@@ -1,0 +1,32 @@
+{
+  "agents": {
+    "defaults": {}
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "ownerDisplay": "raw",
+    "restart": true
+  },
+  "tools": {
+    "exec": {
+      "host": "gateway"
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.11",
+    "lastTouchedAt": "2026-04-22T11:46:17.536Z"
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "7b95e365265255878fb8983f0b6fd2441cd94298659df8e0"
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-22T11:46:17.110Z",
+    "lastRunVersion": "2026.4.11",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  }
+}

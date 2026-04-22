@@ -37,6 +37,9 @@
         },
         "custom-dashscope-aliyuncs-com/glm-5": {
           "alias": "glm-5"
+        },
+        "ollama/glm-5.1:cloud": {
+          "alias": "ollama-glm5"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
@@ -104,11 +107,12 @@
     "tools": {
       "allow": [
         "exec"
-      ]
+      ],
+      "deny": []
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-04-16T03:03:59.163Z",
+    "lastTouchedAt": "2026-04-21T16:56:26.986Z",
     "lastTouchedVersion": "2026.4.11"
   },
   "models": {
@@ -405,8 +409,7 @@
       }
     },
     "exec": {
-      "host": "node",
-      "node": "StevenGerrard的Mac Studio"
+      "host": "auto"
     },
     "deny": []
   },
