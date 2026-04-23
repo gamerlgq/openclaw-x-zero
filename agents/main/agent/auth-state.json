@@ -22,14 +22,9 @@
       "disabledReason": "billing"
     },
     "ollama:default": {
-      "errorCount": 1,
-      "lastUsed": 1776128656614,
-      "lastFailureAt": 1776789765822,
-      "failureCounts": {
-        "auth": 1
-      },
-      "cooldownUntil": 1776789795822,
-      "cooldownReason": "auth"
+      "errorCount": 0,
+      "lastUsed": 1776959622899,
+      "lastFailureAt": 1776959622381
     }
   }
 }

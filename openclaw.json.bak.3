@@ -17,9 +17,9 @@
         }
       },
       "model": {
-        "primary": "ollama/glm-5.1:cloud",
+        "primary": "custom-dashscope-aliyuncs-com/glm-5.1",
         "fallbacks": [
-          "custom-ark-cn-beijing-volces-com/Kimi-K2.5"
+          "custom-ark-cn-beijing-volces-com/Kimi-k2.6"
         ]
       },
       "models": {
@@ -29,21 +29,40 @@
         "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-pro": {
           "alias": "seed-pro-2.0"
         },
-        "custom-ark-cn-beijing-volces-com/Kimi-K2.5": {
-          "alias": "kimi-2.5"
+        "custom-ark-cn-beijing-volces-com/Kimi-K2.6": {
+          "alias": "kimi-2.6"
         },
-        "custom-ark-cn-beijing-volces-com/MiniMax-M2.5": {
-          "alias": "minimax-2.5"
+        "custom-ark-cn-beijing-volces-com/MiniMax-M2.7": {
+          "alias": "minimax-2.7"
         },
-        "custom-dashscope-aliyuncs-com/glm-5": {
-          "alias": "glm-5"
+        "custom-dashscope-aliyuncs-com/glm-5.1": {
+          "alias": "glm-5.1"
         },
         "ollama/glm-5.1:cloud": {
-          "alias": "ollama-glm5"
+          "alias": "ollama-glm5.1"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
-    }
+    },
+    "list": [
+      {
+        "id": "dev-cloud",
+        "default": false,
+        "name": "Dev-Cloud",
+        "workspace": "/home/ubuntu/game-project",
+        "identity": {
+          "name": "Dev-Cloud",
+          "emoji": "⚡️"
+        },
+        "runtime": {
+          "type": "acp",
+          "acp": {
+            "agent": "codex",
+            "cwd": "/home/ubuntu/game-project"
+          }
+        }
+      }
+    ]
   },
   "auth": {
     "profiles": {}
@@ -112,7 +131,7 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-04-21T16:56:26.986Z",
+    "lastTouchedAt": "2026-04-22T16:10:56.295Z",
     "lastTouchedVersion": "2026.4.11"
   },
   "models": {
@@ -149,12 +168,12 @@
               "input": 0,
               "output": 0
             },
-            "id": "MiniMax-M2.5",
+            "id": "MiniMax-M2.7",
             "input": [
               "text"
             ],
             "maxTokens": 8192,
-            "name": "MiniMax-M2.5 (Custom Provider)",
+            "name": "MiniMax-M2.7 (Custom Provider)",
             "reasoning": false
           },
           {
@@ -166,12 +185,12 @@
               "input": 0,
               "output": 0
             },
-            "id": "Kimi-K2.5",
+            "id": "Kimi-K2.6",
             "input": [
               "text"
             ],
             "maxTokens": 8192,
-            "name": "Kimi-K2.5 (Custom Provider)",
+            "name": "Kimi-K2.6 (Custom Provider)",
             "reasoning": false
           },
           {
@@ -409,7 +428,7 @@
       }
     },
     "exec": {
-      "host": "auto"
+      "host": "gateway"
     },
     "deny": []
   },
@@ -418,5 +437,12 @@
     "lastRunCommand": "doctor",
     "lastRunMode": "local",
     "lastRunVersion": "2026.4.11"
+  },
+  "acp": {
+    "enabled": true,
+    "defaultAgent": "codex",
+    "allowedAgents": [
+      "codex"
+    ]
   }
 }

@@ -17,10 +17,7 @@
         }
       },
       "model": {
-        "primary": "custom-dashscope-aliyuncs-com/glm-5.1",
-        "fallbacks": [
-          "custom-ark-cn-beijing-volces-com/Kimi-k2.6"
-        ]
+        "primary": "custom-ark-cn-beijing-volces-com/Kimi-K2.6"
       },
       "models": {
         "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
@@ -35,15 +32,31 @@
         "custom-ark-cn-beijing-volces-com/MiniMax-M2.7": {
           "alias": "minimax-2.7"
         },
-        "custom-dashscope-aliyuncs-com/glm-5.1": {
-          "alias": "glm-5.1"
-        },
         "ollama/glm-5.1:cloud": {
           "alias": "ollama-glm5.1"
         }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
-    }
+    },
+    "list": [
+      {
+        "id": "dev-cloud",
+        "default": false,
+        "name": "Dev-Cloud",
+        "workspace": "/home/ubuntu/game-project",
+        "identity": {
+          "name": "Dev-Cloud",
+          "emoji": "⚡️"
+        },
+        "runtime": {
+          "type": "acp",
+          "acp": {
+            "agent": "codex",
+            "cwd": "/home/ubuntu/game-project"
+          }
+        }
+      }
+    ]
   },
   "auth": {
     "profiles": {}
@@ -112,7 +125,7 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-04-16T16:52:03.254Z",
+    "lastTouchedAt": "2026-04-22T16:30:14.799Z",
     "lastTouchedVersion": "2026.4.11"
   },
   "models": {
@@ -268,29 +281,6 @@
           }
         ]
       },
-      "custom-dashscope-aliyuncs-com": {
-        "api": "openai-completions",
-        "apiKey": "sk-4fd188310bdf4646befb9993bde914c9",
-        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "models": [
-          {
-            "contextWindow": 131072,
-            "cost": {
-              "cacheRead": 0,
-              "cacheWrite": 0,
-              "input": 0,
-              "output": 0
-            },
-            "id": "glm-5",
-            "input": [
-              "text"
-            ],
-            "maxTokens": 4096,
-            "name": "glm-5 (Custom Provider)",
-            "reasoning": false
-          }
-        ]
-      },
       "ollama": {
         "api": "ollama",
         "apiKey": "ollama-local",
@@ -321,7 +311,8 @@
       "deepseek",
       "memory-core",
       "openclaw-web-search",
-      "ollama"
+      "ollama",
+      "acpx"
     ],
     "entries": {
       "deepseek": {
@@ -337,6 +328,9 @@
         "enabled": true
       },
       "openclaw-web-search": {
+        "enabled": true
+      },
+      "acpx": {
         "enabled": true
       }
     },
@@ -418,5 +412,12 @@
     "lastRunCommand": "doctor",
     "lastRunMode": "local",
     "lastRunVersion": "2026.4.11"
+  },
+  "acp": {
+    "enabled": true,
+    "defaultAgent": "codex",
+    "allowedAgents": [
+      "codex"
+    ]
   }
 }

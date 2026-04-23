@@ -39,7 +39,7 @@
         "token": "0geYP6YsI1awMwnDBi4UMXPiz1TbwtURB79gPzE6uzI"
       }
     },
-    "displayName": "agent"
+    "displayName": "gateway:sessions.list"
   },
   "9ef037002f25c705ea544ecf591b74ffa703b05eb5648980c1eb5858401ab414": {
     "approvedAtMs": 1775998224207,
@@ -89,7 +89,7 @@
     "platform": "macOS 15.6.1",
     "deviceFamily": "Mac",
     "clientId": "openclaw-macos",
-    "clientMode": "node",
+    "clientMode": "ui",
     "role": "node",
     "roles": [
       "operator",
