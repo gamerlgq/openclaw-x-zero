@@ -913,7 +913,7 @@
   },
   "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da": {
     "sessionId": "fd678594-4811-462d-b52d-6c197ed6302d",
-    "updatedAt": 1777470975185,
+    "updatedAt": 1777476986174,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -1347,10 +1347,10 @@
       "version": 1777468583947
     },
     "status": "running",
-    "startedAt": 1777470975170,
+    "startedAt": 1777476986154,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1777470521106,
+      "generatedAt": 1777470975129,
       "sessionId": "fd678594-4811-462d-b52d-6c197ed6302d",
       "sessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
       "provider": "custom-ark-cn-beijing-volces-com",
@@ -1370,9 +1370,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 31681,
+        "chars": 33668,
         "projectContextChars": 8945,
-        "nonProjectContextChars": 22736
+        "nonProjectContextChars": 24723
       },
       "injectedWorkspaceFiles": [
         {
@@ -1535,7 +1535,7 @@
       },
       "tools": {
         "listChars": 0,
-        "schemaChars": 52636,
+        "schemaChars": 61410,
         "entries": [
           {
             "name": "read",
@@ -1557,13 +1557,13 @@
           },
           {
             "name": "exec",
-            "summaryChars": 446,
+            "summaryChars": 539,
             "schemaChars": 1098,
             "propertiesCount": 12
           },
           {
             "name": "process",
-            "summaryChars": 322,
+            "summaryChars": 416,
             "schemaChars": 961,
             "propertiesCount": 12
           },
@@ -1574,9 +1574,21 @@
             "propertiesCount": 18
           },
           {
+            "name": "nodes",
+            "summaryChars": 118,
+            "schemaChars": 1589,
+            "propertiesCount": 32
+          },
+          {
+            "name": "cron",
+            "summaryChars": 3726,
+            "schemaChars": 6700,
+            "propertiesCount": 13
+          },
+          {
             "name": "message",
-            "summaryChars": 123,
-            "schemaChars": 5651,
+            "summaryChars": 129,
+            "schemaChars": 5639,
             "propertiesCount": 105
           },
           {
@@ -1602,6 +1614,12 @@
             "summaryChars": 225,
             "schemaChars": 3734,
             "propertiesCount": 20
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 494,
+            "schemaChars": 497,
+            "propertiesCount": 12
           },
           {
             "name": "agents_list",
