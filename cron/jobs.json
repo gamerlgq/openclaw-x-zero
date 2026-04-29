@@ -35,7 +35,8 @@
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "nextRunAtMs": 1777478340000,
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1777478340005
       }
     }
   ]
