@@ -3,7 +3,8 @@
   "lastGood": {
     "google": "google:default",
     "deepseek": "deepseek:default",
-    "ollama": "ollama:default"
+    "ollama": "ollama:default",
+    "opencode-go": "opencode-go:default"
   },
   "usageStats": {
     "google:default": {
@@ -25,6 +26,10 @@
       "errorCount": 0,
       "lastUsed": 1776959622899,
       "lastFailureAt": 1776959622381
+    },
+    "opencode-go:default": {
+      "errorCount": 0,
+      "lastUsed": 1777565591778
     }
   }
 }

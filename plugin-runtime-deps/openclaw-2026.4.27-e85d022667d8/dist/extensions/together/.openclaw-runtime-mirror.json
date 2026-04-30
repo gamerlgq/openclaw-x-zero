@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "together",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/together",
+  "sourceFingerprint": "d80efb98f997cc4a99a1baf66543b37c59ffa268b8a723a8ffe2ff56604a0291"
+}

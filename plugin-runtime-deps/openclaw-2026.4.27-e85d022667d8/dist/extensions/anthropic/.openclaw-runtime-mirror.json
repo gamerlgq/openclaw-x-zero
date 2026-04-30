@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "anthropic",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/anthropic",
+  "sourceFingerprint": "5b2cc19454c7cc91346b3a988a3dbc04e2d909690228143302497b274ee87347"
+}

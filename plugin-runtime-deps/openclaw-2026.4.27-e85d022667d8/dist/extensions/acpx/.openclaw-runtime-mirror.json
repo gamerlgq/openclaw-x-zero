@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "acpx",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/acpx",
+  "sourceFingerprint": "8f1a058c6aef0370b03afa9afd9480e9af8dccd9694252e72793f684dfa6cab6"
+}

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "duckduckgo",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/duckduckgo",
+  "sourceFingerprint": "beaf8f7594e6f98146bc53d344e59ef0ac34c92b46c349d7766415593d446426"
+}

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "searxng",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/searxng",
+  "sourceFingerprint": "9412e6c31a0c99f477773178c6ddc65d3780835ab6eee998bb872bb4b7618f61"
+}

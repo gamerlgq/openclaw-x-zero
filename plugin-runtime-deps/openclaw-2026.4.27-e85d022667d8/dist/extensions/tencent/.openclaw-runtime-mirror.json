@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "tencent",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/tencent",
+  "sourceFingerprint": "3c8479a3f5608bf742040660b74c92f4fe5e1bed17c5b59681ed5e2bd92edcd1"
+}

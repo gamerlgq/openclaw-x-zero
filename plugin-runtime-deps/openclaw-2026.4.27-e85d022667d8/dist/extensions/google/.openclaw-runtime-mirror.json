@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "google",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/google",
+  "sourceFingerprint": "1dc938242d81b478a043898212951e4b2edb05bc1015d52284be87678aa7b601"
+}

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "lmstudio",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/lmstudio",
+  "sourceFingerprint": "425f64d83d2134b15a4030f73b7e9b899cdc6d8a30583eb1b6e3061326f39c3a"
+}

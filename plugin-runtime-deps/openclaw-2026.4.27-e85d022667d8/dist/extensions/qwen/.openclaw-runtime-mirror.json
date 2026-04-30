@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "qwen",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/qwen",
+  "sourceFingerprint": "1a7721a75162f922a014c59ecffb3583b35045fb8ad5d7079e48903c497e0068"
+}

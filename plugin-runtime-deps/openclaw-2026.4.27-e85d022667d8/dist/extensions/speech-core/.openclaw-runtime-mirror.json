@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "speech-core",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/speech-core",
+  "sourceFingerprint": "a05550996ae23b705e2cafbe3ff7e0b27453d59a9dbe3f6c48627d1fd4ff7289"
+}

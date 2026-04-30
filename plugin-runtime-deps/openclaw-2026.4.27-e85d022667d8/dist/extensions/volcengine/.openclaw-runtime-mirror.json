@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "volcengine",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/volcengine",
+  "sourceFingerprint": "b289f47f4113a1a945f307bf164dc7dee57d9fe3d58a2cf55083e4b1a5e8b874"
+}

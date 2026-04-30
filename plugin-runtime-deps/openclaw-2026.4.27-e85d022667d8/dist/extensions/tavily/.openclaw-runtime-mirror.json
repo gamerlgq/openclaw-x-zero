@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "tavily",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/tavily",
+  "sourceFingerprint": "2225b15f6979b484516c065b965ed73efc311025a0a83ccfa99c5553dc33ae9c"
+}

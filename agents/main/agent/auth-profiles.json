@@ -24,6 +24,16 @@
       "expires": 1777735385000,
       "accountId": "fdd8e1a2-f227-4770-acc7-0cc278672fbf",
       "managedBy": "codex-cli"
+    },
+    "opencode:default": {
+      "type": "api_key",
+      "provider": "opencode",
+      "key": "sk-SQN4QKSqdplCEZRs3Jz8WrKX4qDBSZC1Kq86uAtkmedIde70b0uiPq4FmOf7z343"
+    },
+    "opencode-go:default": {
+      "type": "api_key",
+      "provider": "opencode-go",
+      "key": "sk-SQN4QKSqdplCEZRs3Jz8WrKX4qDBSZC1Kq86uAtkmedIde70b0uiPq4FmOf7z343"
     }
   }
 }

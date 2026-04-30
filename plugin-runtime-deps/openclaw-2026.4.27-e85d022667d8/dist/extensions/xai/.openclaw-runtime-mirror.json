@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "xai",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/xai",
+  "sourceFingerprint": "9d0fb074b630e70844386c86d6a06a3b6928ab4746de2098e751b062b2eb2643"
+}

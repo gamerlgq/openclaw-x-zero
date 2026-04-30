@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "nvidia",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/nvidia",
+  "sourceFingerprint": "2c325ed88d85515fa5c3d2056038f1da1859f44e0d3246c0e39899c747c59215"
+}

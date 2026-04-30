@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "mistral",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/mistral",
+  "sourceFingerprint": "722a7344faedbb1788d71612ae7128cb36ff4154c33da124693f98aa0bfd7bee"
+}

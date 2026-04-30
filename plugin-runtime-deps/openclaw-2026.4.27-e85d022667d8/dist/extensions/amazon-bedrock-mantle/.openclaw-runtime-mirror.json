@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "amazon-bedrock-mantle",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/amazon-bedrock-mantle",
+  "sourceFingerprint": "9a4abfe5b41f5653a81f251a66eba75442baec5ea390d10be9a595cd6635b884"
+}

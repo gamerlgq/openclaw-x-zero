@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "xiaomi",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/xiaomi",
+  "sourceFingerprint": "280a80bf7313237236cb5119561c09fc4eebe3784939e438f6d8ec562bc196ce"
+}

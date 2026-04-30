@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "codex",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/codex",
+  "sourceFingerprint": "8d3316d89fc63c2cf0dc6db41ac16ed433ca9dc964090285a409d91e5813350e"
+}

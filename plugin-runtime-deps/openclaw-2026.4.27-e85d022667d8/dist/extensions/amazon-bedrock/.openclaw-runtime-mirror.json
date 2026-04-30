@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "amazon-bedrock",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/amazon-bedrock",
+  "sourceFingerprint": "d0b9ac257d6a50fcb94a93fc9108368d7ed405a673ea1e2510562ce6d08f6906"
+}

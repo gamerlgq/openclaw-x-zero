@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "brave",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/brave",
+  "sourceFingerprint": "0a149ff74a30287b3027cee6d5bc1efe3508f9aa489ec9ad82046f81c881b33f"
+}

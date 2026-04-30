@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "anthropic-vertex",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/anthropic-vertex",
+  "sourceFingerprint": "5d3d17ae3676e19488a5fa139d4d384ad7ff8fe87c0722ed8c5e23eab5659b5e"
+}

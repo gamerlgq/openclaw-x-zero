@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "cerebras",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/cerebras",
+  "sourceFingerprint": "d1a4d462442a23903a8efcceadb91ed86020119df48a65e74c7d0379938cab45"
+}

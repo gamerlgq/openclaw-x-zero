@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "cloudflare-ai-gateway",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/cloudflare-ai-gateway",
+  "sourceFingerprint": "b07f8c661661b28516e86c193fb7893185736f7703d3e1aa5a958a36ebe9a303"
+}

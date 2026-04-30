@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "pluginId": "synthetic",
+  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/synthetic",
+  "sourceFingerprint": "abf78e0a23d52426f48e9ad01af8978402cab1d85859633ee233f0a05f039beb"
+}
