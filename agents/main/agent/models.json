@@ -260,6 +260,23 @@
           },
           "contextWindow": 131072,
           "maxTokens": 8192
+        },
+        {
+          "id": "Doubao-Seed-2.0-Lite",
+          "name": "Doubao-Seed-2.0-Lite (Custom Provider)",
+          "api": "openai-completions",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 8192
         }
       ]
     },

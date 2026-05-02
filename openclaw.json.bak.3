@@ -17,7 +17,7 @@
         }
       },
       "model": {
-        "primary": "custom-ark-cn-beijing-volces-com/glm-5.1"
+        "primary": "opencode-go/kimi-k2.6"
       },
       "models": {
         "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
@@ -37,15 +37,47 @@
         },
         "custom-ark-cn-beijing-volces-com/glm-5.1": {
           "alias": "glm-5.1"
-        }
+        },
+        "opencode-go/kimi-k2.6": {}
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
     }
   },
   "auth": {
-    "profiles": {}
+    "profiles": {
+      "opencode:default": {
+        "provider": "opencode",
+        "mode": "api_key"
+      },
+      "opencode-go:default": {
+        "provider": "opencode-go",
+        "mode": "api_key"
+      }
+    }
   },
-  "channels": {},
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "appId": "cli_a9238b7334b85bc2",
+      "appSecret": "BmR06Umor2FhunsSSeZhhh8nmDML4LjH",
+      "domain": "feishu",
+      "connectionMode": "websocket",
+      "dmPolicy": "allowlist",
+      "allowFrom": [
+        "ou_22bcccc95a09d7521b0d7a59992738da"
+      ],
+      "groupPolicy": "allowlist",
+      "groupAllowFrom": [
+        "ou_22bcccc95a09d7521b0d7a59992738da"
+      ],
+      "groups": {
+        "*": {
+          "enabled": true
+        }
+      },
+      "requireMention": true
+    }
+  },
   "commands": {
     "native": "auto",
     "nativeSkills": "auto",
@@ -87,8 +119,8 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-04-22T16:50:54.447Z",
-    "lastTouchedVersion": "2026.4.11"
+    "lastTouchedAt": "2026-04-30T09:27:54.223Z",
+    "lastTouchedVersion": "2026.4.27"
   },
   "models": {
     "mode": "merge",
@@ -308,10 +340,10 @@
     "deny": []
   },
   "wizard": {
-    "lastRunAt": "2026-04-12T12:29:00.029Z",
-    "lastRunCommand": "doctor",
+    "lastRunAt": "2026-04-30T09:27:54.004Z",
+    "lastRunCommand": "configure",
     "lastRunMode": "local",
-    "lastRunVersion": "2026.4.11"
+    "lastRunVersion": "2026.4.27"
   },
   "acp": {
     "enabled": true,
@@ -326,7 +358,8 @@
       "memory-core",
       "openclaw-web-search",
       "ollama",
-      "acpx"
+      "acpx",
+      "feishu"
     ],
     "entries": {
       "deepseek": {

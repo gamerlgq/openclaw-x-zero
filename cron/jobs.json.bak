@@ -18,7 +18,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "执行仓库备份：cd /home/ubuntu/.openclaw && git add -A && git commit -m \"backup: $(date '+%Y-%m-%d %H:%M:%S')\" && git push origin master",
-        "model": "opencode-go/glm-5.1",
+        "model": "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Lite",
         "lightContext": true
       },
       "delivery": {
