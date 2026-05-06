@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "github-copilot",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/github-copilot",
-  "sourceFingerprint": "3abbb71f585c1a62135aeecdb13637057707f304a9353251a4756434d8be3c50"
-}

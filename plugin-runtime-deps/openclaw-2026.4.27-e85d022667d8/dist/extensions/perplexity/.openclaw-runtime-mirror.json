@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "perplexity",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/perplexity",
-  "sourceFingerprint": "f32353fe930bef922429d7a9598759b06bf06880710aedfc3213f88b1178064b"
-}

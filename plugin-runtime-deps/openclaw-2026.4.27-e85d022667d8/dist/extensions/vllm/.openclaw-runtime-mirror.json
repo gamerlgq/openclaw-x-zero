@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "vllm",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/vllm",
-  "sourceFingerprint": "32bef7b0baea45a8c44f1086b42cc7a8acc96414e297ef3bf1c17f52884f7295"
-}

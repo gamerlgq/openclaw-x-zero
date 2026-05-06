@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "vercel-ai-gateway",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/vercel-ai-gateway",
-  "sourceFingerprint": "06316c4644f5a7ad29ff7d56ff4fe60c0881817d099df7191a448de92af3838e"
-}

@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "groq",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/groq",
-  "sourceFingerprint": "7165788613db36d6ecc3f0e3aba14bae00582ecb29d75564a717790f1116709b"
-}

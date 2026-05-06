@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "browser",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/browser",
-  "sourceFingerprint": "8e5066a8778f32b41ec00a07888baacf31d8f3e5d42201c04855b09e77510c33"
-}

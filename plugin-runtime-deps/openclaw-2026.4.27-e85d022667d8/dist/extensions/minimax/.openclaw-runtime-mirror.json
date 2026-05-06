@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "minimax",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/minimax",
-  "sourceFingerprint": "972131a3551f75a71e81efe25c35aa7a4aea09bf2f3d5fd38e93a04d75d8ec5a"
-}

@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-06T07:44:49.810Z",
+  "entries": {
+    "memory:memory/2026-04-01.md:217:288": {
+      "key": "memory:memory/2026-04-01.md:217:288",
+      "path": "memory/2026-04-01.md",
+      "startLine": 217,
+      "endLine": 288,
+      "source": "memory",
+      "snippet": "- 🌐 支持 Remote CDP (Browserless/Browserbase) **CLI 命令**： ```bash openclaw browser status openclaw browser start openclaw browser open https://example.com openclaw browser snapshot ``` ### 选择指南 | 场景 | 用哪个 | |------|--------| | 快速搜索网页 | `web_search` | | 读取文档/文章 | `web_fetch` | | 需登录网站 | `browser` (profile=user) | | 点击/填表单 | `browser` | | 截图/PDF | `browser` | | 动态 JS 网页 | `browser` | ### 文档 URL - tools/index.md: https://docs.openclaw.ai/tools/index.md - tools/browser.md: https://docs.openclaw.ai/tools/browser.md (33468 字符) - tools/web.md: https://docs.openclaw.ai/tools/web.md (13727 字符) --- _更新时间: 2026-04-01 01:27 Asia/Shanghai_ ## 2026-04-01 01:30 实际工具能力确认 ### 用户反馈 - 澄清：`web_search` 和 `",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.42191438376903534,
+      "maxScore": 0.42191438376903534,
+      "firstRecalledAt": "2026-05-06T07:44:49.810Z",
+      "lastRecalledAt": "2026-05-06T07:44:49.810Z",
+      "queryHashes": [
+        "c2d6774f1def"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "browserless/browserbase",
+        "example.com",
+        "web-search",
+        "读取文档/文章",
+        "web-fetch",
+        "点击/填表单",
+        "截图/pdf",
+        "tools/index.md"
+      ]
+    },
+    "memory:memory/2026-04-01.md:1:59": {
+      "key": "memory:memory/2026-04-01.md:1:59",
+      "path": "memory/2026-04-01.md",
+      "startLine": 1,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "# 2026-04-01 Memory Log ## OpenClaw 文档学习完成 ✅ 完成时间: 2026-03-31 22:30 ### 已掌握的核心知识 #### Part 1: 核心概念 - **Agent Runtime**: 运行循环 → 消息处理 → 工具调用 → 结果返回 - **Session**: 会话生命周期、跨会话通信 (`sessions_send`)、子代理管理 (`subagents`) - **Memory**: MEMORY.md 长期记忆 + memory/YYYY-MM-DD.md 日志 - **Context**: 消息上下文、工具可用性、技能触发 - **Agent Loop**: 消息循环、心跳机制、HEARTBEAT_OK 响应 - **Queue**: 命令队列、优先级排序 - **Streaming**: 流式输出、Chunking 分块 - **Compaction**: 历史压缩、摘要保留 #### Part 2: Gateway 架构 - **架构**: Gateway daemon + Agent runtime - **CLI**: `openclaw gateway start/stop/restart/status` - **配置**: ~/.openclaw/config.json + ~/.openclaw/gateway/config.json - **协议**: WebSocket 连接、消息格式 - **安全**: authorized senders、权限控制 - **心跳**: HEART",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.42017141580581663,
+      "maxScore": 0.42017141580581663,
+      "firstRecalledAt": "2026-05-06T07:44:49.810Z",
+      "lastRecalledAt": "2026-05-06T07:44:49.810Z",
+      "queryHashes": [
+        "c2d6774f1def"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "gateway",
+        "sessions-send",
+        "memory.md",
+        "memory/yyyy-mm-dd.md",
+        "heartbeat-ok",
+        "start/stop/restart/status",
+        "openclaw/config.json",
+        "openclaw/gateway/config.json"
+      ]
+    },
+    "memory:memory/2026-04-01.md:270:329": {
+      "key": "memory:memory/2026-04-01.md:270:329",
+      "path": "memory/2026-04-01.md",
+      "startLine": 270,
+      "endLine": 329,
+      "source": "memory",
+      "snippet": "- **内置工具**: `web_search`, `web_fetch` - 无需安装，默认可用 - **插件工具**: `browser`, `x_search` - 需 `openclaw plugins install` ### 如何获取 Browser 能力 ```bash openclaw plugins install browser ``` 安装后可获得完整 Chromium 控制能力（截图、点击、登录网站等）。 --- _更新时间: 2026-04-01 01:30 Asia/Shanghai_ ## 2026-04-01 01:30 Browser Skill 安装尝试 ### 用户请求 - 用户想安装 `browser` 能力 ### 安装过程 1. **尝试 plugins 安装**（失败）: ```bash openclaw plugins install browser ``` - 返回: `\"browser\" is a skill. Use \"openclaw skills install browser\" instead.` - 原因: browser 是 skill，不是 plugin 2. **尝试 skills 安装**（失败）: ```bash openclaw skills install browser ``` - 返回: `ClawHub /api/v1/download failed (429): Rate limit exceeded` - 原因: Cla",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.413980770111084,
+      "maxScore": 0.413980770111084,
+      "firstRecalledAt": "2026-05-06T07:44:49.810Z",
+      "lastRecalledAt": "2026-05-06T07:44:49.810Z",
+      "queryHashes": [
+        "c2d6774f1def"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "web-search",
+        "web-fetch",
+        "x-search",
+        "asia/shanghai",
+        "api/v1/download",
+        "工具",
+        "安装",
+        "默认"
+      ]
+    },
+    "memory:memory/2026-04-01.md:167:235": {
+      "key": "memory:memory/2026-04-01.md:167:235",
+      "path": "memory/2026-04-01.md",
+      "startLine": 167,
+      "endLine": 235,
+      "source": "memory",
+      "snippet": "| 25 | Session Management | concepts/session.md | | 26 | Session Pruning | concepts/session-pruning.md | | 27 | Session Tools | concepts/session-tool.md | | 28 | Streaming and Chunking | concepts/streaming.md | | 29 | System Prompt | concepts/system-prompt.md | | 30 | Timezones | concepts/timezone.md | | 31 | TypeBox | concepts/typebox.md | ### 记忆要点 - Concepts 是核心概念目录，31 个文档涵盖 OpenClaw 所有核心机制 - Gateway Architecture 排在第一位（用户重点关注） - 之前学习中已掌握大部分核心概念，但需确认是否有遗漏 --- _更新时间: 2026-04-01 01:18 Asia/Shanghai_ ## 2026-04-01 01:27 Tools 目录学习 - Web vs Browser ### 用户问题 - 询问 tools 中的 **web browser** 和 **web tools** 分别是什么 ### Tools 目录结构 从 `tools/index.md` 识别的工具分类： - `browser` 工具 - Chromium 浏览器控制 - `web`",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40876014828681945,
+      "maxScore": 0.40876014828681945,
+      "firstRecalledAt": "2026-05-06T07:44:49.810Z",
+      "lastRecalledAt": "2026-05-06T07:44:49.810Z",
+      "queryHashes": [
+        "c2d6774f1def"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "gateway",
+        "concepts/session.md",
+        "concepts/session-pruning.md",
+        "concepts/session-tool.md",
+        "concepts/streaming.md",
+        "concepts/system-prompt.md",
+        "concepts/timezone.md",
+        "concepts/typebox.md"
+      ]
+    }
+  }
+}

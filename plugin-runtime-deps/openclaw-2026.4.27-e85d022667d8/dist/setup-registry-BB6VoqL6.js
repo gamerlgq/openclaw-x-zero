@@ -1,2 +1,0 @@
-import { a as resolvePluginSetupProvider, i as resolvePluginSetupCliBackend, n as clearPluginSetupRegistryCache, o as resolvePluginSetupRegistry, r as resolvePluginSetupAutoEnableReasons, s as runPluginSetupConfigMigrations, t as __testing } from "./setup-registry-CMHsMQMP.js";
-export { __testing, clearPluginSetupRegistryCache, resolvePluginSetupAutoEnableReasons, resolvePluginSetupCliBackend, resolvePluginSetupProvider, resolvePluginSetupRegistry, runPluginSetupConfigMigrations };

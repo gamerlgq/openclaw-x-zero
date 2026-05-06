@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "huggingface",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/huggingface",
-  "sourceFingerprint": "a7cbc70b9cd2038317e34157f782d34023f62d23f118bbc0f533276ca8a99e6d"
-}

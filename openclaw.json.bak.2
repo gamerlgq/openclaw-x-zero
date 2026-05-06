@@ -32,9 +32,6 @@
         "custom-ark-cn-beijing-volces-com/MiniMax-M2.7": {
           "alias": "minimax-2.7"
         },
-        "ollama/glm-5.1:cloud": {
-          "alias": "ollama-glm"
-        },
         "custom-ark-cn-beijing-volces-com/glm-5.1": {
           "alias": "ark-glm"
         },
@@ -48,11 +45,25 @@
           "alias": "opencode-glm"
         },
         "opencode-go/deepseek-v4-flash": {
-          "alias":"opencode-deepseek"
-        },
+          "alias": "opencode-deepseek"
+        }
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
-    }
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "finance",
+        "name": "finance",
+        "workspace": "/home/ubuntu/.openclaw/workspace-finance",
+        "agentDir": "/home/ubuntu/.openclaw/agents/finance/agent",
+        "model": {
+          "primary": "opencode-go/deepseek-v4-flash"
+        }
+      }
+    ]
   },
   "auth": {
     "profiles": {
@@ -86,7 +97,47 @@
           "enabled": true
         }
       },
-      "requireMention": true
+      "requireMention": true,
+      "accounts": {
+        "default": {
+          "appId": "cli_a9238b7334b85bc2",
+          "appSecret": "BmR06Umor2FhunsSSeZhhh8nmDML4LjH",
+          "domain": "feishu",
+          "connectionMode": "websocket",
+          "dmPolicy": "allowlist",
+          "allowFrom": [
+            "ou_22bcccc95a09d7521b0d7a59992738da"
+          ],
+          "groupPolicy": "allowlist",
+          "groupAllowFrom": [
+            "ou_22bcccc95a09d7521b0d7a59992738da"
+          ],
+          "groups": {
+            "*": {
+              "enabled": true
+            }
+          },
+          "requireMention": true
+        },
+        "finance": {
+          "appId": "cli_a97cb2e9aa789cbc",
+          "appSecret": "GeuiNlrnKhmIGOtp69YXYgPuwq2SRKwJ",
+          "domain": "feishu",
+          "connectionMode": "websocket",
+          "dmPolicy": "allowlist",
+          "allowFrom": [
+            "ou_fb91fc9642d1015779bcd9a43a6f08bf"
+          ],
+          "groupPolicy": "open",
+          "groups": {
+            "*": {
+              "enabled": true
+            }
+          },
+          "requireMention": false,
+          "streaming": false
+        }
+      }
     }
   },
   "commands": {
@@ -127,11 +178,17 @@
         "exec"
       ],
       "deny": []
+    },
+    "controlUi": {
+      "allowInsecureAuth": true,
+      "allowedOrigins": [
+        "https://vm-20-2-ubuntu.tail88098b.ts.net"
+      ]
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-04-30T09:28:16.966Z",
-    "lastTouchedVersion": "2026.4.27"
+    "lastTouchedAt": "2026-05-06T15:50:07.088Z",
+    "lastTouchedVersion": "2026.5.4"
   },
   "models": {
     "mode": "merge",
@@ -245,29 +302,6 @@
             "maxTokens": 8192
           }
         ]
-      },
-      "ollama": {
-        "api": "ollama",
-        "apiKey": "ollama-local",
-        "baseUrl": "http://127.0.0.1:11434",
-        "timeoutSeconds": 300,
-        "models": [
-          {
-            "contextWindow": 202752,
-            "cost": {
-              "cacheRead": 0,
-              "cacheWrite": 0,
-              "input": 0,
-              "output": 0
-            },
-            "id": "glm-5.1:cloud",
-            "input": [
-              "text"
-            ],
-            "name": "glm-5.1:cloud",
-            "reasoning": true
-          }
-        ]
       }
     }
   },
@@ -276,9 +310,7 @@
   },
   "tools": {
     "alsoAllow": [
-      "exec",
-      "ollama_web_search",
-      "ollama_web_fetch"
+      "exec"
     ],
     "profile": "full",
     "web": {
@@ -295,10 +327,10 @@
     "deny": []
   },
   "wizard": {
-    "lastRunAt": "2026-04-30T09:27:54.004Z",
+    "lastRunAt": "2026-05-06T15:26:56.406Z",
     "lastRunCommand": "configure",
     "lastRunMode": "local",
-    "lastRunVersion": "2026.4.27"
+    "lastRunVersion": "2026.5.4"
   },
   "acp": {
     "enabled": true,
@@ -311,20 +343,15 @@
     "allow": [
       "deepseek",
       "memory-core",
-      "openclaw-web-search",
-      "ollama",
       "acpx",
       "feishu",
-      "opencode-go"
+      "opencode-go",
+      "codex",
+      "browser",
+      "device-pair"
     ],
     "entries": {
       "deepseek": {
-        "enabled": true
-      },
-      "ollama": {
-        "enabled": true
-      },
-      "openclaw-web-search": {
         "enabled": true
       },
       "acpx": {
@@ -332,6 +359,164 @@
       },
       "opencode-go": {
         "enabled": true
+      },
+      "feishu": {
+        "enabled": true
+      },
+      "codex": {
+        "enabled": true
+      },
+      "browser": {
+        "enabled": true
+      },
+      "device-pair": {
+        "enabled": true
+      }
+    },
+    "bundledDiscovery": "compat"
+  },
+  "bindings": [
+    {
+      "type": "route",
+      "agentId": "finance",
+      "match": {
+        "channel": "feishu",
+        "accountId": "finance"
+      }
+    }
+  ],
+  "messages": {
+    "groupChat": {
+      "visibleReplies": "message_tool"
+    }
+  },
+  "skills": {
+    "entries": {
+      "1password": {
+        "enabled": false
+      },
+      "apple-notes": {
+        "enabled": false
+      },
+      "apple-reminders": {
+        "enabled": false
+      },
+      "bear-notes": {
+        "enabled": false
+      },
+      "blogwatcher": {
+        "enabled": false
+      },
+      "blucli": {
+        "enabled": false
+      },
+      "bluebubbles": {
+        "enabled": false
+      },
+      "camsnap": {
+        "enabled": false
+      },
+      "coding-agent": {
+        "enabled": false
+      },
+      "discord": {
+        "enabled": false
+      },
+      "eightctl": {
+        "enabled": false
+      },
+      "gemini": {
+        "enabled": false
+      },
+      "gifgrep": {
+        "enabled": false
+      },
+      "gog": {
+        "enabled": false
+      },
+      "goplaces": {
+        "enabled": false
+      },
+      "himalaya": {
+        "enabled": false
+      },
+      "imsg": {
+        "enabled": false
+      },
+      "mcporter": {
+        "enabled": false
+      },
+      "model-usage": {
+        "enabled": false
+      },
+      "nano-pdf": {
+        "enabled": false
+      },
+      "notion": {
+        "enabled": false
+      },
+      "obsidian": {
+        "enabled": false
+      },
+      "openai-whisper": {
+        "enabled": false
+      },
+      "openai-whisper-api": {
+        "enabled": false
+      },
+      "openhue": {
+        "enabled": false
+      },
+      "oracle": {
+        "enabled": false
+      },
+      "ordercli": {
+        "enabled": false
+      },
+      "peekaboo": {
+        "enabled": false
+      },
+      "sag": {
+        "enabled": false
+      },
+      "session-logs": {
+        "enabled": false
+      },
+      "sherpa-onnx-tts": {
+        "enabled": false
+      },
+      "slack": {
+        "enabled": false
+      },
+      "songsee": {
+        "enabled": false
+      },
+      "sonoscli": {
+        "enabled": false
+      },
+      "spotify-player": {
+        "enabled": false
+      },
+      "summarize": {
+        "enabled": false
+      },
+      "things-mac": {
+        "enabled": false
+      },
+      "trello": {
+        "enabled": false
+      },
+      "video-frames": {
+        "enabled": false
+      },
+      "voice-call": {
+        "enabled": false
+      },
+      "wacli": {
+        "enabled": false
+      },
+      "xurl": {
+        "enabled": false
       }
     }
   }

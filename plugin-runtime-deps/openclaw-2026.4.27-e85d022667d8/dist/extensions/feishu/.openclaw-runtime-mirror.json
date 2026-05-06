@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "feishu",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/feishu",
-  "sourceFingerprint": "c90e36c97afc919f5607d6099e4ca6169ef10a0594154aea3035a49654c538ba"
-}

@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "litellm",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/litellm",
-  "sourceFingerprint": "3d7e695cf5eebb9c0f763727aabbc9ca1a2359fb8070c8e774b02e2bb76b2116"
-}

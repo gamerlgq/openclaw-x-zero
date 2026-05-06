@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "microsoft-foundry",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/microsoft-foundry",
-  "sourceFingerprint": "a478bb3cf48b9faba1e6948291680f67a312daea0297bf0bec621fd376bd2172"
-}

@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "firecrawl",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/firecrawl",
-  "sourceFingerprint": "cf35ca9cfc2fe24bb9feec49e4c0725c4c346d186c0589a6b7f5e205dad3ee67"
-}

@@ -171,9 +171,9 @@
       "apiKey": "sk-9b8b40b0e710477e9dda4bdbff3b8989"
     },
     "custom-ark-cn-beijing-volces-com": {
-      "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
-      "apiKey": "30e157c7-3139-430f-a886-cf6d23b0e875",
       "api": "openai-completions",
+      "apiKey": "30e157c7-3139-430f-a886-cf6d23b0e875",
+      "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
       "timeoutSeconds": 300,
       "models": [
         {
@@ -380,28 +380,9 @@
     },
     "ollama": {
       "baseUrl": "http://127.0.0.1:11434",
-      "apiKey": "ollama-local",
       "api": "ollama",
-      "timeoutSeconds": 300,
-      "models": [
-        {
-          "id": "glm-5.1:cloud",
-          "name": "glm-5.1:cloud",
-          "reasoning": true,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 202752,
-          "maxTokens": 8192,
-          "api": "ollama"
-        }
-      ]
+      "models": [],
+      "apiKey": "ollama-local"
     },
     "openai-codex": {
       "baseUrl": "https://chatgpt.com/backend-api",

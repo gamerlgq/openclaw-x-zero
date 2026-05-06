@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "copilot-proxy",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/copilot-proxy",
-  "sourceFingerprint": "308845d6f88b38384a7badd534effb8bad71b607e09e09645408fe52646d506f"
-}

@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "ollama",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/ollama",
-  "sourceFingerprint": "fe53cb9ed27f8069aff4431522d3f88d3d6f6d2a981e0033a8da3b1b1ef2be6f"
-}

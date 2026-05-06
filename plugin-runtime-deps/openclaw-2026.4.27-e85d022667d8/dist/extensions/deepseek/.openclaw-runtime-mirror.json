@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "deepseek",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/deepseek",
-  "sourceFingerprint": "b611dbfc44d2b0109c847b4a4f45cfa6687958a2caec1155b73ade6530bd6515"
-}

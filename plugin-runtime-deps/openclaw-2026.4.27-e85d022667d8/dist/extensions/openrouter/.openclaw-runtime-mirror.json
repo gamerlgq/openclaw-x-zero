@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "openrouter",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/openrouter",
-  "sourceFingerprint": "06a166bc2af3a1d81549c212727a8725ce48086de87f2a98eacb1a7cb3f41640"
-}

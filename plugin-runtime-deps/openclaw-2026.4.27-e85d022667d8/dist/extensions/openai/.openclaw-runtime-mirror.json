@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "pluginId": "openai",
-  "sourceRoot": "/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/openai",
-  "sourceFingerprint": "0a54f5493f2d001e05fbff1ea8aa8a0c1a8df0d2cecc09526ac0446bc66e4c9d"
-}
