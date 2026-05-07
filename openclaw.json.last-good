@@ -180,7 +180,7 @@
       ],
       "browser": {
         "mode": "manual",
-        "node": "StevenGerrerrard的Mac Studio"
+        "node": "StevenGerrerrard\u7684Mac Studio"
       }
     },
     "port": 18789,
@@ -529,7 +529,7 @@
     }
   },
   "proxy": {
-    "enabled": false,
+    "enabled": true,
     "proxyUrl": "http://127.0.0.1:7890"
   }
 }
