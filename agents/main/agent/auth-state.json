@@ -4,7 +4,8 @@
     "google": "google:default",
     "deepseek": "deepseek:default",
     "ollama": "ollama:default",
-    "opencode-go": "opencode-go:default"
+    "opencode-go": "opencode-go:default",
+    "openai-codex": "openai-codex:18664778270@163.com"
   },
   "usageStats": {
     "google:default": {
@@ -29,7 +30,11 @@
     },
     "opencode-go:default": {
       "errorCount": 0,
-      "lastUsed": 1778079607164
+      "lastUsed": 1778168395917
+    },
+    "openai-codex:18664778270@163.com": {
+      "errorCount": 0,
+      "lastUsed": 1778168869612
     }
   }
 }

@@ -17,7 +17,13 @@
         }
       },
       "model": {
-        "primary": "opencode-go/glm-5.1"
+        "primary": "openai-codex/gpt-5.5",
+        "fallbacks": [
+          "openai-codex/gpt-5.3-codex",
+          "openai-codex/gpt-5.4",
+          "openai-codex/gpt-5.5",
+          "openai-codex/gpt-5.5-pro"
+        ]
       },
       "models": {
         "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
@@ -46,7 +52,11 @@
         },
         "opencode-go/deepseek-v4-flash": {
           "alias": "opencode-deepseek"
-        }
+        },
+        "openai-codex/gpt-5.5": {},
+        "openai-codex/gpt-5.3-codex": {},
+        "openai-codex/gpt-5.4": {},
+        "openai-codex/gpt-5.5-pro": {}
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
     },
@@ -74,6 +84,11 @@
       "opencode-go:default": {
         "provider": "opencode-go",
         "mode": "api_key"
+      },
+      "openai-codex:18664778270@163.com": {
+        "provider": "openai-codex",
+        "mode": "oauth",
+        "email": "18664778270@163.com"
       }
     }
   },
@@ -187,8 +202,8 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-05-06T15:55:13.333Z",
-    "lastTouchedVersion": "2026.5.4"
+    "lastTouchedAt": "2026-05-07T15:44:44.781Z",
+    "lastTouchedVersion": "2026.5.6"
   },
   "models": {
     "mode": "merge",
@@ -327,10 +342,10 @@
     "deny": []
   },
   "wizard": {
-    "lastRunAt": "2026-05-06T15:55:13.071Z",
+    "lastRunAt": "2026-05-07T15:44:44.316Z",
     "lastRunCommand": "onboard",
     "lastRunMode": "local",
-    "lastRunVersion": "2026.5.4"
+    "lastRunVersion": "2026.5.6"
   },
   "acp": {
     "enabled": true,
@@ -340,16 +355,6 @@
     ]
   },
   "plugins": {
-    "allow": [
-      "deepseek",
-      "memory-core",
-      "acpx",
-      "feishu",
-      "opencode-go",
-      "codex",
-      "browser",
-      "device-pair"
-    ],
     "entries": {
       "deepseek": {
         "enabled": true
@@ -370,6 +375,9 @@
         "enabled": true
       },
       "device-pair": {
+        "enabled": true
+      },
+      "openai": {
         "enabled": true
       }
     },
@@ -519,5 +527,9 @@
         "enabled": false
       }
     }
+  },
+  "proxy": {
+    "enabled": false,
+    "proxyUrl": "http://127.0.0.1:7890"
   }
 }

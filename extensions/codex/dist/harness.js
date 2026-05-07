@@ -18,7 +18,7 @@ function createCodexAppServerAgentHarness(options) {
 			};
 		},
 		runAttempt: async (params) => {
-			const { runCodexAppServerAttempt } = await import("./run-attempt-CFL1BFBl.js");
+			const { runCodexAppServerAttempt } = await import("./run-attempt-iMdlA1m8.js");
 			return runCodexAppServerAttempt(params, { pluginConfig: options?.pluginConfig });
 		},
 		compact: async (params) => {

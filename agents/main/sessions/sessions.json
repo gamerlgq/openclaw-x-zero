@@ -1,9 +1,9 @@
 {
   "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da": {
-    "sessionId": "ae50d279-dbcc-43f5-8ba6-994c15d6ec0b",
-    "updatedAt": 1778082761212,
-    "sessionStartedAt": 1778049372554,
-    "lastInteractionAt": 1778082761209,
+    "sessionId": "b2b24814-642e-44f3-9b41-d86fc71a95cd",
+    "updatedAt": 1778169424465,
+    "sessionStartedAt": 1778110943882,
+    "lastInteractionAt": 1778169424464,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -24,13 +24,16 @@
       "to": "user:ou_22bcccc95a09d7521b0d7a59992738da",
       "accountId": "default"
     },
-    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/ae50d279-dbcc-43f5-8ba6-994c15d6ec0b.jsonl",
+    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/b2b24814-642e-44f3-9b41-d86fc71a95cd.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/acpx/skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/feishu/skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/feishu/skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/feishu/skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/extensions/feishu/skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "acp-router"
+        },
+        {
+          "name": "browser-automation"
         },
         {
           "name": "clawhub",
@@ -155,12 +158,14 @@
       ],
       "version": 0
     },
-    "status": "done",
-    "startedAt": 1778079563154,
+    "status": "failed",
+    "startedAt": 1778168935048,
+    "totalTokens": 103445,
+    "totalTokensFresh": true,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1778079562908,
-      "sessionId": "ae50d279-dbcc-43f5-8ba6-994c15d6ec0b",
+      "generatedAt": 1778168205348,
+      "sessionId": "b2b24814-642e-44f3-9b41-d86fc71a95cd",
       "sessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
       "provider": "opencode-go",
       "model": "glm-5.1",
@@ -179,9 +184,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 38267,
+        "chars": 38346,
         "projectContextChars": 9156,
-        "nonProjectContextChars": 29111
+        "nonProjectContextChars": 29190
       },
       "injectedWorkspaceFiles": [
         {
@@ -250,11 +255,15 @@
         }
       ],
       "skills": {
-        "promptChars": 13528,
+        "promptChars": 13557,
         "entries": [
           {
             "name": "acp-router",
-            "blockChars": 726
+            "blockChars": 668
+          },
+          {
+            "name": "browser-automation",
+            "blockChars": 324
           },
           {
             "name": "clawhub",
@@ -262,19 +271,19 @@
           },
           {
             "name": "feishu-doc",
-            "blockChars": 315
+            "blockChars": 255
           },
           {
             "name": "feishu-drive",
-            "blockChars": 307
+            "blockChars": 247
           },
           {
             "name": "feishu-perm",
-            "blockChars": 329
+            "blockChars": 269
           },
           {
             "name": "feishu-wiki",
-            "blockChars": 309
+            "blockChars": 249
           },
           {
             "name": "gh-issues",
@@ -412,7 +421,7 @@
       },
       "tools": {
         "listChars": 0,
-        "schemaChars": 46274,
+        "schemaChars": 49018,
         "entries": [
           {
             "name": "read",
@@ -489,7 +498,7 @@
           {
             "name": "video_generate",
             "summaryChars": 225,
-            "schemaChars": 3841,
+            "schemaChars": 4005,
             "propertiesCount": 21
           },
           {
@@ -569,6 +578,30 @@
             "summaryChars": 1537,
             "schemaChars": 2976,
             "propertiesCount": 52
+          },
+          {
+            "name": "file_fetch",
+            "summaryChars": 639,
+            "schemaChars": 483,
+            "propertiesCount": 6
+          },
+          {
+            "name": "dir_list",
+            "summaryChars": 552,
+            "schemaChars": 598,
+            "propertiesCount": 7
+          },
+          {
+            "name": "dir_fetch",
+            "summaryChars": 598,
+            "schemaChars": 641,
+            "propertiesCount": 7
+          },
+          {
+            "name": "file_write",
+            "summaryChars": 550,
+            "schemaChars": 858,
+            "propertiesCount": 7
           },
           {
             "name": "memory_search",
@@ -663,20 +696,18 @@
         ]
       }
     },
-    "cacheRead": 100,
+    "inputTokens": 322385,
+    "outputTokens": 889,
+    "cacheRead": 102816,
     "cacheWrite": 0,
-    "totalTokensFresh": true,
-    "modelProvider": "opencode-go",
-    "model": "glm-5.1",
-    "authProfileOverride": "opencode-go:default",
+    "modelOverride": "gpt-5.3-codex",
+    "providerOverride": "openai-codex",
+    "modelOverrideSource": "user",
+    "authProfileOverride": "openai-codex:18664778270@163.com",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "contextTokens": 202752,
-    "inputTokens": 164729,
-    "outputTokens": 66,
-    "totalTokens": 83598,
-    "endedAt": 1778079606332,
-    "runtimeMs": 43178
+    "endedAt": 1778168943291,
+    "runtimeMs": 8243
   },
   "agent:main:feishu:group:ou_22bcccc95a09d7521b0d7a59992738da": {
     "channel": "feishu",
@@ -1388,12 +1419,12 @@
   },
   "agent:main:cron:6d0015b5-0498-44a9-b2d8-faa615885204": {
     "label": "Cron: backup-github-repo",
-    "sessionId": "6f0dbfd2-7960-4374-ba2c-1f341933f3a5",
-    "updatedAt": 1778083191522,
-    "sessionStartedAt": 1778083140014,
-    "lastInteractionAt": 1778083140014,
+    "sessionId": "3b4eb1d3-f43f-4649-b5c3-1d4bd0ab381f",
+    "updatedAt": 1778169540911,
+    "sessionStartedAt": 1778169540041,
+    "lastInteractionAt": 1778169540041,
     "systemSent": true,
-    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/6f0dbfd2-7960-4374-ba2c-1f341933f3a5.jsonl",
+    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/3b4eb1d3-f43f-4649-b5c3-1d4bd0ab381f.jsonl",
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
@@ -1548,15 +1579,12 @@
     "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/f5a02e13-1eb7-4d22-bbb2-fa217ea105ff.jsonl"
   },
   "agent:main:main": {
-    "sessionId": "e27d5489-1034-493b-8c91-6abd9bae5113",
-    "updatedAt": 1778049378244,
-    "sessionStartedAt": 1778048350639,
-    "lastInteractionAt": 1778049156427,
+    "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
+    "updatedAt": 1778169453822,
+    "sessionStartedAt": 1778119562870,
+    "lastInteractionAt": 1778169445318,
     "systemSent": true,
     "abortedLastRun": false,
-    "authProfileOverride": "opencode-go:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
     "chatType": "direct",
     "deliveryContext": {
       "channel": "webchat"
@@ -1568,18 +1596,32 @@
       "surface": "webchat",
       "chatType": "direct"
     },
-    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/e27d5489-1034-493b-8c91-6abd9bae5113.jsonl",
+    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.jsonl",
     "compactionCount": 0,
-    "totalTokens": 30183,
-    "inputTokens": 29127,
-    "outputTokens": 6,
-    "contextTokens": 202752,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
+        {
+          "name": "acp-router"
+        },
+        {
+          "name": "browser-automation"
+        },
         {
           "name": "clawhub",
           "requiredEnv": []
+        },
+        {
+          "name": "feishu-doc"
+        },
+        {
+          "name": "feishu-drive"
+        },
+        {
+          "name": "feishu-perm"
+        },
+        {
+          "name": "feishu-wiki"
         },
         {
           "name": "gh-issues",
@@ -1688,17 +1730,18 @@
       ],
       "version": 0
     },
-    "status": "done",
-    "startedAt": 1778049372280,
-    "modelProvider": "opencode-go",
-    "model": "glm-5.1",
+    "status": "running",
+    "startedAt": 1778169453820,
+    "providerOverride": "custom-ark-cn-beijing-volces-com",
+    "modelOverride": "glm-5.1",
+    "modelOverrideSource": "user",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1778049372050,
-      "sessionId": "e27d5489-1034-493b-8c91-6abd9bae5113",
+      "generatedAt": 1778168855322,
+      "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
       "sessionKey": "agent:main:main",
-      "provider": "opencode-go",
-      "model": "glm-5.1",
+      "provider": "openai-codex",
+      "model": "gpt-5.3-codex",
       "workspaceDir": "/home/ubuntu/.openclaw/workspace",
       "bootstrapMaxChars": 12000,
       "bootstrapTotalMaxChars": 60000,
@@ -1714,9 +1757,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 34721,
+        "chars": 39504,
         "projectContextChars": 9156,
-        "nonProjectContextChars": 25565
+        "nonProjectContextChars": 30348
       },
       "injectedWorkspaceFiles": [
         {
@@ -1785,11 +1828,35 @@
         }
       ],
       "skills": {
-        "promptChars": 11527,
+        "promptChars": 13557,
         "entries": [
+          {
+            "name": "acp-router",
+            "blockChars": 668
+          },
+          {
+            "name": "browser-automation",
+            "blockChars": 324
+          },
           {
             "name": "clawhub",
             "blockChars": 269
+          },
+          {
+            "name": "feishu-doc",
+            "blockChars": 255
+          },
+          {
+            "name": "feishu-drive",
+            "blockChars": 247
+          },
+          {
+            "name": "feishu-perm",
+            "blockChars": 269
+          },
+          {
+            "name": "feishu-wiki",
+            "blockChars": 249
           },
           {
             "name": "gh-issues",
@@ -1927,7 +1994,7 @@
       },
       "tools": {
         "listChars": 0,
-        "schemaChars": 33308,
+        "schemaChars": 29659,
         "entries": [
           {
             "name": "read",
@@ -1948,9 +2015,15 @@
             "propertiesCount": 2
           },
           {
+            "name": "apply_patch",
+            "summaryChars": 132,
+            "schemaChars": 153,
+            "propertiesCount": 1
+          },
+          {
             "name": "exec",
             "summaryChars": 446,
-            "schemaChars": 1139,
+            "schemaChars": 1198,
             "propertiesCount": 12
           },
           {
@@ -1958,18 +2031,6 @@
             "summaryChars": 322,
             "schemaChars": 1011,
             "propertiesCount": 12
-          },
-          {
-            "name": "canvas",
-            "summaryChars": 106,
-            "schemaChars": 661,
-            "propertiesCount": 18
-          },
-          {
-            "name": "message",
-            "summaryChars": 321,
-            "schemaChars": 7207,
-            "propertiesCount": 109
           },
           {
             "name": "tts",
@@ -1992,8 +2053,698 @@
           {
             "name": "video_generate",
             "summaryChars": 225,
-            "schemaChars": 3841,
+            "schemaChars": 4064,
             "propertiesCount": 21
+          },
+          {
+            "name": "agents_list",
+            "summaryChars": 118,
+            "schemaChars": 76,
+            "propertiesCount": 0
+          },
+          {
+            "name": "update_plan",
+            "summaryChars": 251,
+            "schemaChars": 574,
+            "propertiesCount": 2
+          },
+          {
+            "name": "sessions_list",
+            "summaryChars": 225,
+            "schemaChars": 432,
+            "propertiesCount": 9
+          },
+          {
+            "name": "sessions_history",
+            "summaryChars": 180,
+            "schemaChars": 161,
+            "propertiesCount": 3
+          },
+          {
+            "name": "sessions_yield",
+            "summaryChars": 97,
+            "schemaChars": 60,
+            "propertiesCount": 1
+          },
+          {
+            "name": "subagents",
+            "summaryChars": 105,
+            "schemaChars": 191,
+            "propertiesCount": 4
+          },
+          {
+            "name": "session_status",
+            "summaryChars": 456,
+            "schemaChars": 89,
+            "propertiesCount": 2
+          },
+          {
+            "name": "image",
+            "summaryChars": 260,
+            "schemaChars": 342,
+            "propertiesCount": 6
+          },
+          {
+            "name": "pdf",
+            "summaryChars": 275,
+            "schemaChars": 400,
+            "propertiesCount": 6
+          },
+          {
+            "name": "browser",
+            "summaryChars": 1537,
+            "schemaChars": 3004,
+            "propertiesCount": 52
+          },
+          {
+            "name": "file_fetch",
+            "summaryChars": 639,
+            "schemaChars": 483,
+            "propertiesCount": 6
+          },
+          {
+            "name": "dir_list",
+            "summaryChars": 552,
+            "schemaChars": 598,
+            "propertiesCount": 7
+          },
+          {
+            "name": "dir_fetch",
+            "summaryChars": 598,
+            "schemaChars": 641,
+            "propertiesCount": 7
+          },
+          {
+            "name": "file_write",
+            "summaryChars": 550,
+            "schemaChars": 858,
+            "propertiesCount": 7
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 605,
+            "schemaChars": 237,
+            "propertiesCount": 4
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 239,
+            "schemaChars": 215,
+            "propertiesCount": 4
+          },
+          {
+            "name": "feishu_doc",
+            "summaryChars": 321,
+            "schemaChars": 2898,
+            "propertiesCount": 27
+          },
+          {
+            "name": "feishu_app_scopes",
+            "summaryChars": 102,
+            "schemaChars": 76,
+            "propertiesCount": 0
+          },
+          {
+            "name": "feishu_chat",
+            "summaryChars": 59,
+            "schemaChars": 606,
+            "propertiesCount": 6
+          },
+          {
+            "name": "feishu_wiki",
+            "summaryChars": 83,
+            "schemaChars": 971,
+            "propertiesCount": 10
+          },
+          {
+            "name": "feishu_drive",
+            "summaryChars": 146,
+            "schemaChars": 1094,
+            "propertiesCount": 11
+          },
+          {
+            "name": "feishu_bitable_get_meta",
+            "summaryChars": 114,
+            "schemaChars": 170,
+            "propertiesCount": 1
+          },
+          {
+            "name": "feishu_bitable_list_fields",
+            "summaryChars": 76,
+            "schemaChars": 255,
+            "propertiesCount": 2
+          },
+          {
+            "name": "feishu_bitable_list_records",
+            "summaryChars": 64,
+            "schemaChars": 462,
+            "propertiesCount": 4
+          },
+          {
+            "name": "feishu_bitable_get_record",
+            "summaryChars": 46,
+            "schemaChars": 335,
+            "propertiesCount": 3
+          },
+          {
+            "name": "feishu_bitable_create_record",
+            "summaryChars": 44,
+            "schemaChars": 606,
+            "propertiesCount": 3
+          },
+          {
+            "name": "feishu_bitable_update_record",
+            "summaryChars": 50,
+            "schemaChars": 530,
+            "propertiesCount": 4
+          },
+          {
+            "name": "feishu_bitable_create_app",
+            "summaryChars": 57,
+            "schemaChars": 243,
+            "propertiesCount": 2
+          },
+          {
+            "name": "feishu_bitable_create_field",
+            "summaryChars": 46,
+            "schemaChars": 968,
+            "propertiesCount": 5
+          }
+        ]
+      }
+    },
+    "inputTokens": 42967,
+    "outputTokens": 6,
+    "cacheRead": 0,
+    "cacheWrite": 0,
+    "estimatedCostUsd": 0.09448,
+    "totalTokens": 42967,
+    "totalTokensFresh": true,
+    "agentHarnessId": "pi",
+    "liveModelSwitchPending": true
+  },
+  "agent:main:tui-cb22698a-7062-4a89-848c-64582e43e6fd": {
+    "sessionId": "a093dc4a-1f49-4984-a8a4-9c361e009138",
+    "updatedAt": 1778159550025,
+    "sessionStartedAt": 1778122647937,
+    "lastInteractionAt": 1778159446013,
+    "systemSent": true,
+    "abortedLastRun": false,
+    "chatType": "direct",
+    "deliveryContext": {
+      "channel": "webchat"
+    },
+    "lastChannel": "webchat",
+    "origin": {
+      "label": "openclaw-tui",
+      "provider": "webchat",
+      "surface": "webchat",
+      "chatType": "direct"
+    },
+    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/a093dc4a-1f49-4984-a8a4-9c361e009138.jsonl",
+    "compactionCount": 0,
+    "totalTokens": 84645,
+    "inputTokens": 11287,
+    "outputTokens": 463,
+    "estimatedCostUsd": 0.100989,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "acp-router"
+        },
+        {
+          "name": "browser-automation"
+        },
+        {
+          "name": "clawhub",
+          "requiredEnv": []
+        },
+        {
+          "name": "feishu-doc"
+        },
+        {
+          "name": "feishu-drive"
+        },
+        {
+          "name": "feishu-perm"
+        },
+        {
+          "name": "feishu-wiki"
+        },
+        {
+          "name": "gh-issues",
+          "primaryEnv": "GH_TOKEN",
+          "requiredEnv": []
+        },
+        {
+          "name": "github",
+          "requiredEnv": []
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "lark-approval"
+        },
+        {
+          "name": "lark-attendance"
+        },
+        {
+          "name": "lark-base"
+        },
+        {
+          "name": "lark-calendar"
+        },
+        {
+          "name": "lark-contact"
+        },
+        {
+          "name": "lark-doc"
+        },
+        {
+          "name": "lark-drive"
+        },
+        {
+          "name": "lark-event"
+        },
+        {
+          "name": "lark-im"
+        },
+        {
+          "name": "lark-mail"
+        },
+        {
+          "name": "lark-minutes"
+        },
+        {
+          "name": "lark-okr"
+        },
+        {
+          "name": "lark-openapi-explorer"
+        },
+        {
+          "name": "lark-shared"
+        },
+        {
+          "name": "lark-sheets"
+        },
+        {
+          "name": "lark-skill-maker"
+        },
+        {
+          "name": "lark-slides"
+        },
+        {
+          "name": "lark-task"
+        },
+        {
+          "name": "lark-vc"
+        },
+        {
+          "name": "lark-whiteboard"
+        },
+        {
+          "name": "lark-wiki"
+        },
+        {
+          "name": "lark-workflow-meeting-summary"
+        },
+        {
+          "name": "lark-workflow-standup-report"
+        },
+        {
+          "name": "node-connect"
+        },
+        {
+          "name": "self-improvement"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "taskflow"
+        },
+        {
+          "name": "taskflow-inbox-triage"
+        },
+        {
+          "name": "tmux",
+          "requiredEnv": []
+        },
+        {
+          "name": "weather",
+          "requiredEnv": []
+        }
+      ],
+      "version": 0
+    },
+    "status": "done",
+    "startedAt": 1778159469161,
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1778159468883,
+      "sessionId": "a093dc4a-1f49-4984-a8a4-9c361e009138",
+      "sessionKey": "agent:main:tui-cb22698a-7062-4a89-848c-64582e43e6fd",
+      "provider": "opencode-go",
+      "model": "glm-5.1",
+      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
+      "bootstrapMaxChars": 12000,
+      "bootstrapTotalMaxChars": 60000,
+      "bootstrapTruncation": {
+        "warningMode": "once",
+        "warningShown": false,
+        "truncatedFiles": 0,
+        "nearLimitFiles": 0,
+        "totalNearLimit": false
+      },
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 38842,
+        "projectContextChars": 9156,
+        "nonProjectContextChars": 29686
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
+          "missing": false,
+          "rawChars": 3710,
+          "injectedChars": 3710,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
+          "missing": false,
+          "rawChars": 1658,
+          "injectedChars": 1658,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
+          "missing": false,
+          "rawChars": 850,
+          "injectedChars": 850,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
+          "missing": false,
+          "rawChars": 348,
+          "injectedChars": 348,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
+          "missing": false,
+          "rawChars": 902,
+          "injectedChars": 902,
+          "truncated": false
+        },
+        {
+          "name": "HEARTBEAT.md",
+          "path": "/home/ubuntu/.openclaw/workspace/HEARTBEAT.md",
+          "missing": false,
+          "rawChars": 167,
+          "injectedChars": 167,
+          "truncated": false
+        },
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "/home/ubuntu/.openclaw/workspace/BOOTSTRAP.md",
+          "missing": true,
+          "rawChars": 0,
+          "injectedChars": 0,
+          "truncated": false
+        },
+        {
+          "name": "MEMORY.md",
+          "path": "/home/ubuntu/.openclaw/workspace/MEMORY.md",
+          "missing": false,
+          "rawChars": 1186,
+          "injectedChars": 1186,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 13557,
+        "entries": [
+          {
+            "name": "acp-router",
+            "blockChars": 668
+          },
+          {
+            "name": "browser-automation",
+            "blockChars": 324
+          },
+          {
+            "name": "clawhub",
+            "blockChars": 269
+          },
+          {
+            "name": "feishu-doc",
+            "blockChars": 255
+          },
+          {
+            "name": "feishu-drive",
+            "blockChars": 247
+          },
+          {
+            "name": "feishu-perm",
+            "blockChars": 269
+          },
+          {
+            "name": "feishu-wiki",
+            "blockChars": 249
+          },
+          {
+            "name": "gh-issues",
+            "blockChars": 287
+          },
+          {
+            "name": "github",
+            "blockChars": 269
+          },
+          {
+            "name": "healthcheck",
+            "blockChars": 296
+          },
+          {
+            "name": "lark-approval",
+            "blockChars": 187
+          },
+          {
+            "name": "lark-attendance",
+            "blockChars": 188
+          },
+          {
+            "name": "lark-base",
+            "blockChars": 335
+          },
+          {
+            "name": "lark-calendar",
+            "blockChars": 482
+          },
+          {
+            "name": "lark-contact",
+            "blockChars": 274
+          },
+          {
+            "name": "lark-doc",
+            "blockChars": 590
+          },
+          {
+            "name": "lark-drive",
+            "blockChars": 453
+          },
+          {
+            "name": "lark-event",
+            "blockChars": 285
+          },
+          {
+            "name": "lark-im",
+            "blockChars": 258
+          },
+          {
+            "name": "lark-mail",
+            "blockChars": 544
+          },
+          {
+            "name": "lark-minutes",
+            "blockChars": 330
+          },
+          {
+            "name": "lark-okr",
+            "blockChars": 262
+          },
+          {
+            "name": "lark-openapi-explorer",
+            "blockChars": 305
+          },
+          {
+            "name": "lark-shared",
+            "blockChars": 380
+          },
+          {
+            "name": "lark-sheets",
+            "blockChars": 329
+          },
+          {
+            "name": "lark-skill-maker",
+            "blockChars": 245
+          },
+          {
+            "name": "lark-slides",
+            "blockChars": 256
+          },
+          {
+            "name": "lark-task",
+            "blockChars": 252
+          },
+          {
+            "name": "lark-vc",
+            "blockChars": 334
+          },
+          {
+            "name": "lark-whiteboard",
+            "blockChars": 532
+          },
+          {
+            "name": "lark-wiki",
+            "blockChars": 273
+          },
+          {
+            "name": "lark-workflow-meeting-summary",
+            "blockChars": 266
+          },
+          {
+            "name": "lark-workflow-standup-report",
+            "blockChars": 279
+          },
+          {
+            "name": "node-connect",
+            "blockChars": 297
+          },
+          {
+            "name": "self-improvement",
+            "blockChars": 643
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 282
+          },
+          {
+            "name": "taskflow",
+            "blockChars": 297
+          },
+          {
+            "name": "taskflow-inbox-triage",
+            "blockChars": 307
+          },
+          {
+            "name": "tmux",
+            "blockChars": 271
+          },
+          {
+            "name": "weather",
+            "blockChars": 202
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 0,
+        "schemaChars": 48096,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 304,
+            "propertiesCount": 3
+          },
+          {
+            "name": "edit",
+            "summaryChars": 326,
+            "schemaChars": 834,
+            "propertiesCount": 2
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 225,
+            "propertiesCount": 2
+          },
+          {
+            "name": "exec",
+            "summaryChars": 539,
+            "schemaChars": 1139,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 416,
+            "schemaChars": 1011,
+            "propertiesCount": 12
+          },
+          {
+            "name": "canvas",
+            "summaryChars": 106,
+            "schemaChars": 661,
+            "propertiesCount": 18
+          },
+          {
+            "name": "nodes",
+            "summaryChars": 173,
+            "schemaChars": 1589,
+            "propertiesCount": 32
+          },
+          {
+            "name": "cron",
+            "summaryChars": 4268,
+            "schemaChars": 7876,
+            "propertiesCount": 13
+          },
+          {
+            "name": "message",
+            "summaryChars": 310,
+            "schemaChars": 6273,
+            "propertiesCount": 108
+          },
+          {
+            "name": "tts",
+            "summaryChars": 305,
+            "schemaChars": 316,
+            "propertiesCount": 3
+          },
+          {
+            "name": "image_generate",
+            "summaryChars": 600,
+            "schemaChars": 2587,
+            "propertiesCount": 15
+          },
+          {
+            "name": "music_generate",
+            "summaryChars": 150,
+            "schemaChars": 1392,
+            "propertiesCount": 11
+          },
+          {
+            "name": "video_generate",
+            "summaryChars": 225,
+            "schemaChars": 4005,
+            "propertiesCount": 21
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 697,
+            "schemaChars": 537,
+            "propertiesCount": 13
           },
           {
             "name": "agents_list",
@@ -2060,6 +2811,36 @@
             "summaryChars": 275,
             "schemaChars": 400,
             "propertiesCount": 6
+          },
+          {
+            "name": "browser",
+            "summaryChars": 1537,
+            "schemaChars": 2976,
+            "propertiesCount": 52
+          },
+          {
+            "name": "file_fetch",
+            "summaryChars": 639,
+            "schemaChars": 483,
+            "propertiesCount": 6
+          },
+          {
+            "name": "dir_list",
+            "summaryChars": 552,
+            "schemaChars": 598,
+            "propertiesCount": 7
+          },
+          {
+            "name": "dir_fetch",
+            "summaryChars": 598,
+            "schemaChars": 641,
+            "propertiesCount": 7
+          },
+          {
+            "name": "file_write",
+            "summaryChars": 550,
+            "schemaChars": 858,
+            "propertiesCount": 7
           },
           {
             "name": "memory_search",
@@ -2154,13 +2935,43 @@
         ]
       }
     },
-    "cacheRead": 1056,
+    "cacheRead": 84288,
     "cacheWrite": 0,
     "totalTokensFresh": true,
-    "endedAt": 1778049377602,
-    "runtimeMs": 5322,
-    "pendingFinalDelivery": true,
-    "pendingFinalDeliveryText": "HEARTBEAT_OK",
-    "pendingFinalDeliveryCreatedAt": 1778049378244
+    "providerOverride": "opencode-go",
+    "modelOverride": "glm-5.1",
+    "modelOverrideSource": "user",
+    "authProfileOverride": "opencode-go:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "compactionCheckpoints": [
+      {
+        "checkpointId": "bc6576ad-566d-4dfb-b066-272dd4d952c7",
+        "sessionKey": "agent:main:tui-cb22698a-7062-4a89-848c-64582e43e6fd",
+        "sessionId": "a093dc4a-1f49-4984-a8a4-9c361e009138",
+        "createdAt": 1778147725635,
+        "reason": "overflow-retry",
+        "tokensBefore": 107520,
+        "tokensAfter": 23014,
+        "summary": "## Goal\n- 诊断并修复飞书（Feishu）聊天通道不通的问题——用户反馈\"飞书聊天没反应\"。\n\n## Constraints & Preferences\n- 用户使用中文交流\n- OpenClaw 环境在 Ubuntu VM 上运行，通过 Tailscale 暴露\n- 飞书通道配置了两个账户：`feishu[default]` 和 `feishu[finance]`\n\n## Progress\n### Done\n- [x] 读取今日记忆文件 `/home/ubuntu/.openclaw/workspace/memory/2026-05-07.md`，确认之前 Codex OAuth 401 问题已解决\n- [x] 读取飞书 IM skill (`~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md`) 和共享 skill (`~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md`)\n- [x] 运行 `openclaw status` 和 `openclaw status --deep`，Gateway 正常运行但飞书通道后台报错\n- [x] 调用 `message(channel-info)` / `message(channel-list)` / `feishu_app_scopes()` 均报错：`tenant_access_token ... is undefined`\n- [x] 查看 Gateway 配置 schema (`channels.feishu`) 和运行配置 (`/home/ubuntu/.openclaw/openclaw.json`)\n- [x] 分析日志：`bot identity background retry 1/5~5/5 failed` → `retry exhausted`，两个账户均失败\n- [x] 定位根因：**Feishu Bot 身份初始化失败**，`tenant_access_token` 获取为空，`bot open_id resolved: unknown`\n\n### In Progress\n- [ ] 等待用户确认进入修复模式\n\n### Blocked\n- 等待用户回复\"开始修\"以执行修复步骤\n\n## Key Decisions\n- **根因为 Bot 身份鉴权失败**：而非消息路由或 webhook 问题；tenant_access_token 无法获取，导致机器人在线但不工作\n\n## Decisions\n- 排除了消息路由/webhook 问题，确认是 Bot 身份鉴权层失败\n- 提出三步修复方案：①确认 appId/appSecret 有效 → ②确认应用可用范围 → ③重启 Gateway\n\n## Open TODOs\n1. 确认飞书开发者后台两个应用（default + finance）的 `appId/appSecret` 未被重置\n2. 确认应用已发布且可用范围包含当前对话用户和群\n3. 重启 Gateway 触发重新鉴权\n4. 复测飞书消息收发\n\n## Constraints/Rules\n- Gateway 服务由 systemd user 管理（pid 1583840，state active）\n- 修复前需确认 appId/appSecret 有效性，避免重启后仍失败\n\n## Pending user asks\n- 用户问\"为什么飞书聊天不通了没反应\"，已诊断但修复尚未执行，等待用户确认\n\n## Exact identifiers\n- Gateway WebSocket: `ws://127.0.0.1:18789`\n- Gateway dashboard: `http://127.0.0.1:18789/`\n- Tailscale URL: `https://vm-20-2-ubuntu.tail88098b.ts.net`\n- Tailscale hostname: `vm-20-2-ubuntu.tail88098b.ts.net`\n- Gateway pid: `1583840`\n- OpenClaw 版本: `2026.5.4`\n- 可用更新版本: `2026.5.6`\n- 配置文件: `/home/ubuntu/.openclaw/openclaw.json`\n- 飞书账户标识: `feishu[default]`, `feishu[finance]`\n- 错误信息: `bot open_id resolved: unknown`, `Cannot destructure property 'tenant_access_token' of '(intermediate value)' as it is undefined`, `bot identity background retry exhausted; requireMention group messages may be skipped until restart`\n- 配置路径: `channels.feishu.appId`, `channels.feishu.appSecret`, `channels.feishu.encryptKey`, `channels.feishu.verificationToken`\n- Skill 路径: `~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md`, `~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md`\n- 内存文件: `/home/ubuntu/.openclaw/workspace/memory/2026-05-07.md`\n\n## Next Steps\n1. 用户确认后，引导检查飞书开发者后台 default + finance 两个应用的 appId/appSecret\n2. 确认应用可用范围配置正确\n3. 重启 Gateway：`systemctl --user restart openclaw-gateway` 或 `openclaw restart`\n4. 观察日志确认 `tenant_access_token` 获取成功、bot open_id 正常解析\n5. 发送测试消息验证飞书通道恢复\n\n**Turn Context (split turn):**\n\n## 决策\n- 已确认代理不是直接原因：Node.js `fetch` 测试直达和通过代理均返回 `200` 成功（但注意 Node.js 内置 `fetch`/undici 默认不尊重 `HTTP_PROXY` 环境变量，\"VIA PROXY\" 测试实际仍是直达）\n- 定位到 feishu 插件使用 `fetchWithSsrFGuard`（来自 `openclaw/plugin-sdk/ssrf-runtime`）发起出站请求，需进一步检查此函数是否受全局代理配置影响导致 feishu API 调用失败\n\n## Open TODOs\n- [ ] 检查 `fetchWithSsrFGuard` 及其依赖的 `ssrf-runtime`、`net-DdbfRcEU.js`、`ssrf-CUQ1WjrX.js`、`fetch-guard-CEd5cd5u.js` 的实际实现，确认是否将全局代理应用于 feishu 出站请求\n- [ ] 获取详细错误日志（当前只有 `bot identity background retry failed`，无具体错误原因），可能需要启用 debug 级别日志\n- [ ] 确认 OpenClaw 进程内 HTTP 客户端与手动 Node.js 测试的网络路径差异\n- [ ] 修复 feishu `bot open_id` 解析为 `unknown` 并重试全部失败的问题\n\n## 约束/规则\n- 全局代理配置：`proxy.enabled: true`，`proxyUrl` 已设置\n- feishu 插件版本跟随 OpenClaw 2026.5.6 (c97b9f7) 发布\n- 两个 feishu 账户均受影响：`default` 和 `finance`\n- 配置中飞书 appId = `cli_a9238b7334b85bc2`\n\n## 待处理用户请求\n- 用户升级 OpenClaw 后飞书仍不工作，需要诊断并修复 `bot open_id resolved: unknown` 及后续重试全部失败的问题\n\n## 精确标识符\n- OpenClaw 版本：`2026.5.6 (c97b9f7)`\n- 错误日志关键行：\n  - `feishu[default]: bot open_id resolved: unknown`\n  - `feishu[default]: bot open_id unknown; starting background retry (delays: 60s, 120s, 300s, 600s, 900s)`\n  - `feishu[default]: bot identity background retry 1/5 failed; next attempt in 120s`\n  - `feishu[finance]: bot identity background retry exhausted; requireMention group messages may be skipped until restart`\n- 飞书 appId：`cli_a9238b7334b85bc2`\n- 插件源码路径：`/home/ubuntu/.openclaw/npm/node_modules/@openclaw/feishu/dist/monitor.account-CUZxYkjE.js`\n- SSRF 运行时路径：`/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/ssrf-runtime-2NoQmkSk.js`\n- SSRF 防护导出模块：`/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/plugin-sdk/ssrf-runtime.js`\n- 依赖链文件：`net-DdbfRcEU.js`、`ssrf-CUQ1WjrX.js`、`fetch-guard-CEd5cd5u.js`、`ssrf-policy-DXzuOZEO.js`\n- feishu 插件函数：`fetchWithSsrFGuard`（来自 `openclaw/plugin-sdk/ssrf-runtime`）、`resolveApiBase(domain)`、`resolveAllowedHostnames(domain)`、`retryBotIdentityProbe`\n- feishu 插件源文件映射：`/feishu/src/dynamic-agent.ts`、`/feishu/src/monitor.bot-identity.ts`\n- 插件 SDK 引用：`openclaw/plugin-sdk/ssrf-runtime`、`openclaw/plugin-sdk/runtime-group-policy`、`openclaw/plugin-sdk/webhook-request-guards`\n- 配置文件路径：`/home/ubuntu/.openclaw/openclaw.json`\n- 飞书 API 端点：`https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal`\n- WebSocket 模式：`mode: websocket`\n- 会话标识：`warm-river`（pid 1660128）、`salty-ocean`（pid 1661954）\n\n## Recent turns preserved verbatim\n- User: [Thu 2026-05-07 12:08 GMT+8] appId/appSecret我都没有修改过的，这个没有时效性的吧不会过期\n- Assistant: 对，**appId/appSecret 本身一般没有“自动过期时间”**。  \n只要你没重置 secret、没删应用、没改可用范围，它就会一直有效。\n\n但注意两点：\n\n1. **会过期的是 `tenant_access_token`**（通常约 2 小时），正常应自动续签。  \n2. 你现在的问题像是“续签/获取 token 失败”，不等于 appSecret 过期。常见触发是：\n   - 飞书侧短暂异常\n   - 本机网络/代理抖动（你这边开了全局 proxy）\n   - 网关进程状态卡住（鉴权重试耗尽）\n\n建议下一步最直接：我现在帮你**重启一次 Gateway 并立刻复测 Feishu 收发**。  \n你回我：**重启排查**。\n[non-text content: thinking]\n- User: [Thu 2026-05-07 12:10 GMT+8] 重启排查\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (gateway): {\n  \"ok\": true,\n  \"pid\": 1583840,\n  \"signal\": \"SIGUSR1\",\n  \"delayMs\": 2000,\n  \"reason\": \"排查 Feishu tenant_access_token 未初始化（聊天无响应）\",\n  \"mode\": \"emit\",\n  \"coalesced\": false,\n  \"cooldownMsApplied\": 0\n}\n- Assistant: [non-text content: thinking, toolCall x3]\n- Tool result (exec): Command still running (session mellow-shell, pid 1588803). Use process (list/poll/log/write/kill/clear/remove) for follow-up.\n- Tool result (feishu_app_scopes): {\n  \"error\": \"Cannot destructure property 'tenant_access_token' of '(intermediate value)' as it is undefined.\"\n}\n- Tool result (message): {\n  \"status\": \"error\",\n  \"tool\": \"message\",\n  \"error\": \"Cannot destructure property 'tenant_access_token' of '(intermediate value)' as it is undefined.\"\n}\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (process): agent:finance:feishu:group:oc_d…          │ group  │ 4d ago  │ deepseek-v4-flash │ 44k/1000k (4%) · 🗄️ 54% cached    │\n│ agent:finance:feishu:direct:ou_…          │ direct │ 5d ago  │ deepseek-v4-flash │ 100k/1000k (10%) · 🗄️ 100% cached │\n│ agent:finance:feishu:direct:oc_…          │ direct │ 5d ago  │ gpt-5.5           │ unknown/200k (?%)                 │\n│ agent:main:feishu:direct:oc_dbd…          │ direct │ 5d ago  │ gpt-5.5           │ unknown/200k (?%)                 │\n│ agent:main:feishu:group:oc_e1de…          │ group  │ 12d ago │ Kimi-K2.6         │ unknown/131k (?%)              ...\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): Gateway not reachable. Is it running and accessible?\nGateway target: ws://127.0.0.1:18789\nSource: local loopback\nConfig: /home/ubuntu/.openclaw/openclaw.json\nBind: loopback\nHint: run `openclaw doctor`.\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): Command still running (session young-shell, pid 1589085). Use process (list/poll/log/write/kill/clear/remove) for follow-up.\n- Assistant: [non-text content: toolCall]\n- Tool result (process): -maker resolved=~/.openclaw/workspace/.agents/skills/lark-skill-maker\n[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/lark-slides resolved=~/.openclaw/workspace/.agents/skills/lark-slides\n[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/lark-task resolved=~/.openclaw/workspace/.agents/skills/lark-task\n[skills] Skipping es...\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): Command still running (session nova-nudibranch, pid 1589332). Use process (list/poll/log/write/kill/clear/remove) for follow-up.\n- Assistant: [non-text content: toolCall]\n- Tool result (process): ns\n┌───────────────────────────────────────────┬────────┬─────────┬───────────────────┬───────────────────────────────────┐\n│ Key                                       │ Kind   │ Age     │ Model             │ Tokens                            │\n├───────────────────────────────────────────┼────────┼─────────┼───────────────────┼───────────────────────────────────┤\n│ agent:main:tui-cb22698a-7062-4a…          │ direct │ 3m ago  │ gpt-5.3-codex     │ 49k/272k (18%) · 🗄️ 55% cached    │\n│ agent:main:main                           │ direct │ 1h ago  │ gpt-5.3-codex     │ 49k/200k (24%) · 🗄️ 68% ca...\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): Log file: /tmp/openclaw/openclaw-2026-05-07.log\n2026-05-07T04:08:21.292Z warn skills {\"subsystem\":\"skills\"} {\"source\":\"openclaw-workspace\",\"rootDir\":\"/home/ubuntu/.openclaw/workspace/skills\",\"rootRealPath\":\"/home/ubuntu/.openclaw/workspace/skills\",\"path\":\"/home/ubuntu/.openclaw/workspace/skills/lark-openapi-explorer\",\"realPath\":\"/home/ubuntu/.openclaw/workspace/.agents/skills/lark-openapi-explorer\",\"reason\":\"symlink-escape\"} Skipping escaped skill path outside its configured root.\n2026-05-07T04:08:21.294Z warn skills {\"subsystem\":\"skills\"} {\"source\":\"openclaw-workspace\",\"rootDir\":\"/home/ubuntu...\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): open.feishu.cn OK TLSv1.3\nopen.larksuite.com OK TLSv1.3\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): 127.0.0.1 7890 OPEN\n127.0.0.1 18789 OPEN\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): default http 200 code 0 msg ok\nfinance http 200 code 0 msg ok\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): Log tail truncated (increase --max-bytes).\n2026-05-07T02:16:50.561Z info channels/feishu {\"subsystem\":\"channels/feishu\"} feishu[default]: dispatch complete (queuedFinal=true, replies=1)\n2026-05-07T02:17:35.361Z info channels/feishu {\"subsystem\":\"channels/feishu\"} feishu[default]: received message from ou_22bcccc95a09d7521b0d7a59992738da in oc_5265506caee3814db453cbc159fd3e99 (p2p)\n2026-05-07T02:17:35.363Z info channels/feishu {\"subsystem\":\"channels/feishu\"} feishu[default]: Feishu[default] DM from ou_22bcccc95a09d7521b0d7a59992738da: /model opencode-go/glm-5.1\n2026-05-07T02:17:35.367Z info cha...\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): default botinfo 200 code 0 msg ok open_id ou_88935cede1df296828775f4ac68bffce\nfinance botinfo 200 code 0 msg ok open_id ou_f91401fc32f501f3ffd9b1b00075bd59\n- Assistant: 重启已做，结果：**问题还在**。\n\n我刚做了更深验证，结论很明确：\n\n- ✅ `appId/appSecret` 有效（我直接调用了飞书 token 接口，两个账号都返回 `code=0`）\n- ✅ `bot/v3/info` 也能拿到 `open_id`（说明飞书侧和密钥本身正常）\n- ❌ 但 OpenClaw 内部 Feishu 通道仍反复报  \n  `bot open_id resolved: unknown` + `tenant_access_token is undefined`\n\n这说明不是你配置错了，而是 **当前 OpenClaw 进程里的 Feishu 适配层异常/版本问题**（你现在是 `2026.5.4`，并且状态里提示有更新 `2026.5.6`）。\n\n我建议直接走这条（成功率最高）：\n1) 升级 OpenClaw 到 `2026.5.6`  \n2) 重启  \n3) 我立刻复测 Feishu 收发\n\n你回我：**同意升级**，我就执行。\n[non-text content: thinking]\n- User: [OpenClaw heartbeat poll]\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (read): # HEARTBEAT.md\n\n# Keep this file empty (or with only comments) to skip heartbeat API calls.\n\n# Add tasks below when you want the agent to check something periodically.\n- Assistant: 网关已成功重启（12:19），重启动作执行正常。  \n我会继续跟进刚才的 Feishu 故障链路：下一步建议直接升级 OpenClaw 到 2026.5.6 后复测（当前症状更像 Feishu 适配层进程态/版本问题，不是你的 appId/appSecret 失效）。\n[non-text content: thinking]\n- User: [Thu 2026-05-07 14:11 GMT+8] 同意\n- Assistant: [assistant turn failed before producing content]\n- Assistant: [assistant turn failed before producing content]\n- Assistant: [assistant turn failed before producing content]\n- Assistant: [assistant turn failed before producing content]\n- User: [Thu 2026-05-07 17:20 GMT+8] 我现在已经升级了openclaw了，你帮我看看为什么飞书不通\n\n<read-files>\n/home/ubuntu/.openclaw/workspace/HEARTBEAT.md\n/home/ubuntu/.openclaw/workspace/memory/2026-05-06.md\n/home/ubuntu/.openclaw/workspace/memory/2026-05-07.md\n~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md\n~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md\n\n</read-files>",
+        "firstKeptEntryId": "d6347dbe",
+        "preCompaction": {
+          "sessionId": "a093dc4a-1f49-4984-a8a4-9c361e009138",
+          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/a093dc4a-1f49-4984-a8a4-9c361e009138.checkpoint.b636c31f-4cbe-44ce-875e-1fa78e3bf279.jsonl",
+          "leafId": "69ae0e95"
+        },
+        "postCompaction": {
+          "sessionId": "a093dc4a-1f49-4984-a8a4-9c361e009138",
+          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/a093dc4a-1f49-4984-a8a4-9c361e009138.jsonl",
+          "leafId": "7f26a87d",
+          "entryId": "7f26a87d"
+        }
+      }
+    ],
+    "modelProvider": "opencode-go",
+    "model": "glm-5.1",
+    "contextTokens": 202752,
+    "endedAt": 1778159548722,
+    "runtimeMs": 79561
   }
 }

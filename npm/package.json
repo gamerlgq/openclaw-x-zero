@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "@openclaw/acpx": "2026.5.4",
-    "@openclaw/feishu": "^2026.5.4"
+    "@openclaw/acpx": "2026.5.6",
+    "@openclaw/feishu": "2026.5.6"
   }
 }

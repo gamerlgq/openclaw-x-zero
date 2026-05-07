@@ -12,7 +12,7 @@ _openclaw_root_completion() {
     "--profile[Use a named profile (isolates OPENCLAW_STATE_DIR/OPENCLAW_CONFIG_PATH under ~/.openclaw-<name>)]" \
     "--log-level[Global log level override for file + console (silent|fatal|error|warn|info|debug|trace)]" \
     "--no-color[Disable ANSI colors]" \
-    "1: :_values 'command' 'completion[Generate shell completion script]' 'crestodian[Open the ring-zero setup and repair helper]' 'setup[Initialize the active OpenClaw config and agent workspace]' 'onboard[Interactive onboarding for the gateway, workspace, and skills]' 'configure[Interactive configuration for credentials, channels, gateway, and agent defaults]' 'config[Non-interactive config helpers (get/set/patch/unset/file/schema/validate). Run without subcommand for guided setup.]' 'backup[Create and verify local backup archives for OpenClaw state]' 'migrate[Import state from another agent system]' 'doctor[Health checks + quick fixes for the gateway and channels]' 'dashboard[Open the Control UI with your current token]' 'reset[Reset local config/state (keeps the CLI installed)]' 'uninstall[Uninstall the gateway service + local data (CLI remains)]' 'message[Send, read, and manage messages and channel actions]' 'mcp[Manage OpenClaw MCP config and channel bridge]' 'agent[Run an agent turn via the Gateway (use --local for embedded)]' 'agents[Manage isolated agents (workspaces + auth + routing)]' 'status[Show channel health and recent session recipients]' 'health[Fetch health from the running gateway]' 'sessions[List stored conversation sessions]' 'commitments[List and manage inferred follow-up commitments]' 'tasks[Inspect durable background tasks and TaskFlow state]' 'acp[Run an ACP bridge backed by the Gateway]' 'gateway[Run, inspect, and query the WebSocket Gateway]' 'daemon[Manage the Gateway service (launchd/systemd/schtasks)]' 'logs[Tail gateway file logs via RPC]' 'system[System tools (events, heartbeat, presence)]' 'models[Model discovery, scanning, and configuration]' 'infer[Run provider-backed inference commands through a stable CLI surface]' 'approvals[Manage exec approvals (gateway or node host)]' 'exec-policy[Show or synchronize requested exec policy with host approvals]' 'nodes[Manage gateway-owned nodes (pairing, status, invoke, and media)]' 'devices[Device pairing and auth tokens]' 'node[Run and manage the headless node host service]' 'sandbox[Manage sandbox containers (Docker-based agent isolation)]' 'tui[Open a terminal UI connected to the Gateway]' 'cron[Manage cron jobs (via Gateway)]' 'dns[DNS helpers for wide-area discovery (Tailscale + CoreDNS)]' 'docs[Search the live OpenClaw docs]' 'proxy[Run the OpenClaw debug proxy and inspect captured traffic]' 'hooks[Manage internal agent hooks]' 'webhooks[Webhook helpers and integrations]' 'qr[Generate a mobile pairing QR code and setup code]' 'clawbot[Legacy clawbot command aliases]' 'memory[Search, inspect, and reindex memory files]' 'pairing[Secure DM pairing (approve inbound requests)]' 'plugins[Manage OpenClaw plugins and extensions]' 'channels[Manage connected chat channels and accounts]' 'directory[Lookup contact and group IDs (self, peers, groups) for supported chat channels]' 'security[Audit local config and state for common security foot-guns]' 'secrets[Secrets runtime controls]' 'skills[List and inspect available skills]' 'update[Update OpenClaw and inspect update channel status]'" \
+    "1: :_values 'command' 'completion[Generate shell completion script]' 'crestodian[Open the ring-zero setup and repair helper]' 'setup[Initialize the active OpenClaw config and agent workspace]' 'onboard[Interactive onboarding for the gateway, workspace, and skills]' 'configure[Interactive configuration for credentials, channels, gateway, and agent defaults]' 'config[Non-interactive config helpers (get/set/patch/unset/file/schema/validate). Run without subcommand for guided setup.]' 'backup[Create and verify local backup archives for OpenClaw state]' 'migrate[Import state from another agent system]' 'doctor[Health checks + quick fixes for the gateway and channels]' 'dashboard[Open the Control UI with your current token]' 'reset[Reset local config/state (keeps the CLI installed)]' 'uninstall[Uninstall the gateway service + local data (CLI remains)]' 'message[Send, read, and manage messages and channel actions]' 'mcp[Manage OpenClaw MCP config and channel bridge]' 'agent[Run an agent turn via the Gateway (use --local for embedded)]' 'agents[Manage isolated agents (workspaces + auth + routing)]' 'status[Show channel health and recent session recipients]' 'health[Fetch health from the running gateway]' 'sessions[List stored conversation sessions]' 'commitments[List and manage inferred follow-up commitments]' 'tasks[Inspect durable background tasks and TaskFlow state]' 'acp[Run an ACP bridge backed by the Gateway]' 'gateway[Run, inspect, and query the WebSocket Gateway]' 'daemon[Manage the Gateway service (launchd/systemd/schtasks)]' 'logs[Tail gateway file logs via RPC]' 'system[System tools (events, heartbeat, presence)]' 'models[Model discovery, scanning, and configuration]' 'infer[Run provider-backed inference commands through a stable CLI surface]' 'approvals[Manage exec approvals (gateway or node host)]' 'exec-policy[Show or synchronize requested exec policy with host approvals]' 'nodes[Manage gateway-owned nodes (pairing, status, invoke, and media)]' 'devices[Device pairing and auth tokens]' 'node[Run and manage the headless node host service]' 'sandbox[Manage sandbox containers (Docker-based agent isolation)]' 'tui[Open a terminal UI connected to the Gateway]' 'cron[Manage cron jobs (via Gateway)]' 'dns[DNS helpers for wide-area discovery (Tailscale + CoreDNS)]' 'docs[Search the live OpenClaw docs]' 'proxy[Run the OpenClaw debug proxy and inspect captured traffic]' 'hooks[Manage internal agent hooks]' 'webhooks[Webhook helpers and integrations]' 'qr[Generate a mobile pairing QR code and setup code]' 'clawbot[Legacy clawbot command aliases]' 'browser[Manage OpenClaw'\''s dedicated browser (Chrome/Chromium)]' 'memory[Search, inspect, and reindex memory files]' 'pairing[Secure DM pairing (approve inbound requests)]' 'plugins[Manage OpenClaw plugins and extensions]' 'channels[Manage connected chat channels and accounts]' 'directory[Lookup contact and group IDs (self, peers, groups) for supported chat channels]' 'security[Audit local config and state for common security foot-guns]' 'secrets[Secrets runtime controls]' 'skills[List and inspect available skills]' 'update[Update OpenClaw and inspect update channel status]'" \
     "*::arg:->args"
 
   case $state in
@@ -61,6 +61,7 @@ _openclaw_root_completion() {
         (webhooks) _openclaw_webhooks ;;
         (qr) _openclaw_qr ;;
         (clawbot) _openclaw_clawbot ;;
+        (browser) _openclaw_browser ;;
         (memory) _openclaw_memory ;;
         (pairing) _openclaw_pairing ;;
         (plugins) _openclaw_plugins ;;
@@ -114,7 +115,7 @@ _openclaw_onboard() {
     "--accept-risk[Acknowledge that agents are powerful and full system access is risky (required for --non-interactive)]" \
     "--flow[Onboard flow: quickstart|advanced|manual|import]" \
     "--mode[Onboard mode: local|remote]" \
-    "--auth-choice[Auth: custom-api-key|skip|claude-cli|codex-cli|apiKey|anthropic-cli|setup-token|arceeai-api-key|byteplus-api-key|cerebras-api-key|chutes|chutes-api-key|cloudflare-ai-gateway-api-key|zai-cn|codex|qwen-api-key-cn|qwen-api-key|zai-coding-cn|zai-coding-global|copilot-proxy|deepinfra-api-key|deepseek-api-key|fireworks-api-key|google-gemini-cli|github-copilot|zai-global|gemini-api-key|google-vertex-api-key|groq-api-key|huggingface-api-key|kilocode-api-key|kimi-code-api-key|litellm-api-key|lmstudio|microsoft-foundry-apikey|microsoft-foundry-entra|minimax-cn-api|minimax-global-api|minimax-cn-oauth|minimax-global-oauth|mistral-api-key|moonshot-api-key|moonshot-api-key-cn|nvidia-api-key|ollama|openai-api-key|openai-codex|openai-codex-device-code|opencode-go|opencode-zen|arceeai-openrouter|openrouter-api-key|qianfan-api-key|sglang|qwen-standard-api-key-cn|qwen-standard-api-key|stepfun-api-key|stepfun-plan-api-key|stepfun-standard-api-key-cn|stepfun-standard-api-key-intl|stepfun-plan-api-key-cn|stepfun-plan-api-key-intl|synthetic-api-key|tokenhub-api-key|together-api-key|venice-api-key|ai-gateway-api-key|vllm|volcengine-api-key|xai-api-key|xiaomi-api-key|zai-api-key]" \
+    "--auth-choice[Auth: custom-api-key|skip|claude-cli|codex-cli|apiKey|anthropic-cli|setup-token|arceeai-api-key|byteplus-api-key|cerebras-api-key|chutes|chutes-api-key|cloudflare-ai-gateway-api-key|zai-cn|qwen-api-key-cn|qwen-api-key|zai-coding-cn|zai-coding-global|copilot-proxy|deepinfra-api-key|deepseek-api-key|fireworks-api-key|google-gemini-cli|github-copilot|zai-global|gemini-api-key|google-vertex-api-key|groq-api-key|huggingface-api-key|kilocode-api-key|kimi-code-api-key|litellm-api-key|lmstudio|microsoft-foundry-apikey|microsoft-foundry-entra|minimax-cn-api|minimax-global-api|minimax-cn-oauth|minimax-global-oauth|mistral-api-key|moonshot-api-key|moonshot-api-key-cn|nvidia-api-key|ollama|openai-api-key|openai-codex|openai-codex-device-code|opencode-go|opencode-zen|arceeai-openrouter|openrouter-api-key|qianfan-api-key|sglang|qwen-standard-api-key-cn|qwen-standard-api-key|stepfun-api-key|stepfun-plan-api-key|stepfun-standard-api-key-cn|stepfun-standard-api-key-intl|stepfun-plan-api-key-cn|stepfun-plan-api-key-intl|synthetic-api-key|tokenhub-api-key|together-api-key|venice-api-key|ai-gateway-api-key|vllm|volcengine-api-key|xai-api-key|xiaomi-api-key|zai-api-key]" \
     "--token-provider[Token provider id (non-interactive; used with --auth-choice token)]" \
     "--token[Token value (non-interactive; used with --auth-choice token)]" \
     "--token-profile-id[Auth profile id (non-interactive; default: <provider>:manual)]" \
@@ -3775,6 +3776,280 @@ _openclaw_clawbot() {
     (args)
       case $line[1] in
         (qr) _openclaw_clawbot_qr ;;
+      esac
+      ;;
+  esac
+}
+
+_openclaw_browser_status() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_start() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_stop() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_reset_profile() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_tabs() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_tab() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_open() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_focus() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_close() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_profiles() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_create_profile() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_delete_profile() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_doctor() {
+  _arguments -C \
+    "--deep[Run a live snapshot probe]"
+}
+
+_openclaw_browser_screenshot() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_snapshot() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_navigate() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_resize() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_click() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_click_coords() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_type() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_press() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_hover() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_scrollintoview() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_drag() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_select() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_upload() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_waitfordownload() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_download() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_dialog() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_fill() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_wait() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_evaluate() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_console() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_pdf() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_responsebody() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_highlight() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_errors() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_requests() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_trace() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_cookies() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_storage() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser_set() {
+  _arguments -C \
+    
+}
+
+_openclaw_browser() {
+  local -a commands
+  local -a options
+  
+  _arguments -C \
+    "--browser-profile[Browser profile name (default from config)]" \
+    "--json[Output machine-readable JSON]" \
+    "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
+    "--token[Gateway token (if required)]" \
+    "--timeout[Timeout in ms]" \
+    "--expect-final[Wait for final response (agent)]" \
+    "1: :_values 'command' 'status[Show browser status]' 'start[Start the browser (no-op if already running)]' 'stop[Stop the browser (best-effort)]' 'reset-profile[Reset browser profile (moves it to Trash)]' 'tabs[List open tabs]' 'tab[Tab shortcuts (index-based)]' 'open[Open a URL in a new tab]' 'focus[Focus a tab by target id, tab id, label, or unique target id prefix]' 'close[Close a tab (target id optional)]' 'profiles[List all browser profiles]' 'create-profile[Create a new browser profile]' 'delete-profile[Delete a browser profile]' 'doctor[Check browser plugin readiness]' 'screenshot[Capture a screenshot (MEDIA:<path>)]' 'snapshot[Capture a snapshot (default: ai; aria is the accessibility tree)]' 'navigate[Navigate the current tab to a URL]' 'resize[Resize the viewport]' 'click[Click an element by ref from snapshot]' 'click-coords[Click viewport coordinates]' 'type[Type into an element by ref from snapshot]' 'press[Press a key]' 'hover[Hover an element by ai ref]' 'scrollintoview[Scroll an element into view by ref from snapshot]' 'drag[Drag from one ref to another]' 'select[Select option(s) in a select element]' 'upload[Arm file upload for the next file chooser]' 'waitfordownload[Wait for the next download (and save it)]' 'download[Click a ref and save the resulting download]' 'dialog[Arm the next modal dialog (alert/confirm/prompt)]' 'fill[Fill a form with JSON field descriptors]' 'wait[Wait for time, selector, URL, load state, or JS conditions]' 'evaluate[Evaluate a function against the page or a ref]' 'console[Get recent console messages]' 'pdf[Save page as PDF]' 'responsebody[Wait for a network response and return its body]' 'highlight[Highlight an element by ref]' 'errors[Get recent page errors]' 'requests[Get recent network requests (best-effort)]' 'trace[Record a Playwright trace]' 'cookies[Read/write cookies]' 'storage[Read/write localStorage/sessionStorage]' 'set[Browser environment settings]'" \
+    "*::arg:->args"
+
+  case $state in
+    (args)
+      case $line[1] in
+        (status) _openclaw_browser_status ;;
+        (start) _openclaw_browser_start ;;
+        (stop) _openclaw_browser_stop ;;
+        (reset-profile) _openclaw_browser_reset_profile ;;
+        (tabs) _openclaw_browser_tabs ;;
+        (tab) _openclaw_browser_tab ;;
+        (open) _openclaw_browser_open ;;
+        (focus) _openclaw_browser_focus ;;
+        (close) _openclaw_browser_close ;;
+        (profiles) _openclaw_browser_profiles ;;
+        (create-profile) _openclaw_browser_create_profile ;;
+        (delete-profile) _openclaw_browser_delete_profile ;;
+        (doctor) _openclaw_browser_doctor ;;
+        (screenshot) _openclaw_browser_screenshot ;;
+        (snapshot) _openclaw_browser_snapshot ;;
+        (navigate) _openclaw_browser_navigate ;;
+        (resize) _openclaw_browser_resize ;;
+        (click) _openclaw_browser_click ;;
+        (click-coords) _openclaw_browser_click_coords ;;
+        (type) _openclaw_browser_type ;;
+        (press) _openclaw_browser_press ;;
+        (hover) _openclaw_browser_hover ;;
+        (scrollintoview) _openclaw_browser_scrollintoview ;;
+        (drag) _openclaw_browser_drag ;;
+        (select) _openclaw_browser_select ;;
+        (upload) _openclaw_browser_upload ;;
+        (waitfordownload) _openclaw_browser_waitfordownload ;;
+        (download) _openclaw_browser_download ;;
+        (dialog) _openclaw_browser_dialog ;;
+        (fill) _openclaw_browser_fill ;;
+        (wait) _openclaw_browser_wait ;;
+        (evaluate) _openclaw_browser_evaluate ;;
+        (console) _openclaw_browser_console ;;
+        (pdf) _openclaw_browser_pdf ;;
+        (responsebody) _openclaw_browser_responsebody ;;
+        (highlight) _openclaw_browser_highlight ;;
+        (errors) _openclaw_browser_errors ;;
+        (requests) _openclaw_browser_requests ;;
+        (trace) _openclaw_browser_trace ;;
+        (cookies) _openclaw_browser_cookies ;;
+        (storage) _openclaw_browser_storage ;;
+        (set) _openclaw_browser_set ;;
       esac
       ;;
   esac

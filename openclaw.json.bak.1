@@ -17,7 +17,13 @@
         }
       },
       "model": {
-        "primary": "opencode-go/glm-5.1"
+        "primary": "openai-codex/gpt-5.5",
+        "fallbacks": [
+          "openai-codex/gpt-5.3-codex",
+          "openai-codex/gpt-5.4",
+          "openai-codex/gpt-5.5",
+          "openai-codex/gpt-5.5-pro"
+        ]
       },
       "models": {
         "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
@@ -46,7 +52,11 @@
         },
         "opencode-go/deepseek-v4-flash": {
           "alias": "opencode-deepseek"
-        }
+        },
+        "openai-codex/gpt-5.5": {},
+        "openai-codex/gpt-5.3-codex": {},
+        "openai-codex/gpt-5.4": {},
+        "openai-codex/gpt-5.5-pro": {}
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
     },
@@ -165,7 +175,7 @@
       ],
       "browser": {
         "mode": "manual",
-        "node": "StevenGerrerrard的Mac Studio"
+        "node": "StevenGerrerrard\u7684Mac Studio"
       }
     },
     "port": 18789,
@@ -187,8 +197,8 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-05-06T15:50:41.743Z",
-    "lastTouchedVersion": "2026.5.4"
+    "lastTouchedAt": "2026-05-07T13:58:15.523Z",
+    "lastTouchedVersion": "2026.5.6"
   },
   "models": {
     "mode": "merge",
@@ -327,10 +337,10 @@
     "deny": []
   },
   "wizard": {
-    "lastRunAt": "2026-05-06T15:50:41.487Z",
-    "lastRunCommand": "onboard",
+    "lastRunAt": "2026-05-07T11:54:24.022Z",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local",
-    "lastRunVersion": "2026.5.4"
+    "lastRunVersion": "2026.5.6"
   },
   "acp": {
     "enabled": true,
@@ -340,16 +350,6 @@
     ]
   },
   "plugins": {
-    "allow": [
-      "deepseek",
-      "memory-core",
-      "acpx",
-      "feishu",
-      "opencode-go",
-      "codex",
-      "browser",
-      "device-pair"
-    ],
     "entries": {
       "deepseek": {
         "enabled": true
@@ -370,6 +370,9 @@
         "enabled": true
       },
       "device-pair": {
+        "enabled": true
+      },
+      "openai": {
         "enabled": true
       }
     },
@@ -519,5 +522,9 @@
         "enabled": false
       }
     }
+  },
+  "proxy": {
+    "enabled": false,
+    "proxyUrl": "http://127.0.0.1:7890"
   }
 }
