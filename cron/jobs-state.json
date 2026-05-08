@@ -13,7 +13,8 @@
         "consecutiveErrors": 0,
         "nextRunAtMs": 1778255940000,
         "consecutiveSkipped": 0,
-        "lastDelivered": true
+        "lastDelivered": true,
+        "runningAtMs": 1778255940001
       }
     }
   }
