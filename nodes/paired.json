@@ -1,16 +1,15 @@
 {
   "459df5ca065277f8138cd980b466a8c1bc98b7666ec71b62030147be1b33ed16": {
     "nodeId": "459df5ca065277f8138cd980b466a8c1bc98b7666ec71b62030147be1b33ed16",
-    "token": "rnDV-o3Z0MhLTTTgEjvL8_MpE16xyr1__HdiapTb88E",
-    "displayName": "StevenGerrerrard的Mac Studio",
+    "token": "0Q3F16bvNm5KQDR6zjXYoE3bbYQsdxNAMtXdjMt2PBo",
+    "displayName": "StevenGerrard的Mac Studio",
     "platform": "macOS 15.6.1",
-    "version": "2026.4.14",
+    "version": "2026.5.7",
     "deviceFamily": "Mac",
     "modelIdentifier": "Mac14,13",
     "caps": [
       "canvas",
-      "screen",
-      "browser"
+      "screen"
     ],
     "commands": [
       "canvas.present",
@@ -21,13 +20,13 @@
       "canvas.a2ui.push",
       "canvas.a2ui.pushJSONL",
       "canvas.a2ui.reset",
+      "screen.snapshot",
       "system.notify",
       "system.which",
-      "system.run",
-      "browser.proxy"
+      "system.run"
     ],
     "createdAtMs": 1776187888430,
-    "approvedAtMs": 1776187888430,
-    "lastConnectedAtMs": 1778177610521
+    "approvedAtMs": 1778257350973,
+    "lastConnectedAtMs": 1778316467430
   }
 }

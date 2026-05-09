@@ -149,7 +149,7 @@
               "enabled": true
             }
           },
-          "requireMention": false,
+          "requireMention": true,
           "streaming": false
         }
       }
