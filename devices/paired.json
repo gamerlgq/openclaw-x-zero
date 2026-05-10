@@ -88,7 +88,7 @@
     "platform": "macOS 15.6.1",
     "deviceFamily": "Mac",
     "clientId": "openclaw-macos",
-    "clientMode": "node",
+    "clientMode": "ui",
     "role": "node",
     "roles": [
       "operator",

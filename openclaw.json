@@ -149,8 +149,7 @@
               "enabled": true
             }
           },
-          "requireMention": true,
-          "streaming": false
+          "requireMention": true
         }
       }
     }
@@ -395,7 +394,7 @@
   ],
   "messages": {
     "groupChat": {
-      "visibleReplies": "message_tool"
+      "visibleReplies": "automatic"
     }
   },
   "skills": {
