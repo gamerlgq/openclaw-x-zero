@@ -30,11 +30,17 @@
     },
     "opencode-go:default": {
       "errorCount": 0,
-      "lastUsed": 1778601562967
+      "lastUsed": 1778759103413
     },
     "openai-codex:18664778270@163.com": {
-      "errorCount": 0,
-      "lastUsed": 1778198470640
+      "errorCount": 2,
+      "lastUsed": 1778198470640,
+      "failureCounts": {
+        "rate_limit": 2
+      },
+      "lastFailureAt": 1778724744614,
+      "cooldownUntil": 1778739144614,
+      "cooldownReason": "rate_limit"
     }
   }
 }

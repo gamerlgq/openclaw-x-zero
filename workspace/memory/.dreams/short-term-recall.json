@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-06T07:44:49.810Z",
+  "updatedAt": "2026-05-14T11:42:24.475Z",
   "entries": {
     "memory:memory/2026-04-01.md:217:288": {
       "key": "memory:memory/2026-04-01.md:217:288",
@@ -9,18 +9,20 @@
       "endLine": 288,
       "source": "memory",
       "snippet": "- 🌐 支持 Remote CDP (Browserless/Browserbase) **CLI 命令**： ```bash openclaw browser status openclaw browser start openclaw browser open https://example.com openclaw browser snapshot ``` ### 选择指南 | 场景 | 用哪个 | |------|--------| | 快速搜索网页 | `web_search` | | 读取文档/文章 | `web_fetch` | | 需登录网站 | `browser` (profile=user) | | 点击/填表单 | `browser` | | 截图/PDF | `browser` | | 动态 JS 网页 | `browser` | ### 文档 URL - tools/index.md: https://docs.openclaw.ai/tools/index.md - tools/browser.md: https://docs.openclaw.ai/tools/browser.md (33468 字符) - tools/web.md: https://docs.openclaw.ai/tools/web.md (13727 字符) --- _更新时间: 2026-04-01 01:27 Asia/Shanghai_ ## 2026-04-01 01:30 实际工具能力确认 ### 用户反馈 - 澄清：`web_search` 和 `",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.42191438376903534,
+      "totalScore": 0.814722689986229,
       "maxScore": 0.42191438376903534,
       "firstRecalledAt": "2026-05-06T07:44:49.810Z",
-      "lastRecalledAt": "2026-05-06T07:44:49.810Z",
+      "lastRecalledAt": "2026-05-14T11:40:33.912Z",
       "queryHashes": [
-        "c2d6774f1def"
+        "c2d6774f1def",
+        "55dc73bce2f6"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-14"
       ],
       "conceptTags": [
         "browserless/browserbase",
@@ -40,18 +42,20 @@
       "endLine": 59,
       "source": "memory",
       "snippet": "# 2026-04-01 Memory Log ## OpenClaw 文档学习完成 ✅ 完成时间: 2026-03-31 22:30 ### 已掌握的核心知识 #### Part 1: 核心概念 - **Agent Runtime**: 运行循环 → 消息处理 → 工具调用 → 结果返回 - **Session**: 会话生命周期、跨会话通信 (`sessions_send`)、子代理管理 (`subagents`) - **Memory**: MEMORY.md 长期记忆 + memory/YYYY-MM-DD.md 日志 - **Context**: 消息上下文、工具可用性、技能触发 - **Agent Loop**: 消息循环、心跳机制、HEARTBEAT_OK 响应 - **Queue**: 命令队列、优先级排序 - **Streaming**: 流式输出、Chunking 分块 - **Compaction**: 历史压缩、摘要保留 #### Part 2: Gateway 架构 - **架构**: Gateway daemon + Agent runtime - **CLI**: `openclaw gateway start/stop/restart/status` - **配置**: ~/.openclaw/config.json + ~/.openclaw/gateway/config.json - **协议**: WebSocket 连接、消息格式 - **安全**: authorized senders、权限控制 - **心跳**: HEART",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.42017141580581663,
-      "maxScore": 0.42017141580581663,
+      "totalScore": 0.8563968539237976,
+      "maxScore": 0.4362254381179809,
       "firstRecalledAt": "2026-05-06T07:44:49.810Z",
-      "lastRecalledAt": "2026-05-06T07:44:49.810Z",
+      "lastRecalledAt": "2026-05-14T11:42:24.475Z",
       "queryHashes": [
-        "c2d6774f1def"
+        "c2d6774f1def",
+        "7ad8aba48725"
       ],
       "recallDays": [
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-14"
       ],
       "conceptTags": [
         "gateway",
@@ -124,6 +128,100 @@
         "concepts/system-prompt.md",
         "concepts/timezone.md",
         "concepts/typebox.md"
+      ]
+    },
+    "memory:memory/2026-05-07.md:1:6": {
+      "key": "memory:memory/2026-05-07.md:1:6",
+      "path": "memory/2026-05-07.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "# 2026-05-07 - 排查 OpenClaw / Codex OAuth 401 `refresh_token_reused`：根因高度疑似为独立 Codex CLI (`~/.codex`, 全局 `@openai/codex`) 与 OpenClaw agent `main` 共用同一 OpenAI/Codex 账号，导致 refresh token 轮换互踩。 - 已按用户要求移除独立 Codex CLI：卸载全局 npm 包 `@openai/codex`；最初曾将 `~/.codex` 迁移到备份目录，随后按用户要求已删除该备份目录，不再保留独立 Codex CLI 本地状态。 - 保留 OpenClaw 内置 Codex 相关目录：`~/.openclaw/agents/main/agent/codex-home`、`~/.openclaw/extensions/codex`，未改动。",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8628293693065643,
+      "maxScore": 0.45879757106304164,
+      "firstRecalledAt": "2026-05-14T11:40:33.912Z",
+      "lastRecalledAt": "2026-05-14T11:40:33.954Z",
+      "queryHashes": [
+        "55dc73bce2f6",
+        "efe6a03f6bca"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "openai",
+        "备份",
+        "refresh-token-reused",
+        "openai/codex",
+        "openclaw/extensions/codex",
+        "openclaw",
+        "codex",
+        "oauth"
+      ]
+    },
+    "memory:memory/2026-05-08.md:29:53": {
+      "key": "memory:memory/2026-05-08.md:29:53",
+      "path": "memory/2026-05-08.md",
+      "startLine": 29,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "const _noProxyVal = process.env[\"NO_PROXY\"] || process.env[\"no_proxy\"] || \"open.feishu.cn,*.feishu.cn,*.larksuite.com,127.0.0.1,localhost\"; process.env[\"NO_PROXY\"] = _noProxyVal; process.env[\"no_proxy\"] = _noProxyVal; process.env[\"GLOBAL_AGENT_NO_PROXY\"] = _noProxyVal; ``` ### ⚠️ 注意 - **OpenClaw 升级后此 patch 会被覆盖**，需要重新打 - 服务器在大陆，用 Clash (`http://127.0.0.1:7890`) 翻墙 - `proxy.enabled: true` + `proxy.proxyUrl: http://127.0.0.1:7890`（在 `openclaw.json` 中） ### 换号流程（下次参考） 1. `openclaw onboard --auth-choice openai-codex` 重新登录新账号 2. 确认 `proxy.enabled: true`（如果被改回 false，需要改 `openclaw.json`） 3. 确认 Clash 代理在运行 (`http://127.0.0.1:7890`) 4. 重启 gateway：`openclaw gateway restart` 5. 验证飞书 bot identity 探针成功（",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5351863145828246,
+      "maxScore": 0.5351863145828246,
+      "firstRecalledAt": "2026-05-14T11:42:24.475Z",
+      "lastRecalledAt": "2026-05-14T11:42:24.475Z",
+      "queryHashes": [
+        "7ad8aba48725"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openai",
+        "process.env",
+        "no-proxy",
+        "open.feishu.cn",
+        "feishu.cn",
+        "larksuite.com",
+        "127.0.0.1"
+      ]
+    },
+    "memory:memory/2026-05-08.md:1:37": {
+      "key": "memory:memory/2026-05-08.md:1:37",
+      "path": "memory/2026-05-08.md",
+      "startLine": 1,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "# 2026-05-08 日志 ## 飞书 + Codex 代理矛盾修复 ### 问题 飞书切换 GPT/Codex 模型后报 `⚠️ Something went wrong`，飞书 bot 无响应。 ### 根因 OpenClaw 代理代码 bug：`proxy.enabled=true` 时 `applyProxyEnv()` 主动清空所有 `NO_PROXY` 环境变量，导致： - 飞书 SDK 被迫走代理 → `global-agent` HTTPS 重定向 URL 循环拼接 → bot identity 探针失败 → 飞书无响应 - 不开代理 → `chatgpt.com` 直连超时（大陆服务器被墙）→ Codex 不可用 ### 矛盾 | 路径 | 需要走代理 | 必须直连 | |------|-----------|---------| | `chatgpt.com` (Codex API) | ✅ Clash 代理 | ❌ 超时 | | `open.feishu.cn` (飞书 SDK) | ❌ URL 循环拼接 | ✅ 大陆直连 | ### 解决方案 Patch 文件：`/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/proxy-lifecycle-CTU4IpEB.js` 原代码（第73行）： ```js for (const key of NO_PROXY_ENV_KEYS) process.env[key] = \"\"; ``` 替换为： ```",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48826881051063536,
+      "maxScore": 0.48826881051063536,
+      "firstRecalledAt": "2026-05-14T11:42:24.475Z",
+      "lastRecalledAt": "2026-05-14T11:42:24.475Z",
+      "queryHashes": [
+        "7ad8aba48725"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "gpt",
+        "gpt/codex",
+        "proxy.enabled",
+        "no-proxy",
+        "global-agent",
+        "chatgpt.com",
+        "open.feishu.cn",
+        "home/ubuntu"
       ]
     }
   }

@@ -1,9 +1,9 @@
 {
   "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da": {
-    "sessionId": "2db7ab04-75ed-438c-bde2-fd772f02e5b8",
-    "updatedAt": 1778258798586,
-    "sessionStartedAt": 1778197417891,
-    "lastInteractionAt": 1778258779385,
+    "sessionId": "6c994add-d21f-48fb-abff-11cd33c4f2bc",
+    "updatedAt": 1778772610176,
+    "sessionStartedAt": 1778724640247,
+    "lastInteractionAt": 1778772610176,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -24,7 +24,7 @@
       "to": "user:ou_22bcccc95a09d7521b0d7a59992738da",
       "accountId": "default"
     },
-    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/2db7ab04-75ed-438c-bde2-fd772f02e5b8.jsonl",
+    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/6c994add-d21f-48fb-abff-11cd33c4f2bc.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
       "prompt": "Remote macOS node available (StevenGerrard的Mac Studio). Run macOS-only skills via exec host=node on that node.\n\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
@@ -156,14 +156,23 @@
           "requiredEnv": []
         }
       ],
-      "version": 1778257314678
+      "version": 1778766338861
     },
-    "status": "done",
-    "startedAt": 1778258783565,
+    "status": "failed",
+    "startedAt": 1778759194558,
+    "modelOverride": "glm-5.1",
+    "providerOverride": "opencode-go",
+    "modelOverrideSource": "user",
+    "authProfileOverride": "opencode-go:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "modelProvider": "opencode-go",
+    "model": "glm-5.1",
+    "contextTokens": 202752,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1778258783369,
-      "sessionId": "2db7ab04-75ed-438c-bde2-fd772f02e5b8",
+      "generatedAt": 1778759068748,
+      "sessionId": "6c994add-d21f-48fb-abff-11cd33c4f2bc",
       "sessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
       "provider": "opencode-go",
       "model": "glm-5.1",
@@ -182,9 +191,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 38395,
+        "chars": 39627,
         "projectContextChars": 10324,
-        "nonProjectContextChars": 28071
+        "nonProjectContextChars": 29303
       },
       "injectedWorkspaceFiles": [
         {
@@ -419,7 +428,7 @@
       },
       "tools": {
         "listChars": 0,
-        "schemaChars": 39016,
+        "schemaChars": 49018,
         "entries": [
           {
             "name": "read",
@@ -441,13 +450,13 @@
           },
           {
             "name": "exec",
-            "summaryChars": 446,
+            "summaryChars": 539,
             "schemaChars": 1139,
             "propertiesCount": 12
           },
           {
             "name": "process",
-            "summaryChars": 322,
+            "summaryChars": 416,
             "schemaChars": 1011,
             "propertiesCount": 12
           },
@@ -456,6 +465,18 @@
             "summaryChars": 106,
             "schemaChars": 661,
             "propertiesCount": 18
+          },
+          {
+            "name": "nodes",
+            "summaryChars": 173,
+            "schemaChars": 1589,
+            "propertiesCount": 32
+          },
+          {
+            "name": "cron",
+            "summaryChars": 4268,
+            "schemaChars": 7876,
+            "propertiesCount": 13
           },
           {
             "name": "message",
@@ -486,6 +507,12 @@
             "summaryChars": 225,
             "schemaChars": 4005,
             "propertiesCount": 21
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 697,
+            "schemaChars": 537,
+            "propertiesCount": 13
           },
           {
             "name": "agents_list",
@@ -676,24 +703,14 @@
         ]
       }
     },
-    "inputTokens": 11688,
-    "outputTokens": 506,
-    "cacheRead": 48128,
+    "inputTokens": 72486,
+    "outputTokens": 138,
+    "cacheRead": 1760,
     "cacheWrite": 0,
-    "estimatedCostUsd": 0.17785,
-    "totalTokens": 59816,
+    "totalTokens": 74246,
     "totalTokensFresh": true,
-    "modelOverride": "glm-5.1",
-    "providerOverride": "opencode-go",
-    "modelOverrideSource": "user",
-    "authProfileOverride": "opencode-go:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "opencode-go",
-    "model": "glm-5.1",
-    "contextTokens": 202752,
-    "endedAt": 1778258797540,
-    "runtimeMs": 13975
+    "endedAt": 1778772203641,
+    "runtimeMs": 13009083
   },
   "agent:main:feishu:group:ou_22bcccc95a09d7521b0d7a59992738da": {
     "channel": "feishu",
@@ -1405,14 +1422,14 @@
   },
   "agent:main:cron:6d0015b5-0498-44a9-b2d8-faa615885204": {
     "label": "Cron: backup-github-repo",
-    "sessionId": "765c95e1-9049-41f7-b179-b713e1bdf48d",
-    "updatedAt": 1778687940815,
-    "sessionStartedAt": 1778687940018,
-    "lastInteractionAt": 1778687940018,
+    "sessionId": "96ce196c-2ece-458e-98d9-d984273c9101",
+    "updatedAt": 1778774341057,
+    "sessionStartedAt": 1778774340075,
+    "lastInteractionAt": 1778774340075,
     "systemSent": true,
-    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/765c95e1-9049-41f7-b179-b713e1bdf48d.jsonl",
+    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/96ce196c-2ece-458e-98d9-d984273c9101.jsonl",
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "Remote macOS node available (StevenGerrard的Mac Studio). Run macOS-only skills via exec host=node on that node.\n\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "acp-router"
@@ -1541,7 +1558,7 @@
           "requiredEnv": []
         }
       ],
-      "version": 1778429487521
+      "version": 1778766338861
     },
     "modelProvider": "opencode-go",
     "model": "deepseek-v4-flash",
@@ -1565,10 +1582,10 @@
     "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/f5a02e13-1eb7-4d22-bbb2-fa217ea105ff.jsonl"
   },
   "agent:main:main": {
-    "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-    "updatedAt": 1778173578742,
-    "sessionStartedAt": 1778119562870,
-    "lastInteractionAt": 1778173469701,
+    "sessionId": "db27373e-0e55-4f03-8ae6-104a57f6dc33",
+    "updatedAt": 1778772623800,
+    "sessionStartedAt": 1778772383619,
+    "lastInteractionAt": 1778772602989,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -1582,10 +1599,10 @@
       "surface": "webchat",
       "chatType": "direct"
     },
-    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.jsonl",
-    "compactionCount": 4,
+    "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/db27373e-0e55-4f03-8ae6-104a57f6dc33.jsonl",
+    "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "Remote macOS node available (StevenGerrard的Mac Studio). Run macOS-only skills via exec host=node on that node.\n\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-approval</name>\n    <description>飞书审批 API：审批实例、审批任务管理。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-approval/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-attendance</name>\n    <description>飞书考勤打卡：查询自己的考勤打卡记录</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-attendance/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-base</name>\n    <description>当需要用 lark-cli 操作飞书多维表格（Base）时调用：适用于建表、字段管理、记录读写、记录分享链接、视图配置、历史查询，以及角色/表单/仪表盘管理/工作流；也适用于把旧的 +table / +field / +record 写法改成当前命令写法。涉及字段设计、公式字段、查找引用、跨表计算、行级派生指标、数据分析需求时也必须使用本 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-base/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-calendar</name>\n    <description>飞书日历（calendar）：提供日历与日程（会议）的全面管理能力。核心场景包括：查看/搜索日程、创建/更新日程、管理参会人、查询忙闲状态及推荐空闲时段、查询/搜索与预定会议室。注意：涉及【预约日程/会议】或【查询/预定会议室】时，必须先读取 references/lark-calendar-schedule-meeting.md 工作流！高频操作请优先使用 Shortcuts：+agenda（快速概览今日/近期行程）、+create（创建日程并按需邀请参会人及预定会议室）、+update（更新既有日程字段，或独立增删参会人/会议室）、+freebusy（查询用户主日历的忙闲信息和rsvp的状态）、+rsvp（回复日程邀请）</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-calendar/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-contact</name>\n    <description>飞书通讯录：查询组织架构、人员信息和搜索员工。获取当前用户或指定用户的详细信息、通过关键词搜索员工（姓名/邮箱/手机号）。当用户需要查看个人信息、查找同事 open_id 或联系方式、按姓名搜索员工、查询部门结构时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-contact/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-doc</name>\n    <description>飞书云文档：创建和编辑飞书文档。默认使用 DocxXML 格式（也支持 Markdown）。创建文档、获取文档内容（支持 simple/with-ids/full 三种导出详细度，以及 full/outline/range/keyword/section 五种局部读取模式，可按目录、block id 区间、关键词或标题自动成节只拉部分内容以节省上下文）、更新文档（八种指令：str_replace/block_insert_after/block_copy_insert_after/block_replace/block_delete/block_move_after/overwrite/append）、上传和下载文档中的图片和文件、搜索云空间文档。当用户需要创建或编辑飞书文档、读取文档内容、在文档中插入图片、搜索云空间文档时使用；如果用户是想按名称或关键词先定位电子表格、报表等云空间对象，也优先使用本 skill 的 docs +search 做资源发现。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-drive</name>\n    <description>飞书云空间：管理云空间中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable）。当用户需要上传或下载文件、整理云空间目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-event</name>\n    <description>飞书事件订阅：通过 WebSocket 长连接实时监听飞书事件（消息、通讯录变更、日历变更等），输出 NDJSON 到 stdout，支持 compact Agent 友好格式、正则路由、文件输出。当用户需要实时监听飞书事件、构建事件驱动管道时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-event/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-im</name>\n    <description>飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-im/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-mail</name>\n    <description>飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-mail/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-minutes</name>\n    <description>飞书妙记：妙记相关基本功能。1.查询妙记列表（按关键词/所有者/参与者/时间范围）；2.获取妙记基础信息（标题、封面、时长 等）；3.下载妙记音视频文件；4.获取妙记相关 AI 产物（总结、待办、章节）。飞书妙记 URL 格式: http(s)://&lt;host&gt;/minutes/&lt;minute-token&gt;</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-minutes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-okr</name>\n    <description>飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-okr/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-openapi-explorer</name>\n    <description>飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-openapi-explorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-shared</name>\n    <description>飞书/Lark CLI 共享基础：应用配置初始化、认证登录（auth login）、身份切换（--as user/bot）、权限与 scope 管理、Permission denied 错误处理、安全规则。当用户需要第一次配置(`lark-cli config init`)、使用登录授权(`lark-cli auth login`)、遇到权限不足、切换 user/bot 身份、配置 scope、或首次使用 lark-cli 时触发。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-shared/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-sheets</name>\n    <description>飞书电子表格：创建和操作电子表格。创建表格并写入表头和数据、读取和写入单元格、追加行数据、在已知电子表格中查找单元格内容、导出表格文件。当用户需要创建电子表格、批量读写数据、在已知表格中查找内容、导出或下载表格时使用。若用户是想按名称或关键词搜索云空间里的表格文件，请改用 lark-doc 的 docs +search 先定位资源。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-sheets/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-skill-maker</name>\n    <description>创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-skill-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-slides</name>\n    <description>飞书幻灯片：创建和编辑幻灯片，接口通过 XML 协议通信。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-slides/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-task</name>\n    <description>飞书任务：管理任务和清单。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-task/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-vc</name>\n    <description>飞书视频会议：查询会议记录、获取会议纪要产物（总结、待办、章节、逐字稿）。1. 查询已经结束的会议数量或详情时使用本技能(如历史日期｜ 昨天 | 上周 | 今天已经开过的会议等场景)，查询未开始的会议日程使用 lark-calendar 技能。2. 支持通过关键词、时间范围、组织者、参与者、会议室等筛选条件搜索会议记录。3. 获取或整理会议纪要时使用本技能。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-vc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-whiteboard</name>\n    <description>飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及&quot;画板&quot;。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-whiteboard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-wiki</name>\n    <description>飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-meeting-summary</name>\n    <description>会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-meeting-summary/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lark-workflow-standup-report</name>\n    <description>日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。</description>\n    <location>~/.openclaw/workspace/.agents/skills/lark-workflow-standup-report/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>~/.openclaw/workspace/skills/self-improving-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>~/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "acp-router"
@@ -1714,645 +1731,19 @@
           "requiredEnv": []
         }
       ],
-      "version": 0
+      "version": 1778766338861
     },
-    "status": "done",
-    "startedAt": 1778173487950,
-    "providerOverride": "custom-ark-cn-beijing-volces-com",
+    "status": "failed",
+    "startedAt": 1778772439594,
+    "endedAt": 1778772608796,
+    "runtimeMs": 169202,
+    "providerOverride": "opencode-go",
     "modelOverride": "glm-5.1",
     "modelOverrideSource": "user",
-    "systemPromptReport": {
-      "source": "run",
-      "generatedAt": 1778173487732,
-      "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-      "sessionKey": "agent:main:main",
-      "provider": "custom-ark-cn-beijing-volces-com",
-      "model": "glm-5.1",
-      "workspaceDir": "/home/ubuntu/.openclaw/workspace",
-      "bootstrapMaxChars": 12000,
-      "bootstrapTotalMaxChars": 60000,
-      "bootstrapTruncation": {
-        "warningMode": "once",
-        "warningShown": false,
-        "truncatedFiles": 0,
-        "nearLimitFiles": 0,
-        "totalNearLimit": false
-      },
-      "sandbox": {
-        "mode": "off",
-        "sandboxed": false
-      },
-      "systemPrompt": {
-        "chars": 39302,
-        "projectContextChars": 9156,
-        "nonProjectContextChars": 30146
-      },
-      "injectedWorkspaceFiles": [
-        {
-          "name": "AGENTS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/AGENTS.md",
-          "missing": false,
-          "rawChars": 3710,
-          "injectedChars": 3710,
-          "truncated": false
-        },
-        {
-          "name": "SOUL.md",
-          "path": "/home/ubuntu/.openclaw/workspace/SOUL.md",
-          "missing": false,
-          "rawChars": 1658,
-          "injectedChars": 1658,
-          "truncated": false
-        },
-        {
-          "name": "TOOLS.md",
-          "path": "/home/ubuntu/.openclaw/workspace/TOOLS.md",
-          "missing": false,
-          "rawChars": 850,
-          "injectedChars": 850,
-          "truncated": false
-        },
-        {
-          "name": "IDENTITY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/IDENTITY.md",
-          "missing": false,
-          "rawChars": 348,
-          "injectedChars": 348,
-          "truncated": false
-        },
-        {
-          "name": "USER.md",
-          "path": "/home/ubuntu/.openclaw/workspace/USER.md",
-          "missing": false,
-          "rawChars": 902,
-          "injectedChars": 902,
-          "truncated": false
-        },
-        {
-          "name": "HEARTBEAT.md",
-          "path": "/home/ubuntu/.openclaw/workspace/HEARTBEAT.md",
-          "missing": false,
-          "rawChars": 167,
-          "injectedChars": 167,
-          "truncated": false
-        },
-        {
-          "name": "BOOTSTRAP.md",
-          "path": "/home/ubuntu/.openclaw/workspace/BOOTSTRAP.md",
-          "missing": true,
-          "rawChars": 0,
-          "injectedChars": 0,
-          "truncated": false
-        },
-        {
-          "name": "MEMORY.md",
-          "path": "/home/ubuntu/.openclaw/workspace/MEMORY.md",
-          "missing": false,
-          "rawChars": 1186,
-          "injectedChars": 1186,
-          "truncated": false
-        }
-      ],
-      "skills": {
-        "promptChars": 13557,
-        "entries": [
-          {
-            "name": "acp-router",
-            "blockChars": 668
-          },
-          {
-            "name": "browser-automation",
-            "blockChars": 324
-          },
-          {
-            "name": "clawhub",
-            "blockChars": 269
-          },
-          {
-            "name": "feishu-doc",
-            "blockChars": 255
-          },
-          {
-            "name": "feishu-drive",
-            "blockChars": 247
-          },
-          {
-            "name": "feishu-perm",
-            "blockChars": 269
-          },
-          {
-            "name": "feishu-wiki",
-            "blockChars": 249
-          },
-          {
-            "name": "gh-issues",
-            "blockChars": 287
-          },
-          {
-            "name": "github",
-            "blockChars": 269
-          },
-          {
-            "name": "healthcheck",
-            "blockChars": 296
-          },
-          {
-            "name": "lark-approval",
-            "blockChars": 187
-          },
-          {
-            "name": "lark-attendance",
-            "blockChars": 188
-          },
-          {
-            "name": "lark-base",
-            "blockChars": 335
-          },
-          {
-            "name": "lark-calendar",
-            "blockChars": 482
-          },
-          {
-            "name": "lark-contact",
-            "blockChars": 274
-          },
-          {
-            "name": "lark-doc",
-            "blockChars": 590
-          },
-          {
-            "name": "lark-drive",
-            "blockChars": 453
-          },
-          {
-            "name": "lark-event",
-            "blockChars": 285
-          },
-          {
-            "name": "lark-im",
-            "blockChars": 258
-          },
-          {
-            "name": "lark-mail",
-            "blockChars": 544
-          },
-          {
-            "name": "lark-minutes",
-            "blockChars": 330
-          },
-          {
-            "name": "lark-okr",
-            "blockChars": 262
-          },
-          {
-            "name": "lark-openapi-explorer",
-            "blockChars": 305
-          },
-          {
-            "name": "lark-shared",
-            "blockChars": 380
-          },
-          {
-            "name": "lark-sheets",
-            "blockChars": 329
-          },
-          {
-            "name": "lark-skill-maker",
-            "blockChars": 245
-          },
-          {
-            "name": "lark-slides",
-            "blockChars": 256
-          },
-          {
-            "name": "lark-task",
-            "blockChars": 252
-          },
-          {
-            "name": "lark-vc",
-            "blockChars": 334
-          },
-          {
-            "name": "lark-whiteboard",
-            "blockChars": 532
-          },
-          {
-            "name": "lark-wiki",
-            "blockChars": 273
-          },
-          {
-            "name": "lark-workflow-meeting-summary",
-            "blockChars": 266
-          },
-          {
-            "name": "lark-workflow-standup-report",
-            "blockChars": 279
-          },
-          {
-            "name": "node-connect",
-            "blockChars": 297
-          },
-          {
-            "name": "self-improvement",
-            "blockChars": 643
-          },
-          {
-            "name": "skill-creator",
-            "blockChars": 282
-          },
-          {
-            "name": "taskflow",
-            "blockChars": 297
-          },
-          {
-            "name": "taskflow-inbox-triage",
-            "blockChars": 307
-          },
-          {
-            "name": "tmux",
-            "blockChars": 271
-          },
-          {
-            "name": "weather",
-            "blockChars": 202
-          }
-        ]
-      },
-      "tools": {
-        "listChars": 0,
-        "schemaChars": 48096,
-        "entries": [
-          {
-            "name": "read",
-            "summaryChars": 298,
-            "schemaChars": 304,
-            "propertiesCount": 3
-          },
-          {
-            "name": "edit",
-            "summaryChars": 326,
-            "schemaChars": 834,
-            "propertiesCount": 2
-          },
-          {
-            "name": "write",
-            "summaryChars": 127,
-            "schemaChars": 225,
-            "propertiesCount": 2
-          },
-          {
-            "name": "exec",
-            "summaryChars": 539,
-            "schemaChars": 1139,
-            "propertiesCount": 12
-          },
-          {
-            "name": "process",
-            "summaryChars": 416,
-            "schemaChars": 1011,
-            "propertiesCount": 12
-          },
-          {
-            "name": "canvas",
-            "summaryChars": 106,
-            "schemaChars": 661,
-            "propertiesCount": 18
-          },
-          {
-            "name": "nodes",
-            "summaryChars": 173,
-            "schemaChars": 1589,
-            "propertiesCount": 32
-          },
-          {
-            "name": "cron",
-            "summaryChars": 4268,
-            "schemaChars": 7876,
-            "propertiesCount": 13
-          },
-          {
-            "name": "message",
-            "summaryChars": 310,
-            "schemaChars": 6273,
-            "propertiesCount": 108
-          },
-          {
-            "name": "tts",
-            "summaryChars": 305,
-            "schemaChars": 316,
-            "propertiesCount": 3
-          },
-          {
-            "name": "image_generate",
-            "summaryChars": 600,
-            "schemaChars": 2587,
-            "propertiesCount": 15
-          },
-          {
-            "name": "music_generate",
-            "summaryChars": 150,
-            "schemaChars": 1392,
-            "propertiesCount": 11
-          },
-          {
-            "name": "video_generate",
-            "summaryChars": 225,
-            "schemaChars": 4005,
-            "propertiesCount": 21
-          },
-          {
-            "name": "gateway",
-            "summaryChars": 697,
-            "schemaChars": 537,
-            "propertiesCount": 13
-          },
-          {
-            "name": "agents_list",
-            "summaryChars": 118,
-            "schemaChars": 33,
-            "propertiesCount": 0
-          },
-          {
-            "name": "update_plan",
-            "summaryChars": 251,
-            "schemaChars": 574,
-            "propertiesCount": 2
-          },
-          {
-            "name": "sessions_list",
-            "summaryChars": 225,
-            "schemaChars": 432,
-            "propertiesCount": 9
-          },
-          {
-            "name": "sessions_history",
-            "summaryChars": 180,
-            "schemaChars": 161,
-            "propertiesCount": 3
-          },
-          {
-            "name": "sessions_send",
-            "summaryChars": 314,
-            "schemaChars": 274,
-            "propertiesCount": 5
-          },
-          {
-            "name": "sessions_spawn",
-            "summaryChars": 585,
-            "schemaChars": 1789,
-            "propertiesCount": 18
-          },
-          {
-            "name": "sessions_yield",
-            "summaryChars": 97,
-            "schemaChars": 60,
-            "propertiesCount": 1
-          },
-          {
-            "name": "subagents",
-            "summaryChars": 105,
-            "schemaChars": 191,
-            "propertiesCount": 4
-          },
-          {
-            "name": "session_status",
-            "summaryChars": 456,
-            "schemaChars": 89,
-            "propertiesCount": 2
-          },
-          {
-            "name": "image",
-            "summaryChars": 171,
-            "schemaChars": 342,
-            "propertiesCount": 6
-          },
-          {
-            "name": "pdf",
-            "summaryChars": 275,
-            "schemaChars": 400,
-            "propertiesCount": 6
-          },
-          {
-            "name": "browser",
-            "summaryChars": 1537,
-            "schemaChars": 2976,
-            "propertiesCount": 52
-          },
-          {
-            "name": "file_fetch",
-            "summaryChars": 639,
-            "schemaChars": 483,
-            "propertiesCount": 6
-          },
-          {
-            "name": "dir_list",
-            "summaryChars": 552,
-            "schemaChars": 598,
-            "propertiesCount": 7
-          },
-          {
-            "name": "dir_fetch",
-            "summaryChars": 598,
-            "schemaChars": 641,
-            "propertiesCount": 7
-          },
-          {
-            "name": "file_write",
-            "summaryChars": 550,
-            "schemaChars": 858,
-            "propertiesCount": 7
-          },
-          {
-            "name": "memory_search",
-            "summaryChars": 605,
-            "schemaChars": 237,
-            "propertiesCount": 4
-          },
-          {
-            "name": "memory_get",
-            "summaryChars": 239,
-            "schemaChars": 215,
-            "propertiesCount": 4
-          },
-          {
-            "name": "feishu_doc",
-            "summaryChars": 321,
-            "schemaChars": 2898,
-            "propertiesCount": 27
-          },
-          {
-            "name": "feishu_app_scopes",
-            "summaryChars": 102,
-            "schemaChars": 33,
-            "propertiesCount": 0
-          },
-          {
-            "name": "feishu_chat",
-            "summaryChars": 59,
-            "schemaChars": 606,
-            "propertiesCount": 6
-          },
-          {
-            "name": "feishu_wiki",
-            "summaryChars": 83,
-            "schemaChars": 971,
-            "propertiesCount": 10
-          },
-          {
-            "name": "feishu_drive",
-            "summaryChars": 146,
-            "schemaChars": 1094,
-            "propertiesCount": 11
-          },
-          {
-            "name": "feishu_bitable_get_meta",
-            "summaryChars": 114,
-            "schemaChars": 170,
-            "propertiesCount": 1
-          },
-          {
-            "name": "feishu_bitable_list_fields",
-            "summaryChars": 76,
-            "schemaChars": 255,
-            "propertiesCount": 2
-          },
-          {
-            "name": "feishu_bitable_list_records",
-            "summaryChars": 64,
-            "schemaChars": 462,
-            "propertiesCount": 4
-          },
-          {
-            "name": "feishu_bitable_get_record",
-            "summaryChars": 46,
-            "schemaChars": 335,
-            "propertiesCount": 3
-          },
-          {
-            "name": "feishu_bitable_create_record",
-            "summaryChars": 44,
-            "schemaChars": 547,
-            "propertiesCount": 3
-          },
-          {
-            "name": "feishu_bitable_update_record",
-            "summaryChars": 50,
-            "schemaChars": 471,
-            "propertiesCount": 4
-          },
-          {
-            "name": "feishu_bitable_create_app",
-            "summaryChars": 57,
-            "schemaChars": 243,
-            "propertiesCount": 2
-          },
-          {
-            "name": "feishu_bitable_create_field",
-            "summaryChars": 46,
-            "schemaChars": 909,
-            "propertiesCount": 5
-          }
-        ]
-      }
-    },
-    "estimatedCostUsd": 0.09448,
-    "totalTokensFresh": false,
-    "agentHarnessId": "pi",
-    "modelProvider": "custom-ark-cn-beijing-volces-com",
-    "model": "glm-5.1",
-    "contextTokens": 131072,
-    "compactionCheckpoints": [
-      {
-        "checkpointId": "477dd13f-f863-407e-b271-acbec75178da",
-        "sessionKey": "agent:main:main",
-        "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-        "createdAt": 1778171268303,
-        "reason": "overflow-retry",
-        "tokensBefore": 312,
-        "tokensAfter": 22712,
-        "summary": "## Goal\n1. 排查并解决 OpenClaw/Codex OAuth `refresh_token_reused` 401 错误\n2. 删除独立 Codex CLI，消除 token 轮换互踩\n3. 排查飞书使用 `gpt-5.3-codex` 无反馈问题\n\n## Constraints & Preferences\n- 保留 OpenClaw 内置的 Codex 相关目录，不删除\n- 独立 Codex CLI 备份不需要，直接彻底删除\n- 用户希望继续通过 OpenClaw 使用 Codex/GPT 模型\n\n## Progress\n### Done\n- [x] 诊断 `refresh_token_reused` 根因：独立 Codex CLI (`~/.codex`) 与 OpenClaw agent `main` 共用同一 OpenAI 账号，refresh token 轮换互踩\n- [x] 卸载全局 npm 包 `@openai/codex`\n- [x] 删除独立 Codex CLI 家目录 `~/.codex`（含备份目录）\n- [x] 诊断飞书 gpt-5.3-codex 无反馈：三个叠加问题（见下方）\n\n### In Progress\n- [ ] 等待用户决定是否重启 gateway + 切换默认模型\n\n### Blocked\n- Codex 免费额度 100% 用完，重置时间约 2026-05-11（`resets_at: 1778685957`）\n- 飞书 bot identity 探针 5/5 全败，需重启 gateway\n\n## Key Decisions\n- **删除独立 Codex CLI**：用户确认不需要备份，直接卸载 `@openai/codex` 并删除 `~/.codex`\n- **保留 OpenClaw 内置 Codex**：`~/.openclaw/agents/main/agent/codex-home` 和 `~/.openclaw/extensions/codex` 未动\n- **飞书无反馈根因**：Codex free plan 额度耗尽（主因）+ 飞书 bot identity 探针失败 + 账号变更\n\n## Decisions\n- 独立 Codex CLI 与 OpenClaw 共用同一 OAuth 账号导致 `refresh_token_reused`，删除独立 CLI 解决\n- 保留 OpenClaw 自身 Codex 集成不动\n- 飞书无反馈是 Codex free plan 额度用完 + 飞书 bot 探针失败叠加\n\n## Open TODOs\n- 重启 gateway 清除飞书 bot identity 坏状态\n- 切换默认 model 到非 Codex 模型（如 `glm-5.1`、`deepseek`）\n- 如需继续用 Codex GPT：换回有额度的 Apple ID 账号（`ggjky5ncq5@privaterelay.appleid.com`）或等 5月11日额度重置\n\n## Constraints/Rules\n- OpenClaw OAuth refresh 带 file lock，同 agent 下多 channel 不会互踩\n- 不同 OAuth 客户端（独立 CLI vs OpenClaw）各自维护 token 存储，会互踩\n- 认证读自单一 token sink：`~/.openclaw/agents/main/agent/auth-profiles.json`\n\n## Pending user asks\n- 用户尚未回复是否要重启 gateway + 切默认模型\n- 用户尚未决定是否换回 Apple ID 账号登录 Codex\n\n## Exact identifiers\n- **npm 包**: `@openai/codex@0.128.0`\n- **已删除目录**: `~/.codex`（原路径），备份已删除 `/home/ubuntu/.openclaw/workspace/backup/codex-cli-removal-20260507-105349/.codex`\n- **保留目录**: `~/.openclaw/agents/main/agent/codex-home`、`~/.openclaw/extensions/codex`\n- **认证文件**: `~/.openclaw/agents/main/agent/auth-profiles.json`\n- **OAuth 锁目录**: `~/.openclaw/locks/oauth-refresh`\n- **旧 Codex 账号**: `openai-codex:ggjky5ncq5@privaterelay.appleid.com`（accountId: `bab102c0-2ee1-4855-9651-fdd6e559e628`）\n- **新 Codex 账号**: `openai-codex:18664778270@163.com`（free plan，额度耗尽）\n- **错误类型**: `refresh_token_reused`、`invalid_request_error`、`usage_limit_reached`\n- **额度重置时间戳**: `1778685957`（约 2026-05-11）\n- **飞书 session key 前缀**: `agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da`\n- **当前 TUI session**: `agent:main:main`（sessionId: `1dd0e478-774f-44a9-af53-19b7bf01b8c7`）\n- **飞书 bot 探针端点**: `/open-apis/bot/v1/openclaw_bot/ping`、`/open-apis/bot/v3/info`\n- **Codex login 回调端口冲突**: 默认 `127.0.0.1:1455` 被占用，回退到 `127.0.0.1:1457`\n- **Codex TUI 日志**: `~/.codex/log/codex-tui.log`\n- **Codex 登录日志**: `~/.codex/log/codex-login.log`\n- **OpenClaw gateway**: `openclaw gateway --port 18789`（pid 1562289）\n- **OpenClaw 版本**: `2026.5.4 (325df3e)` → 当前 `2026.5.6 (c97b9f7)`\n- **当前默认模型**: `custom-ark-cn-beijing-volces-com/glm-5.1`\n- **Codex fallback 链**: `openai-codex/gpt-5.3-codex`, `openai-codex/gpt-5.4`, `openai-codex/gpt-5.5`, `openai-codex/gpt-5.5-pro`\n- **onboard 命令**: `openclaw onboard --auth-choice openai-codex`\n- **飞书 bot identity 错误**: `feishu[default]: bot identity background retry 5/5 failed`、`feishu[finance]: bot open_id resolved: unknown`\n- **memory 文件**: `/home/ubuntu/.openclaw/workspace/memory/2026-05-07.md`\n- **SQLite 状态文件**: `~/.codex/state_5.sqlite`、`~/.openclaw/agents/main/agent/codex-home/state_5.sqlite`\n- **模型配置文件**: `~/.openclaw/agents/main/agent/models.json`\n\n## Critical Context\n- 飞书无反馈的直接原因是 Codex free plan 额度 100% 用完（`X-Codex-Primary-Used-Percent: 100`），所有 fallback 模型也是 openai-codex，全链失败\n- 飞书 bot identity 探针全败（5/5 retries exhausted），需重启 gateway\n- 用户重新 onboard 后账号从 Apple ID 换成了 163 邮箱，新账号是 free plan\n\n**Turn Context (split turn):**\n\n## 决策\n- **代理先前被禁用**：`proxy.enabled: false` 是因为代理会导致飞书 SDK 出现 URL 循环拼接 bug（Feishu API 路径如 `/open-apis/bot/v1/openclaw_bot/ping`、`/open-apis/bot/v3/info` 被重复拼接）\n- **根因确认**：GPT 模型切换报错不是额度问题，而是网络问题——服务器直连 `api.openai.com` 超时（被墙），而 proxy 被禁用导致 OpenClaw 不走代理\n- **OpenClaw proxy 配置仅支持全局开关**：只有 `proxy.enabled` 和 `proxy.proxyUrl`，无 per-provider 或 no_proxy 选项\n\n## 待办\n- [ ] 解决代理矛盾：Codex/OpenAI 需要走代理，飞书 SDK 不能走代理\n- [ ] 重新启用代理但避免飞书 SDK URL 循环拼接 bug\n- [ ] 确认 GPT/Codex 模型在飞书端正常可用\n\n## 约束/规则\n- 服务器在新加坡（腾讯云），直连 `api.openai.com` 被墙\n- 本地代理 `http://127.0.0.1:7890` 可正常访问 OpenAI（1.9s 返回 401）\n- 飞书 SDK 走代理时会出现 URL 循环拼接 bug\n- OpenClaw proxy schema 无 bypass/exclude/per-provider 机制\n\n## 待定用户请求\n- 修复飞书切换 GPT 模型后报错的问题，使 Codex 模型在飞书端可用\n\n## 精确标识符\n- 日志文件: `/tmp/openclaw/openclaw-2026-05-08.log`\n- 配置文件: `/home/ubuntu/.openclaw/openclaw.json`\n- 代理地址: `http://127.0.0.1:7890`\n- DNS 服务器: `127.0.0.53`\n- OpenAI IP: `108.160.172.1`, `2a03:2880:f126:83:face:b00c:0:25de`\n- 模型: `openai-codex/gpt-5.3-codex`\n- provider: `openai-codex`\n- 错误: `LLM request failed: network connection error.`, `fetch failed`, `providerRuntimeFailureKind: timeout`\n- 当前 proxy 配置: `{\"enabled\":false,\"proxyUrl\":\"http://127.0.0.1:7890\"}`\n- 飞书 API 路径: `/open-apis/bot/v1/openclaw_bot/ping`, `/open-apis/bot/v3/info`\n- OpenClaw 模块路径: `/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/`\n- 工作目录: `/home/ubuntu/.openclaw/workspace`\n- 直连测试: `http_code:000 time:10.001149s` (超时)\n- 代理测试: `http_code:401 time:1.966691s` (正常)\n- 诊断日志: `eventLoopDelayP99Ms=23.5`, `eventLoopDelayMaxMs=6106.9`\n- 日志时间戳: `2026-05-08T00:03:47.755+08:00`\n\n## Recent turns preserved verbatim\n- User: [Fri 2026-05-08 00:01 GMT+8] 首先gpt的额度我确定有的还有98%，你帮我重启然后继续修复此问题\n- Assistant: [non-text content: thinking, toolCall]\n- Tool result (exec): openai-codex:18664778270@163.com {\n  \"type\": \"oauth\",\n  \"provider\": \"openai-codex\",\n  \"access\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzc5MDMyNjUwLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiZWYwOTBhOWItYzc5Zi00MWJiLTgwMjMtODdjNDhlMDE0YmY0IiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLXFxaTZqdU1YYjJtbWVKWHBXMXpZVTlUZF9fZWYwOTBhOWItYzc5Zi00MWJiLTgwMjMtODdjNDhlMDE0YmY0IiwiY2hhdGdwdF9jb21wdXRlX3Jlc2...\n- Assistant: 先看清楚问题再动手。当前认证状态的关键：\n\n- **当前登录账号**：`18664778270@163.com`\n- **账号类型**：`chatgptPlanType: \"free\"`\n- **Gateway 日志报**：`usage_limit_reached` / `plan_type: \"free\"` / `Primary-Used-Percent: 100`\n\n你之前的 Apple ID 账号 `ggjky5ncq5@privaterelay.appleid.com` 被这次 onboard 覆盖掉了。**你现在登录的是一个 free 账号，不是你有 98% 额度的付费账号。**\n\n我先重启 gateway 修复飞书 bot identity，然后你需要重新用正确的账号登录。\n[non-text content: thinking, toolCall]\n- Tool result (exec): Command aborted by signal SIGTERM\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): Service: systemd user (enabled)\nFile logs: /tmp/openclaw/openclaw-2026-05-08.log\nCommand: /home/ubuntu/.nvm/versions/node/v24.14.0/bin/node /home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/index.js gateway --port 18789\nService file: ~/.config/systemd/user/openclaw-gateway.service\nService env: OPENCLAW_GATEWAY_PORT=18789\n\nService config looks out of date or non-standard.\nService config issue: Gateway service PATH includes version managers or package managers; recommend a minimal PATH. (/home/ubuntu/.nvm/versions/node/v24.14.0/bin, /home/ubuntu/.nvm/current/bin)\nService co...\n- User: [Fri 2026-05-08 00:06 GMT+8] 如果你没额度应该就是ggjky5ncq5@privaterelay.appleid.com这个账号的这个账号确实是没有了\n- Assistant: 明白了。所以情况是：\n\n- `ggjky5ncq5@privaterelay.appleid.com` → 额度用完了\n- `18664778270@163.com` → 有 98% 额度，但 JWT 里写着 `chatgptPlanType: \"free\"`\n\nGateway 刚重启完但处于 stopped 状态，我先把它拉起来，然后验证 Codex API 和飞书。\n[non-text content: thinking, toolCall]\n- Tool result (gateway): {\n  \"ok\": true,\n  \"pid\": 1769026,\n  \"signal\": \"SIGUSR1\",\n  \"delayMs\": 2000,\n  \"reason\": \"修复飞书 bot identity 探针失败 + 重置 OAuth 状态\",\n  \"mode\": \"emit\",\n  \"coalesced\": false,\n  \"cooldownMsApplied\": 0\n}\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): {\"0\":\"{\\\"subsystem\\\":\\\"plugins\\\"}\",\"1\":\"[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: acpx (/home/ubuntu/.openclaw/npm/node_modules/@openclaw/acpx/dist/index.js), feishu (/home/ubuntu/.openclaw/npm/node_modules/@openclaw/feishu/dist/index.js). Set plugins.allow to explicit trusted ids.\",\"_meta\":{\"runtime\":\"node\",\"runtimeVersion\":\"24.14.0\",\"hostname\":\"unknown\",\"name\":\"{\\\"subsystem\\\":\\\"plugins\\\"}\",\"parentNames\":[\"openclaw\"],\"date\":\"2026-05-07T16:03:42.010Z\",\"logLevelId\":4,\"logLevelName\":\"WARN\",\"path\":{\"fullFilePath\":\"file:///home/ubuntu/.nvm/versions/node/v24.14...\n- Assistant: Gateway 重启成功，飞书两个账户都正常了：\n\n```\nfeishu[default]: bot open_id resolved: ou_88935cede1df296828775f4ac68bffce ✅\nfeishu[finance]: bot open_id resolved: ou_f91401fc32f501f3ffd9b1b00075bd59 ✅\nWebSocket client started ✅ (两个都启动了)\n```\n\n现在回到核心问题——**Codex 额度**：\n\n你说 `18664778270@163.com` 这个账号有 98% 额度，但 OpenAI 返回的 JWT 里写的是 `chatgptPlanType: \"free\"`，而且 gateway 日志报了 `usage_limit_reached` / `plan_type: free` / `Primary-Used-Percent: 100`。\n\n这可能有两种情况：\n\n1. **这个账号确实是付费的**，但 OpenClaw 用的是 Codex 专用的 model endpoint，计费规则不同——free plan 在 Codex 侧的额度可能已用完，即使 ChatGPT 网页端还有 98%\n2. **账号状态有延迟**——onboard 时获取的 JWT 里 plan_type 还是旧...\n- User: [OpenClaw heartbeat poll]\n- Assistant: HEARTBEAT_OK\n[non-text content: thinking]\n- User: [Fri 2026-05-08 00:09 GMT+8] 我打算切换model 然后飞书没反应了\n- Assistant: [non-text content: thinking, toolCall x2]\n- Tool result (exec): {\"0\":\"{\\\"subsystem\\\":\\\"skills\\\"}\",\"1\":{\"source\":\"openclaw-workspace\",\"rootDir\":\"/home/ubuntu/.openclaw/workspace/skills\",\"rootRealPath\":\"/home/ubuntu/.openclaw/workspace/skills\",\"path\":\"/home/ubuntu/.openclaw/workspace/skills/lark-task\",\"realPath\":\"/home/ubuntu/.openclaw/workspace/.agents/skills/lark-task\",\"reason\":\"symlink-escape\"},\"2\":\"Skipping escaped skill path outside its configured root.\",\"_meta\":{\"runtime\":\"node\",\"runtimeVersion\":\"24.14.0\",\"hostname\":\"unknown\",\"name\":\"{\\\"subsystem\\\":\\\"skills\\\"}\",\"parentNames\":[\"openclaw\"],\"date\":\"2026-05-07T16:08:58.435Z\",\"logLevelId\":4,\"logLevelName\":\"...\n- Tool result (session_status): 🦞 OpenClaw 2026.5.6 (c97b9f7)\n⏱️ Uptime: gateway 2m 11s · system 28d 10h\n🧠 Model: custom-ark-cn-beijing-volces-com/glm-5.1 · 🔑 api-key (models.json)\n🔄 Fallbacks: openai-codex/gpt-5.3-codex, openai-codex/gpt-5.4, openai-codex/gpt-5.5, openai-codex/gpt-5.5-pro\n🧮 Tokens: 43k in / 6 out · 💵 Cost: $0.0000\n🗄️ Cache: 95% hit · 779k cached, 0 new\n📚 Context: 43k/131k (33%) · 🧹 Compactions: 0\n🧵 Session: agent:main:main • updated just now\n⚙️ Execution: direct · Runtime: OpenClaw Pi Default · Think: off · elevated\n🪢 Queue: steer (depth 0)\n- Assistant: 日志里看到了：**飞书现在已经恢复了**。\n\n```\nfeishu[default]: dispatch complete (queuedFinal=true, replies=1) ✅\n```\n\n刚才没反应是因为 gateway 在重启中。\n\n但核心问题还在：**你当前飞书会话如果切到 codex 模型，会因为 free 账号额度耗尽而无反馈。**\n\n当前状态：\n- 默认 model：`glm-5.1`（正常工作）\n- Fallback 链：全是 `openai-codex` → free 账号额度已用完 → 会失败\n\n你想怎么处理？两个方向：\n\n1. **飞书 session 指定用 glm-5.1 等非 codex 模型**（立即可用，不依赖 Codex 额度）\n2. **重新用有额度的账号登录 Codex**（`openclaw onboard --auth-choice openai-codex`，换回你说的有 98% 额度的账号）\n\n你选哪个？或者两个都做？\n[non-text content: thinking]\n- User: [Fri 2026-05-08 00:11 GMT+8] 成功切换了gpt的model然后发送消息 返回 ⚠️ Something went wrong while processing your request. Please try again, or use /new to start a fresh session.\n\n<read-files>\n/home/ubuntu/.codex/log/codex-login.log\n/home/ubuntu/.openclaw/workspace/docs/openclaw-docs/oauth.md\n\n</read-files>\n\n<modified-files>\n/home/ubuntu/.openclaw/workspace/memory/2026-05-07.md\n\n</modified-files>",
-        "firstKeptEntryId": "95cc838b",
-        "preCompaction": {
-          "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.checkpoint.2f54deba-4cdf-42b3-9a66-62818ebedc93.jsonl",
-          "leafId": "8760915d"
-        },
-        "postCompaction": {
-          "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.jsonl",
-          "leafId": "7e08a228",
-          "entryId": "7e08a228"
-        }
-      },
-      {
-        "checkpointId": "ea4852fc-b567-4fd5-9d1b-1363cd7121ea",
-        "sessionKey": "agent:main:main",
-        "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-        "createdAt": 1778172048688,
-        "reason": "auto-threshold",
-        "tokensBefore": 129113,
-        "tokensAfter": 20407,
-        "summary": "## Goal\n1. 修复飞书切换 GPT/Codex 模型后报错 `⚠️ Something went wrong` 的问题\n2. 解决代理矛盾：Codex/OpenAI 需要走代理，飞书 SDK 不能走代理\n3. 排查并解决 OpenClaw/Codex OAuth `refresh_token_reused` 401 错误（已通过删除独立 CLI 解决）\n\n## Constraints & Preferences\n- 保留 OpenClaw 内置的 Codex 相关目录，不删除\n- 独立 Codex CLI 已彻底删除，不需要备份\n- 用户希望继续通过 OpenClaw 使用 Codex/GPT 模型\n- OpenClaw proxy 配置仅支持全局开关（`proxy.enabled` + `proxy.proxyUrl`），无 per-provider / no_proxy / bypass 机制\n- 飞书 SDK 走代理时会出现 URL 循环拼接 bug\n- 服务器在新加坡（腾讯云）\n\n## Progress\n### Done\n- [x] 诊断 `refresh_token_reused` 根因：独立 Codex CLI 与 OpenClaw 共用 OAuth 互踩\n- [x] 卸载全局 npm 包 `@openai/codex`，删除 `~/.codex`\n- [x] 重启 gateway 修复飞书 bot identity 探针失败（5/5→全部恢复✅）\n- [x] 确认代理 `http://127.0.0.1:7890` 可正常访问 OpenAI（返回 401，1.9s）\n- [x] 确认 DNS 解析 `api.openai.com` → `118.107.180.216`（新加坡 CDN IP）\n- [x] 确认 `models.json` 中搜索 `codex`/`openai` 无匹配条目\n\n### In Progress\n- [ ] 修复飞书切换 GPT 模型后 \"Something went wrong\" 报错\n- [ ] 解决代理矛盾（OpenAI 需代理 vs 飞书 SDK 不能走代理）\n\n### Blocked\n- `proxy.enabled: false` 导致 OpenClaw 不走代理，无法直连 OpenAI（之前直连超时）\n- 飞书 SDK 走代理时 URL 循环拼接 bug 未解决\n- `18664778270@163.com` JWT 显示 `chatgptPlanType: \"free\"`，gateway 报 `usage_limit_reached`，但用户声称该账号有 98% 额度\n\n## Key Decisions\n- **删除独立 Codex CLI**：用户确认不需要备份，直接卸载\n- **保留 OpenClaw 内置 Codex**：`~/.openclaw/agents/main/agent/codex-home` 和 `~/.openclaw/extensions/codex` 未动\n- **proxy.enabled: false**：因飞书 SDK URL 循环拼接 bug 而禁用，但导致 OpenAI 不可达\n- **飞书无反馈根因**：Codex free plan 额度耗尽 + 飞书 bot 探针失败 + 代理被禁用（网络不通）叠加\n\n## Decisions\n- 独立 Codex CLI 与 OpenClaw 共用同一 OAuth 账号导致 `refresh_token_reused`，删除独立 CLI 解决\n- 保留 OpenClaw 自身 Codex 集成不动\n- proxy 禁用是因为飞书 SDK 走代理会 URL 循环拼接；需找到方案让 OpenAI 走代理而飞书不走\n- 用户确认 `18664778270@163.com` 有 98% 额度，但 JWT/网关均显示 free plan，可能 Codex endpoint 计费独立于 ChatGPT 网页端\n\n## Open TODOs\n- 解决代理矛盾：Codex/OpenAI 需要走代理，飞书 SDK 不能走代理\n- 重新启用代理但避免飞书 SDK URL 循环拼接 bug\n- 确认 GPT/Codex 模型在飞书端正常可用\n- 排查 models.json 中为何无 codex/openai 条目\n- 排查 `18664778270@163.com` 额度问题（JWT free vs 用户声称 98%）\n- 如需换账号：用 `openclaw onboard --auth-choice openai-codex` 重新登录\n\n## Constraints/Rules\n- OpenClaw OAuth refresh 带 file lock，同 agent 下多 channel 不会互踩\n- 不同 OAuth 客户端各自维护 token 存储，会互踩\n- 认证读自单一 token sink：`~/.openclaw/agents/main/agent/auth-profiles.json`\n- 服务器直连 `api.openai.com` 之前超时（10s），DNS 解析到 `118.107.180.216`\n- 本地代理 `http://127.0.0.1:7890` 可正常访问 OpenAI\n- 飞书 SDK 走代理时 URL 循环拼接（`/open-apis/bot/v1/openclaw_bot/ping` 等路径重复）\n- OpenClaw proxy schema 无 bypass/exclude/per-provider 机制\n\n## Pending user asks\n- 修复飞书切换 GPT 模型后 `⚠️ Something went wrong` 报错，使 Codex 模型在飞书端可用\n- 确认 `18664778270@163.com` 账号额度状态\n\n## Exact identifiers\n- **npm 包**: `@openai/codex@0.128.0`\n- **已删除目录**: `~/.codex`\n- **保留目录**: `~/.openclaw/agents/main/agent/codex-home`、`~/.openclaw/extensions/codex`\n- **认证文件**: `~/.openclaw/agents/main/agent/auth-profiles.json`\n- **OAuth 锁目录**: `~/.openclaw/locks/oauth-refresh`\n- **旧 Codex 账号**: `openai-codex:ggjky5ncq5@privaterelay.appleid.com`（accountId: `bab102c0-2ee1-4855-9651-fdd6e559e628`，额度用完）\n- **新 Codex 账号**: `openai-codex:18664778270@163.com`（accountId: `ef090a9b-c79f-41bb-8023-87c48e014bf4`，chatgptPlanType: free，用户声称有 98% 额度）\n- **错误类型**: `refresh_token_reused`、`invalid_request_error`、`usage_limit_reached`\n- **额度重置时间戳**: `1778685957`（约 2026-05-11）\n- **飞书 session key 前缀**: `agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da`\n- **当前 TUI session**: `agent:main:main`（sessionId: `1dd0e478-774f-44a9-af53-19b7bf01b8c7`）\n- **飞书 bot 探针端点**: `/open-apis/bot/v1/openclaw_bot/ping`、`/open-apis/bot/v3/info`\n- **飞书 bot open_id（default）**: `ou_88935cede1df296828775f4ac68bffce`（已恢复✅）\n- **飞书 bot open_id（finance）**: `ou_f91401fc32f501f3ffd9b1b00075bd59`（已恢复✅）\n- **Codex login 回调端口冲突**: 默认 `127.0.0.1:1455` 被占用，回退到 `127.0.0.1:1457`\n- **日志文件**: `/tmp/openclaw/openclaw-2026-05-08.log`\n- **Codex TUI 日志**: `~/.codex/log/codex-tui.log`（已删除）\n- **Codex 登录日志**: `~/.codex/log/codex-login.log`（已删除）\n- **OpenClaw gateway**: `openclaw gateway --port 18789`（pid 1769026，重启后）\n- **OpenClaw 版本**: `2026.5.6 (c97b9f7)`\n- **当前默认模型**: `custom-ark-cn-beijing-volces-com/glm-5.1`\n- **Codex fallback 链**: `openai-codex/gpt-5.3-codex`, `openai-codex/gpt-5.4`, `openai-codex/gpt-5.5`, `openai-codex/gpt-5.5-pro`\n- **onboard 命令**: `openclaw onboard --auth-choice openai-codex`\n- **模型配置文件**: `~/.openclaw/agents/main/agent/models.json`\n- **配置文件**: `/home/ubuntu/.openclaw/openclaw.json`\n- **当前 proxy 配置**: `{\"enabled\":false,\"proxyUrl\":\"http://127.0.0.1:7890\"}`\n- **代理地址**: `http://127.0.0.1:7890`\n- **DNS 服务器**: `127.0.0.53`\n- **api.openai.com 解析 IP**: `118.107.180.216`（当前）、`108.160.172.1`（之前记录）\n- **OpenAI IPv6**: `2a03:2880:f126:83:face:b00c:0:25de`\n- **OpenAI API key 管理页**: `https://platform.openai.com/account/api-keys`\n- **直连测试结果**: `http_code:000 time:10.001149s`（超时）\n- **代理测试结果**: `http_code:401 time:1.966691s`（正常可达）\n- **飞书切换 GPT 报错**: `⚠️ Something went wrong while processing your request. Please try again, or use /new to start a fresh session.`\n- **LLM 错误**: `LLM request failed: network connection error.`、`fetch failed`、`providerRuntimeFailureKind: timeout`\n- **OpenClaw 模块路径**: `/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/`\n- **工作目录**: `/home/ubuntu/.openclaw/workspace`\n- **memory 文件**: `/home/ubuntu/.openclaw/workspace/memory/2026-05-07.md`\n- **SQLite 状态文件**: `~/.codex/state_5.sqlite`（已删除）、`~/.openclaw/agents/main/agent/codex-home/state_5.sqlite`\n- **诊断指标**: `eventLoopDelayP99Ms=23.5`、`eventLoopDelayMaxMs=6106.9`\n- **gateway systemd service**: `~/.config/systemd/user/openclaw-gateway.service`\n\n## Critical Context\n- 飞书切换 GPT 模型后报错的直接原因是 **proxy 被禁用** → OpenClaw 不走代理 → 无法连接 `api.openai.com` → LLM request failed\n- 飞书 bot identity 已通过重启 gateway 修复（5/5→全部成功）\n- `models.json` 中搜索 `codex`/`openai` 无匹配，可能 codex 模型配置走的是 OAuth provider 而非 models.json 中的 apiKey 方式\n- 代理矛盾是核心阻塞：需要为 OpenAI 请求走代理，同时飞书 SDK 不走代理\n\n## Recent turns preserved verbatim\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): providers\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): codex {\n  \"baseUrl\": \"https://chatgpt.com/backend-api\",\n  \"auth\": \"token\",\n  \"api\": \"openai-codex-responses\",\n  \"models\": [\n    {\n      \"id\": \"gpt-5.5\",\n      \"name\": \"gpt-5.5\",\n      \"api\": \"openai-codex-responses\",\n      \"reasoning\": true,\n      \"input\": [\n        \"text\",\n        \"image\"\n      ],\n      \"cost\": {\n        \"input\": 0,\n        \"output\": 0,\n        \"cacheRead\": 0,\n        \"cacheWrite\": 0\n      },\n      \"contextWindow\": 272000,\n      \"maxTokens\": 128000,\n      \"compat\": {\n        \"supportsReasoningEffort\": true,\n        \"supportsUsageInStreaming\": true\n      }\n    },\n    {\n      \"...\n- Assistant: Codex 的 endpoint 是 `chatgpt.com/backend-api`，不是 `api.openai.com`。我来测试直连。\n[non-text content: thinking, toolCall]\n- Tool result (exec): == direct to chatgpt.com ==\ncurl: (28) Failed to connect to chatgpt.com port 443 after 10001 ms: Timeout was reached\nhttp_code:000 time:10.001512sDIRECT_FAILED\n\n\n== via proxy to chatgpt.com ==\nhttp_code:403 time:0.582037s\n\n== NO_PROXY test: proxy on but exclude feishu ==\nno proxy env in service\n- Assistant: 确认了：\n\n- **直连 `chatgpt.com`**：❌ 超时（被墙）\n- **走代理连 `chatgpt.com`**：✅ 正常（403 是因为没带 token，正常）\n\n所以必须开 proxy，但之前开 proxy 会导致飞书 SDK 出问题。我来看看能不能通过 `NO_PROXY` 环境变量让飞书直连、其他走代理。\n[non-text content: toolCall]\n- Tool result (exec): == direct to feishu (no proxy) ==\nhttp_code:400 time:0.137203s\n\n== via proxy to feishu ==\nhttp_code:400 time:0.124770s\n\n== NO_PROXY test: proxy + NO_PROXY for feishu ==\nhttp_code:400 time:0.147858s\n- Assistant: 飞书直连和走代理都正常。之前飞书出问题是 OpenClaw 内部的 `global-agent` 补丁在 HTTPS 重定向时导致 URL 循环拼接。如果设置了 `NO_PROXY`，`global-agent` 会跳过代理，飞书流量直连，就不会触发那个 bug。\n\n方案：\n1. 开启 `proxy.enabled: true`\n2. 给 systemd 服务加 `NO_PROXY` 环境变量排除飞书域名\n3. 重启\n[non-text content: thinking, toolCall]\n- Tool result (exec): [Unit]\nDescription=OpenClaw Gateway (v2026.5.6)\nAfter=network-online.target\nWants=network-online.target\nStartLimitBurst=5\nStartLimitIntervalSec=60\n\n[Service]\nExecStart=/home/ubuntu/.nvm/versions/node/v24.14.0/bin/node /home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/index.js gateway --port 18789\nRestart=always\nRestartSec=5\nRestartPreventExitStatus=78\nTimeoutStopSec=30\nTimeoutStartSec=30\nSuccessExitStatus=0 143\nKillMode=control-group\nEnvironment=HOME=/home/ubuntu\nEnvironment=TMPDIR=/tmp\nEnvironment=NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt\nEnvironment=PATH=/h...\n- Assistant: 好，现在我来：\n1. 开启 proxy\n2. 给 systemd service 加 `NO_PROXY` 环境变量\n3. 重启\n[non-text content: toolCall]\n- Tool result (gateway): {\n  \"status\": \"error\",\n  \"tool\": \"gateway\",\n  \"error\": \"gateway config.patch cannot change protected config paths: proxy.enabled, proxy.proxyUrl\"\n}\n- Assistant: Proxy 字段被保护了，不能通过 config.patch 修改。需要直接改配置文件。\n[non-text content: toolCall]\n- Tool result (exec): proxy.enabled: True\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): Added NO_PROXY env\nsystemd reloaded\n- Assistant: 现在重启 gateway 让代理和 NO_PROXY 都生效。\n[non-text content: toolCall]\n- Tool result (gateway): {\n  \"ok\": true,\n  \"pid\": 1770114,\n  \"signal\": \"SIGUSR1\",\n  \"delayMs\": 2000,\n  \"reason\": \"开启代理让 Codex API 可达，同时 NO_PROXY 排除飞书域名避免飞书 SDK 代理 bug\",\n  \"mode\": \"emit\",\n  \"coalesced\": false,\n  \"cooldownMsApplied\": 0\n}\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): {\"0\":\"{\\\"subsystem\\\":\\\"agent/embedded\\\"}\",\"1\":{\"event\":\"embedded_run_agent_end\",\"tags\":[\"error_handling\",\"lifecycle\",\"agent_end\",\"assistant_error\"],\"runId\":\"502d62b5-cc80-4f59-823d-9a348ce563a6\",\"isError\":true,\"error\":\"LLM request failed: network connection error.\",\"failoverReason\":\"timeout\",\"model\":\"gpt-5.3-codex\",\"provider\":\"openai-codex\",\"rawErrorPreview\":\"fetch failed\",\"rawErrorHash\":\"sha256:e2c73a8fd237\",\"providerRuntimeFailureKind\":\"timeout\"},\"2\":\"embedded run agent end\",\"_meta\":{\"runtime\":\"node\",\"runtimeVersion\":\"24.14.0\",\"hostname\":\"unknown\",\"name\":\"{\\\"subsystem\\\":\\\"agent/embedded\\\"}\",...",
-        "firstKeptEntryId": "b44b609c",
-        "preCompaction": {
-          "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.checkpoint.8c19c209-dfaa-4ef2-aff6-0548c80cc240.jsonl",
-          "leafId": "a88847ab-5237-4e05-a7c3-bfc0d978c29b"
-        },
-        "postCompaction": {
-          "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.jsonl",
-          "leafId": "193ba53f",
-          "entryId": "193ba53f"
-        }
-      },
-      {
-        "checkpointId": "f54ff093-25ae-4e3b-8466-3bf2841a2635",
-        "sessionKey": "agent:main:main",
-        "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-        "createdAt": 1778173349386,
-        "reason": "auto-threshold",
-        "tokensBefore": 132910,
-        "tokensAfter": 20509,
-        "summary": "## Goal\n1. 修复飞书切换 GPT/Codex 模型后报错 `⚠️ Something went wrong` 的问题\n2. 解决代理矛盾：Codex/OpenAI 需要走代理，飞书 SDK 不能走代理\n3. 排查并解决 OpenClaw/Codex OAuth `refresh_token_reused` 401 错误（已通过删除独立 CLI 解决）\n\n## Constraints & Preferences\n- 保留 OpenClaw 内置的 Codex 相关目录，不删除\n- 独立 Codex CLI 已彻底删除，不需要备份\n- 用户希望继续通过 OpenClaw 使用 Codex/GPT 模型\n- OpenClaw proxy 配置仅支持全局开关（`proxy.enabled` + `proxy.proxyUrl`），无 per-provider / no_proxy / bypass 机制\n- 飞书 SDK 走代理时会出现 URL 循环拼接 bug\n- 服务器在新加坡（腾讯云）\n\n## Progress\n### Done\n- [x] 诊断 `refresh_token_reused` 根因：独立 Codex CLI 与 OpenClaw 共用 OAuth 互踩\n- [x] 卸载全局 npm 包 `@openai/codex`，删除 `~/.codex`\n- [x] 重启 gateway 修复飞书 bot identity 探针失败（5/5→全部恢复✅）\n- [x] 确认代理 `http://127.0.0.1:7890` 可正常访问 OpenAI（返回 401，1.9s）\n- [x] 确认 DNS 解析 `api.openai.com` → `118.107.180.216`（新加坡 CDN IP）\n- [x] 确认 `models.json` 中搜索 `codex`/`openai` 无匹配条目\n\n### In Progress\n- [ ] 修复飞书切换 GPT 模型后 \"Something went wrong\" 报错\n- [ ] 解决代理矛盾（OpenAI 需代理 vs 飞书 SDK 不能走代理）\n\n### Blocked\n- `proxy.enabled: false` 导致 OpenClaw 不走代理，无法直连 OpenAI（之前直连超时）\n- 飞书 SDK 走代理时 URL 循环拼接 bug 未解决\n- `18664778270@163.com` JWT 显示 `chatgptPlanType: \"free\"`，gateway 报 `usage_limit_reached`，但用户声称该账号有 98% 额度\n\n## Key Decisions\n- **删除独立 Codex CLI**：用户确认不需要备份，直接卸载\n- **保留 OpenClaw 内置 Codex**：`~/.openclaw/agents/main/agent/codex-home` 和 `~/.openclaw/extensions/codex` 未动\n- **proxy.enabled: false**：因飞书 SDK URL 循环拼接 bug 而禁用，但导致 OpenAI 不可达\n- **飞书无反馈根因**：Codex free plan 额度耗尽 + 飞书 bot 探针失败 + 代理被禁用（网络不通）叠加\n\n## Decisions\n- 独立 Codex CLI 与 OpenClaw 共用同一 OAuth 账号导致 `refresh_token_reused`，删除独立 CLI 解决\n- 保留 OpenClaw 自身 Codex 集成不动\n- proxy 禁用是因为飞书 SDK 走代理会 URL 循环拼接；需找到方案让 OpenAI 走代理而飞书不走\n- 用户确认 `18664778270@163.com` 有 98% 额度，但 JWT/网关均显示 free plan，可能 Codex endpoint 计费独立于 ChatGPT 网页端\n\n## Open TODOs\n- 解决代理矛盾：Codex/OpenAI 需要走代理，飞书 SDK 不能走代理\n- 重新启用代理但避免飞书 SDK URL 循环拼接 bug\n- 确认 GPT/Codex 模型在飞书端正常可用\n- 排查 models.json 中为何无 codex/openai 条目\n- 排查 `18664778270@163.com` 额度问题（JWT free vs 用户声称 98%）\n- 如需换账号：用 `openclaw onboard --auth-choice openai-codex` 重新登录\n\n## Constraints/Rules\n- OpenClaw OAuth refresh 带 file lock，同 agent 下多 channel 不会互踩\n- 不同 OAuth 客户端各自维护 token 存储，会互踩\n- 认证读自单一 token sink：`~/.openclaw/agents/main/agent/auth-profiles.json`\n- 服务器直连 `api.openai.com` 之前超时（10s），DNS 解析到 `118.107.180.216`\n- 本地代理 `http://127.0.0.1:7890` 可正常访问 OpenAI\n- 飞书 SDK 走代理时 URL 循环拼接（`/open-apis/bot/v1/openclaw_bot/ping` 等路径重复）\n- OpenClaw proxy schema 无 bypass/exclude/per-provider 机制\n\n## Pending user asks\n- 修复飞书切换 GPT 模型后 `⚠️ Something went wrong` 报错，使 Codex 模型在飞书端可用\n- 确认 `18664778270@163.com` 账号额度状态\n\n## Exact identifiers\n- **npm 包**: `@openai/codex@0.128.0`\n- **已删除目录**: `~/.codex`\n- **保留目录**: `~/.openclaw/agents/main/agent/codex-home`、`~/.openclaw/extensions/codex`\n- **认证文件**: `~/.openclaw/agents/main/agent/auth-profiles.json`\n- **OAuth 锁目录**: `~/.openclaw/locks/oauth-refresh`\n- **旧 Codex 账号**: `openai-codex:ggjky5ncq5@privaterelay.appleid.com`（accountId: `bab102c0-2ee1-4855-9651-fdd6e559e628`，额度用完）\n- **新 Codex 账号**: `openai-codex:18664778270@163.com`（accountId: `ef090a9b-c79f-41bb-8023-87c48e014bf4`，chatgptPlanType: free，用户声称有 98% 额度）\n- **错误类型**: `refresh_token_reused`、`invalid_request_error`、`usage_limit_reached`\n- **额度重置时间戳**: `1778685957`（约 2026-05-11）\n- **飞书 session key 前缀**: `agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da`\n- **当前 TUI session**: `agent:main:main`（sessionId: `1dd0e478-774f-44a9-af53-19b7bf01b8c7`）\n- **飞书 bot 探针端点**: `/open-apis/bot/v1/openclaw_bot/ping`、`/open-apis/bot/v3/info`\n- **飞书 bot open_id（default）**: `ou_88935cede1df296828775f4ac68bffce`（已恢复✅）\n- **飞书 bot open_id（finance）**: `ou_f91401fc32f501f3ffd9b1b00075bd59`（已恢复✅）\n- **Codex login 回调端口冲突**: 默认 `127.0.0.1:1455` 被占用，回退到 `127.0.0.1:1457`\n- **日志文件**: `/tmp/openclaw/openclaw-2026-05-08.log`\n- **Codex TUI 日志**: `~/.codex/log/codex-tui.log`（已删除）\n- **Codex 登录日志**: `~/.codex/log/codex-login.log`（已删除）\n- **OpenClaw gateway**: `openclaw gateway --port 18789`（pid 1769026，重启后）\n- **OpenClaw 版本**: `2026.5.6 (c97b9f7)`\n- **当前默认模型**: `custom-ark-cn-beijing-volces-com/glm-5.1`\n- **Codex fallback 链**: `openai-codex/gpt-5.3-codex`, `openai-codex/gpt-5.4`, `openai-codex/gpt-5.5`, `openai-codex/gpt-5.5-pro`\n- **onboard 命令**: `openclaw onboard --auth-choice openai-codex`\n- **模型配置文件**: `~/.openclaw/agents/main/agent/models.json`\n- **配置文件**: `/home/ubuntu/.openclaw/openclaw.json`\n- **当前 proxy 配置**: `{\"enabled\":false,\"proxyUrl\":\"http://127.0.0.1:7890\"}`\n- **代理地址**: `http://127.0.0.1:7890`\n- **DNS 服务器**: `127.0.0.53`\n- **api.openai.com 解析 IP**: `118.107.180.216`（当前）、`108.160.172.1`（之前记录）\n- **OpenAI IPv6**: `2a03:2880:f126:83:face:b00c:0:25de`\n- **OpenAI API key 管理页**: `https://platform.openai.com/account/api-keys`\n- **直连测试结果**: `http_code:000 time:10.001149s`（超时）\n- **代理测试结果**: `http_code:401 time:1.966691s`（正常可达）\n- **飞书切换 GPT 报错**: `⚠️ Something went wrong while processing your request. Please try again, or use /new to start a fresh session.`\n- **LLM 错误**: `LLM request failed: network connection error.`、`fetch failed`、`providerRuntimeFailureKind: timeout`\n- **OpenClaw 模块路径**: `/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/`\n- **工作目录**: `/home/ubuntu/.openclaw/workspace`\n- **memory 文件**: `/home/ubuntu/.openclaw/workspace/memory/2026-05-07.md`\n- **SQLite 状态文件**: `~/.codex/state_5.sqlite`（已删除）、`~/.openclaw/agents/main/agent/codex-home/state_5.sqlite`\n- **诊断指标**: `eventLoopDelayP99Ms=23.5`、`eventLoopDelayMaxMs=6106.9`\n- **gateway systemd service**: `~/.config/systemd/user/openclaw-gateway.service`\n\n## Critical Context\n- 飞书切换 GPT 模型后报错的直接原因是 **proxy 被禁用** → OpenClaw 不走代理 → 无法连接 `api.openai.com` → LLM request failed\n- 飞书 bot identity 已通过重启 gateway 修复（5/5→全部成功）\n- `models.json` 中搜索 `codex`/`openai` 无匹配，可能 codex 模型配置走的是 OAuth provider 而非 models.json 中的 apiKey 方式\n- 代理矛盾是核心阻塞：需要为 OpenAI 请求走代理，同时飞书 SDK 不走代理\n\n## Recent turns preserved verbatim\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): providers\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): codex {\n  \"baseUrl\": \"https://chatgpt.com/backend-api\",\n  \"auth\": \"token\",\n  \"api\": \"openai-codex-responses\",\n  \"models\": [\n    {\n      \"id\": \"gpt-5.5\",\n      \"name\": \"gpt-5.5\",\n      \"api\": \"openai-codex-responses\",\n      \"reasoning\": true,\n      \"input\": [\n        \"text\",\n        \"image\"\n      ],\n      \"cost\": {\n        \"input\": 0,\n        \"output\": 0,\n        \"cacheRead\": 0,\n        \"cacheWrite\": 0\n      },\n      \"contextWindow\": 272000,\n      \"maxTokens\": 128000,\n      \"compat\": {\n        \"supportsReasoningEffort\": true,\n        \"supportsUsageInStreaming\": true\n      }\n    },\n    {\n      \"...\n- Assistant: Codex 的 endpoint 是 `chatgpt.com/backend-api`，不是 `api.openai.com`。我来测试直连。\n[non-text content: thinking, toolCall]\n- Tool result (exec): == direct to chatgpt.com ==\ncurl: (28) Failed to connect to chatgpt.com port 443 after 10001 ms: Timeout was reached\nhttp_code:000 time:10.001512sDIRECT_FAILED\n\n\n== via proxy to chatgpt.com ==\nhttp_code:403 time:0.582037s\n\n== NO_PROXY test: proxy on but exclude feishu ==\nno proxy env in service\n- Assistant: 确认了：\n\n- **直连 `chatgpt.com`**：❌ 超时（被墙）\n- **走代理连 `chatgpt.com`**：✅ 正常（403 是因为没带 token，正常）\n\n所以必须开 proxy，但之前开 proxy 会导致飞书 SDK 出问题。我来看看能不能通过 `NO_PROXY` 环境变量让飞书直连、其他走代理。\n[non-text content: toolCall]\n- Tool result (exec): == direct to feishu (no proxy) ==\nhttp_code:400 time:0.137203s\n\n== via proxy to feishu ==\nhttp_code:400 time:0.124770s\n\n== NO_PROXY test: proxy + NO_PROXY for feishu ==\nhttp_code:400 time:0.147858s\n- Assistant: 飞书直连和走代理都正常。之前飞书出问题是 OpenClaw 内部的 `global-agent` 补丁在 HTTPS 重定向时导致 URL 循环拼接。如果设置了 `NO_PROXY`，`global-agent` 会跳过代理，飞书流量直连，就不会触发那个 bug。\n\n方案：\n1. 开启 `proxy.enabled: true`\n2. 给 systemd 服务加 `NO_PROXY` 环境变量排除飞书域名\n3. 重启\n[non-text content: thinking, toolCall]\n- Tool result (exec): [Unit]\nDescription=OpenClaw Gateway (v2026.5.6)\nAfter=network-online.target\nWants=network-online.target\nStartLimitBurst=5\nStartLimitIntervalSec=60\n\n[Service]\nExecStart=/home/ubuntu/.nvm/versions/node/v24.14.0/bin/node /home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/index.js gateway --port 18789\nRestart=always\nRestartSec=5\nRestartPreventExitStatus=78\nTimeoutStopSec=30\nTimeoutStartSec=30\nSuccessExitStatus=0 143\nKillMode=control-group\nEnvironment=HOME=/home/ubuntu\nEnvironment=TMPDIR=/tmp\nEnvironment=NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt\nEnvironment=PATH=/h...\n- Assistant: 好，现在我来：\n1. 开启 proxy\n2. 给 systemd service 加 `NO_PROXY` 环境变量\n3. 重启\n[non-text content: toolCall]\n- Tool result (gateway): {\n  \"status\": \"error\",\n  \"tool\": \"gateway\",\n  \"error\": \"gateway config.patch cannot change protected config paths: proxy.enabled, proxy.proxyUrl\"\n}\n- Assistant: Proxy 字段被保护了，不能通过 config.patch 修改。需要直接改配置文件。\n[non-text content: toolCall]\n- Tool result (exec): proxy.enabled: True\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): Added NO_PROXY env\nsystemd reloaded\n- Assistant: 现在重启 gateway 让代理和 NO_PROXY 都生效。\n[non-text content: toolCall]\n- Tool result (gateway): {\n  \"ok\": true,\n  \"pid\": 1770114,\n  \"signal\": \"SIGUSR1\",\n  \"delayMs\": 2000,\n  \"reason\": \"开启代理让 Codex API 可达，同时 NO_PROXY 排除飞书域名避免飞书 SDK 代理 bug\",\n  \"mode\": \"emit\",\n  \"coalesced\": false,\n  \"cooldownMsApplied\": 0\n}\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): {\"0\":\"{\\\"subsystem\\\":\\\"agent/embedded\\\"}\",\"1\":{\"event\":\"embedded_run_agent_end\",\"tags\":[\"error_handling\",\"lifecycle\",\"agent_end\",\"assistant_error\"],\"runId\":\"502d62b5-cc80-4f59-823d-9a348ce563a6\",\"isError\":true,\"error\":\"LLM request failed: network connection error.\",\"failoverReason\":\"timeout\",\"model\":\"gpt-5.3-codex\",\"provider\":\"openai-codex\",\"rawErrorPreview\":\"fetch failed\",\"rawErrorHash\":\"sha256:e2c73a8fd237\",\"providerRuntimeFailureKind\":\"timeout\"},\"2\":\"embedded run agent end\",\"_meta\":{\"runtime\":\"node\",\"runtimeVersion\":\"24.14.0\",\"hostname\":\"unknown\",\"name\":\"{\\\"subsystem\\\":\\\"agent/embedded\\\"}\",...",
-        "firstKeptEntryId": "b44b609c",
-        "preCompaction": {
-          "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.checkpoint.3fa5cf56-57d9-4a66-922c-a0c0a0d6f3fb.jsonl",
-          "leafId": "8d2df7e5"
-        },
-        "postCompaction": {
-          "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.jsonl",
-          "leafId": "7ee49121",
-          "entryId": "7ee49121"
-        }
-      },
-      {
-        "checkpointId": "f3929752-ccc3-4250-8b5e-4e33a819578f",
-        "sessionKey": "agent:main:main",
-        "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-        "createdAt": 1778173484412,
-        "reason": "auto-threshold",
-        "tokensBefore": 136785,
-        "tokensAfter": 20820,
-        "summary": "## Goal\n1. 修复飞书切换 GPT/Codex 模型后报错 `⚠️ Something went wrong` 的问题\n2. 解决代理矛盾：Codex/OpenAI 需要走代理，飞书 SDK 不能走代理\n3. 排查并解决 OpenClaw/Codex OAuth `refresh_token_reused` 401 错误（已通过删除独立 CLI 解决）\n\n## Constraints & Preferences\n- 保留 OpenClaw 内置的 Codex 相关目录，不删除\n- 独立 Codex CLI 已彻底删除，不需要备份\n- 用户希望继续通过 OpenClaw 使用 Codex/GPT 模型\n- OpenClaw proxy 配置仅支持全局开关（`proxy.enabled` + `proxy.proxyUrl`），无 per-provider / no_proxy / bypass 机制\n- 飞书 SDK 走代理时会出现 URL 循环拼接 bug\n- 服务器在新加坡（腾讯云）\n\n## Progress\n### Done\n- [x] 诊断 `refresh_token_reused` 根因：独立 Codex CLI 与 OpenClaw 共用 OAuth 互踩\n- [x] 卸载全局 npm 包 `@openai/codex`，删除 `~/.codex`\n- [x] 重启 gateway 修复飞书 bot identity 探针失败（5/5→全部恢复✅）\n- [x] 确认代理 `http://127.0.0.1:7890` 可正常访问 OpenAI（返回 401，1.9s）\n- [x] 确认 DNS 解析 `api.openai.com` → `118.107.180.216`（新加坡 CDN IP）\n- [x] 确认 `models.json` 中搜索 `codex`/`openai` 无匹配条目\n\n### In Progress\n- [ ] 修复飞书切换 GPT 模型后 \"Something went wrong\" 报错\n- [ ] 解决代理矛盾（OpenAI 需代理 vs 飞书 SDK 不能走代理）\n\n### Blocked\n- `proxy.enabled: false` 导致 OpenClaw 不走代理，无法直连 OpenAI（之前直连超时）\n- 飞书 SDK 走代理时 URL 循环拼接 bug 未解决\n- `18664778270@163.com` JWT 显示 `chatgptPlanType: \"free\"`，gateway 报 `usage_limit_reached`，但用户声称该账号有 98% 额度\n\n## Key Decisions\n- **删除独立 Codex CLI**：用户确认不需要备份，直接卸载\n- **保留 OpenClaw 内置 Codex**：`~/.openclaw/agents/main/agent/codex-home` 和 `~/.openclaw/extensions/codex` 未动\n- **proxy.enabled: false**：因飞书 SDK URL 循环拼接 bug 而禁用，但导致 OpenAI 不可达\n- **飞书无反馈根因**：Codex free plan 额度耗尽 + 飞书 bot 探针失败 + 代理被禁用（网络不通）叠加\n\n## Decisions\n- 独立 Codex CLI 与 OpenClaw 共用同一 OAuth 账号导致 `refresh_token_reused`，删除独立 CLI 解决\n- 保留 OpenClaw 自身 Codex 集成不动\n- proxy 禁用是因为飞书 SDK 走代理会 URL 循环拼接；需找到方案让 OpenAI 走代理而飞书不走\n- 用户确认 `18664778270@163.com` 有 98% 额度，但 JWT/网关均显示 free plan，可能 Codex endpoint 计费独立于 ChatGPT 网页端\n\n## Open TODOs\n- 解决代理矛盾：Codex/OpenAI 需要走代理，飞书 SDK 不能走代理\n- 重新启用代理但避免飞书 SDK URL 循环拼接 bug\n- 确认 GPT/Codex 模型在飞书端正常可用\n- 排查 models.json 中为何无 codex/openai 条目\n- 排查 `18664778270@163.com` 额度问题（JWT free vs 用户声称 98%）\n- 如需换账号：用 `openclaw onboard --auth-choice openai-codex` 重新登录\n\n## Constraints/Rules\n- OpenClaw OAuth refresh 带 file lock，同 agent 下多 channel 不会互踩\n- 不同 OAuth 客户端各自维护 token 存储，会互踩\n- 认证读自单一 token sink：`~/.openclaw/agents/main/agent/auth-profiles.json`\n- 服务器直连 `api.openai.com` 之前超时（10s），DNS 解析到 `118.107.180.216`\n- 本地代理 `http://127.0.0.1:7890` 可正常访问 OpenAI\n- 飞书 SDK 走代理时 URL 循环拼接（`/open-apis/bot/v1/openclaw_bot/ping` 等路径重复）\n- OpenClaw proxy schema 无 bypass/exclude/per-provider 机制\n\n## Pending user asks\n- 修复飞书切换 GPT 模型后 `⚠️ Something went wrong` 报错，使 Codex 模型在飞书端可用\n- 确认 `18664778270@163.com` 账号额度状态\n\n## Exact identifiers\n- **npm 包**: `@openai/codex@0.128.0`\n- **已删除目录**: `~/.codex`\n- **保留目录**: `~/.openclaw/agents/main/agent/codex-home`、`~/.openclaw/extensions/codex`\n- **认证文件**: `~/.openclaw/agents/main/agent/auth-profiles.json`\n- **OAuth 锁目录**: `~/.openclaw/locks/oauth-refresh`\n- **旧 Codex 账号**: `openai-codex:ggjky5ncq5@privaterelay.appleid.com`（accountId: `bab102c0-2ee1-4855-9651-fdd6e559e628`，额度用完）\n- **新 Codex 账号**: `openai-codex:18664778270@163.com`（accountId: `ef090a9b-c79f-41bb-8023-87c48e014bf4`，chatgptPlanType: free，用户声称有 98% 额度）\n- **错误类型**: `refresh_token_reused`、`invalid_request_error`、`usage_limit_reached`\n- **额度重置时间戳**: `1778685957`（约 2026-05-11）\n- **飞书 session key 前缀**: `agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da`\n- **当前 TUI session**: `agent:main:main`（sessionId: `1dd0e478-774f-44a9-af53-19b7bf01b8c7`）\n- **飞书 bot 探针端点**: `/open-apis/bot/v1/openclaw_bot/ping`、`/open-apis/bot/v3/info`\n- **飞书 bot open_id（default）**: `ou_88935cede1df296828775f4ac68bffce`（已恢复✅）\n- **飞书 bot open_id（finance）**: `ou_f91401fc32f501f3ffd9b1b00075bd59`（已恢复✅）\n- **Codex login 回调端口冲突**: 默认 `127.0.0.1:1455` 被占用，回退到 `127.0.0.1:1457`\n- **日志文件**: `/tmp/openclaw/openclaw-2026-05-08.log`\n- **Codex TUI 日志**: `~/.codex/log/codex-tui.log`（已删除）\n- **Codex 登录日志**: `~/.codex/log/codex-login.log`（已删除）\n- **OpenClaw gateway**: `openclaw gateway --port 18789`（pid 1769026，重启后）\n- **OpenClaw 版本**: `2026.5.6 (c97b9f7)`\n- **当前默认模型**: `custom-ark-cn-beijing-volces-com/glm-5.1`\n- **Codex fallback 链**: `openai-codex/gpt-5.3-codex`, `openai-codex/gpt-5.4`, `openai-codex/gpt-5.5`, `openai-codex/gpt-5.5-pro`\n- **onboard 命令**: `openclaw onboard --auth-choice openai-codex`\n- **模型配置文件**: `~/.openclaw/agents/main/agent/models.json`\n- **配置文件**: `/home/ubuntu/.openclaw/openclaw.json`\n- **当前 proxy 配置**: `{\"enabled\":false,\"proxyUrl\":\"http://127.0.0.1:7890\"}`\n- **代理地址**: `http://127.0.0.1:7890`\n- **DNS 服务器**: `127.0.0.53`\n- **api.openai.com 解析 IP**: `118.107.180.216`（当前）、`108.160.172.1`（之前记录）\n- **OpenAI IPv6**: `2a03:2880:f126:83:face:b00c:0:25de`\n- **OpenAI API key 管理页**: `https://platform.openai.com/account/api-keys`\n- **直连测试结果**: `http_code:000 time:10.001149s`（超时）\n- **代理测试结果**: `http_code:401 time:1.966691s`（正常可达）\n- **飞书切换 GPT 报错**: `⚠️ Something went wrong while processing your request. Please try again, or use /new to start a fresh session.`\n- **LLM 错误**: `LLM request failed: network connection error.`、`fetch failed`、`providerRuntimeFailureKind: timeout`\n- **OpenClaw 模块路径**: `/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/`\n- **工作目录**: `/home/ubuntu/.openclaw/workspace`\n- **memory 文件**: `/home/ubuntu/.openclaw/workspace/memory/2026-05-07.md`\n- **SQLite 状态文件**: `~/.codex/state_5.sqlite`（已删除）、`~/.openclaw/agents/main/agent/codex-home/state_5.sqlite`\n- **诊断指标**: `eventLoopDelayP99Ms=23.5`、`eventLoopDelayMaxMs=6106.9`\n- **gateway systemd service**: `~/.config/systemd/user/openclaw-gateway.service`\n\n## Critical Context\n- 飞书切换 GPT 模型后报错的直接原因是 **proxy 被禁用** → OpenClaw 不走代理 → 无法连接 `api.openai.com` → LLM request failed\n- 飞书 bot identity 已通过重启 gateway 修复（5/5→全部成功）\n- `models.json` 中搜索 `codex`/`openai` 无匹配，可能 codex 模型配置走的是 OAuth provider 而非 models.json 中的 apiKey 方式\n- 代理矛盾是核心阻塞：需要为 OpenAI 请求走代理，同时飞书 SDK 不走代理\n\n## Recent turns preserved verbatim\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): providers\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): codex {\n  \"baseUrl\": \"https://chatgpt.com/backend-api\",\n  \"auth\": \"token\",\n  \"api\": \"openai-codex-responses\",\n  \"models\": [\n    {\n      \"id\": \"gpt-5.5\",\n      \"name\": \"gpt-5.5\",\n      \"api\": \"openai-codex-responses\",\n      \"reasoning\": true,\n      \"input\": [\n        \"text\",\n        \"image\"\n      ],\n      \"cost\": {\n        \"input\": 0,\n        \"output\": 0,\n        \"cacheRead\": 0,\n        \"cacheWrite\": 0\n      },\n      \"contextWindow\": 272000,\n      \"maxTokens\": 128000,\n      \"compat\": {\n        \"supportsReasoningEffort\": true,\n        \"supportsUsageInStreaming\": true\n      }\n    },\n    {\n      \"...\n- Assistant: Codex 的 endpoint 是 `chatgpt.com/backend-api`，不是 `api.openai.com`。我来测试直连。\n[non-text content: thinking, toolCall]\n- Tool result (exec): == direct to chatgpt.com ==\ncurl: (28) Failed to connect to chatgpt.com port 443 after 10001 ms: Timeout was reached\nhttp_code:000 time:10.001512sDIRECT_FAILED\n\n\n== via proxy to chatgpt.com ==\nhttp_code:403 time:0.582037s\n\n== NO_PROXY test: proxy on but exclude feishu ==\nno proxy env in service\n- Assistant: 确认了：\n\n- **直连 `chatgpt.com`**：❌ 超时（被墙）\n- **走代理连 `chatgpt.com`**：✅ 正常（403 是因为没带 token，正常）\n\n所以必须开 proxy，但之前开 proxy 会导致飞书 SDK 出问题。我来看看能不能通过 `NO_PROXY` 环境变量让飞书直连、其他走代理。\n[non-text content: toolCall]\n- Tool result (exec): == direct to feishu (no proxy) ==\nhttp_code:400 time:0.137203s\n\n== via proxy to feishu ==\nhttp_code:400 time:0.124770s\n\n== NO_PROXY test: proxy + NO_PROXY for feishu ==\nhttp_code:400 time:0.147858s\n- Assistant: 飞书直连和走代理都正常。之前飞书出问题是 OpenClaw 内部的 `global-agent` 补丁在 HTTPS 重定向时导致 URL 循环拼接。如果设置了 `NO_PROXY`，`global-agent` 会跳过代理，飞书流量直连，就不会触发那个 bug。\n\n方案：\n1. 开启 `proxy.enabled: true`\n2. 给 systemd 服务加 `NO_PROXY` 环境变量排除飞书域名\n3. 重启\n[non-text content: thinking, toolCall]\n- Tool result (exec): [Unit]\nDescription=OpenClaw Gateway (v2026.5.6)\nAfter=network-online.target\nWants=network-online.target\nStartLimitBurst=5\nStartLimitIntervalSec=60\n\n[Service]\nExecStart=/home/ubuntu/.nvm/versions/node/v24.14.0/bin/node /home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/index.js gateway --port 18789\nRestart=always\nRestartSec=5\nRestartPreventExitStatus=78\nTimeoutStopSec=30\nTimeoutStartSec=30\nSuccessExitStatus=0 143\nKillMode=control-group\nEnvironment=HOME=/home/ubuntu\nEnvironment=TMPDIR=/tmp\nEnvironment=NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt\nEnvironment=PATH=/h...\n- Assistant: 好，现在我来：\n1. 开启 proxy\n2. 给 systemd service 加 `NO_PROXY` 环境变量\n3. 重启\n[non-text content: toolCall]\n- Tool result (gateway): {\n  \"status\": \"error\",\n  \"tool\": \"gateway\",\n  \"error\": \"gateway config.patch cannot change protected config paths: proxy.enabled, proxy.proxyUrl\"\n}\n- Assistant: Proxy 字段被保护了，不能通过 config.patch 修改。需要直接改配置文件。\n[non-text content: toolCall]\n- Tool result (exec): proxy.enabled: True\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): Added NO_PROXY env\nsystemd reloaded\n- Assistant: 现在重启 gateway 让代理和 NO_PROXY 都生效。\n[non-text content: toolCall]\n- Tool result (gateway): {\n  \"ok\": true,\n  \"pid\": 1770114,\n  \"signal\": \"SIGUSR1\",\n  \"delayMs\": 2000,\n  \"reason\": \"开启代理让 Codex API 可达，同时 NO_PROXY 排除飞书域名避免飞书 SDK 代理 bug\",\n  \"mode\": \"emit\",\n  \"coalesced\": false,\n  \"cooldownMsApplied\": 0\n}\n- Assistant: [non-text content: toolCall]\n- Tool result (exec): {\"0\":\"{\\\"subsystem\\\":\\\"agent/embedded\\\"}\",\"1\":{\"event\":\"embedded_run_agent_end\",\"tags\":[\"error_handling\",\"lifecycle\",\"agent_end\",\"assistant_error\"],\"runId\":\"502d62b5-cc80-4f59-823d-9a348ce563a6\",\"isError\":true,\"error\":\"LLM request failed: network connection error.\",\"failoverReason\":\"timeout\",\"model\":\"gpt-5.3-codex\",\"provider\":\"openai-codex\",\"rawErrorPreview\":\"fetch failed\",\"rawErrorHash\":\"sha256:e2c73a8fd237\",\"providerRuntimeFailureKind\":\"timeout\"},\"2\":\"embedded run agent end\",\"_meta\":{\"runtime\":\"node\",\"runtimeVersion\":\"24.14.0\",\"hostname\":\"unknown\",\"name\":\"{\\\"subsystem\\\":\\\"agent/embedded\\\"}\",...",
-        "firstKeptEntryId": "b44b609c",
-        "preCompaction": {
-          "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.checkpoint.f2e96698-5eee-4682-9335-5b14d056b395.jsonl",
-          "leafId": "dc90c135"
-        },
-        "postCompaction": {
-          "sessionId": "1dd0e478-774f-44a9-af53-19b7bf01b8c7",
-          "sessionFile": "/home/ubuntu/.openclaw/agents/main/sessions/1dd0e478-774f-44a9-af53-19b7bf01b8c7.jsonl",
-          "leafId": "d79976da",
-          "entryId": "d79976da"
-        }
-      }
-    ],
-    "endedAt": 1778173577464,
-    "runtimeMs": 89514
+    "liveModelSwitchPending": true,
+    "authProfileOverride": "opencode-go:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0
   },
   "agent:main:tui-cb22698a-7062-4a89-848c-64582e43e6fd": {
     "sessionId": "a093dc4a-1f49-4984-a8a4-9c361e009138",

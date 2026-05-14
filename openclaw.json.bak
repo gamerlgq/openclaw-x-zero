@@ -72,6 +72,15 @@
         "model": {
           "primary": "opencode-go/deepseek-v4-flash"
         }
+      },
+      {
+        "id": "void",
+        "name": "void",
+        "workspace": "/home/ubuntu/.openclaw/workspace-void",
+        "agentDir": "/home/ubuntu/.openclaw/agents/void/agent",
+        "model": {
+          "primary": "opencode-go/glm-5.1"
+        }
       }
     ]
   },
@@ -149,8 +158,27 @@
               "enabled": true
             }
           },
-          "requireMention": false,
-          "streaming": false
+          "requireMention": true
+        },
+        "void": {
+          "appId": "cli_a96eca6c0e785cb6",
+          "appSecret": "K1KwePejGubRNDVxeN2TFf606BTMxAp3",
+          "domain": "feishu",
+          "connectionMode": "websocket",
+          "dmPolicy": "allowlist",
+          "allowFrom": [
+            "ou_c58332b5dc5315bbdc2170fc9f9679cd"
+          ],
+          "groupPolicy": "allowlist",
+          "groupAllowFrom": [
+            "ou_c58332b5dc5315bbdc2170fc9f9679cd"
+          ],
+          "groups": {
+            "*": {
+              "enabled": true
+            }
+          },
+          "requireMention": true
         }
       }
     }
@@ -180,7 +208,7 @@
       ],
       "browser": {
         "mode": "manual",
-        "node": "StevenGerrerrard\u7684Mac Studio"
+        "node": "StevenGerrerrard的Mac Studio"
       }
     },
     "port": 18789,
@@ -202,7 +230,7 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-05-07T15:44:44.781Z",
+    "lastTouchedAt": "2026-05-07T18:12:52.524Z",
     "lastTouchedVersion": "2026.5.6"
   },
   "models": {
@@ -337,7 +365,7 @@
       }
     },
     "exec": {
-      "host": "gateway"
+      "host": "auto"
     },
     "deny": []
   },
@@ -391,11 +419,19 @@
         "channel": "feishu",
         "accountId": "finance"
       }
+    },
+    {
+      "type": "route",
+      "agentId": "void",
+      "match": {
+        "channel": "feishu",
+        "accountId": "void"
+      }
     }
   ],
   "messages": {
     "groupChat": {
-      "visibleReplies": "message_tool"
+      "visibleReplies": "automatic"
     }
   },
   "skills": {

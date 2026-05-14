@@ -8,7 +8,7 @@
       "operator.pairing"
     ],
     "clientId": "cli",
-    "clientMode": "cli",
+    "clientMode": "probe",
     "createdAtMs": 1774539567984,
     "deviceId": "1e97034d83553185d21a7c1b41e0f69f6b880bbafd563cdf2295f5be00c94579",
     "platform": "linux",
