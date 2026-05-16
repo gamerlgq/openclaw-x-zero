@@ -10,9 +10,9 @@
       "accountId": "void"
     },
     "sessionId": "787bc827-0346-4b97-82cf-b2737d7a1a08",
-    "updatedAt": 1778758585439,
+    "updatedAt": 1778775826962,
     "sessionStartedAt": 1778752732610,
-    "lastInteractionAt": 1778758585438,
+    "lastInteractionAt": 1778775826961,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "opencode-go:default",

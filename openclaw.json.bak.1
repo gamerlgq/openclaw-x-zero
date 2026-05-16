@@ -17,12 +17,12 @@
         }
       },
       "model": {
-        "primary": "openai-codex/gpt-5.5",
+        "primary": "openai/gpt-5.5",
         "fallbacks": [
-          "openai-codex/gpt-5.3-codex",
-          "openai-codex/gpt-5.4",
-          "openai-codex/gpt-5.5",
-          "openai-codex/gpt-5.5-pro"
+          "openai/gpt-5.3-codex",
+          "openai/gpt-5.4",
+          "openai/gpt-5.5",
+          "openai/gpt-5.5-pro"
         ]
       },
       "models": {
@@ -53,12 +53,15 @@
         "opencode-go/deepseek-v4-flash": {
           "alias": "opencode-deepseek"
         },
-        "openai-codex/gpt-5.5": {},
-        "openai-codex/gpt-5.3-codex": {},
-        "openai-codex/gpt-5.4": {},
-        "openai-codex/gpt-5.5-pro": {}
+        "openai/gpt-5.5": {},
+        "openai/gpt-5.3-codex": {},
+        "openai/gpt-5.4": {},
+        "openai/gpt-5.5-pro": {}
       },
-      "workspace": "/home/ubuntu/.openclaw/workspace"
+      "workspace": "/home/ubuntu/.openclaw/workspace",
+      "agentRuntime": {
+        "id": "codex"
+      }
     },
     "list": [
       {
@@ -71,6 +74,15 @@
         "agentDir": "/home/ubuntu/.openclaw/agents/finance/agent",
         "model": {
           "primary": "opencode-go/deepseek-v4-flash"
+        }
+      },
+      {
+        "id": "void",
+        "name": "void",
+        "workspace": "/home/ubuntu/.openclaw/workspace-void",
+        "agentDir": "/home/ubuntu/.openclaw/agents/void/agent",
+        "model": {
+          "primary": "opencode-go/glm-5.1"
         }
       }
     ]
@@ -149,8 +161,27 @@
               "enabled": true
             }
           },
-          "requireMention": false,
-          "streaming": false
+          "requireMention": true
+        },
+        "void": {
+          "appId": "cli_a96eca6c0e785cb6",
+          "appSecret": "K1KwePejGubRNDVxeN2TFf606BTMxAp3",
+          "domain": "feishu",
+          "connectionMode": "websocket",
+          "dmPolicy": "allowlist",
+          "allowFrom": [
+            "ou_c58332b5dc5315bbdc2170fc9f9679cd"
+          ],
+          "groupPolicy": "allowlist",
+          "groupAllowFrom": [
+            "ou_c58332b5dc5315bbdc2170fc9f9679cd"
+          ],
+          "groups": {
+            "*": {
+              "enabled": true
+            }
+          },
+          "requireMention": true
         }
       }
     }
@@ -180,7 +211,7 @@
       ],
       "browser": {
         "mode": "manual",
-        "node": "StevenGerrerrard\u7684Mac Studio"
+        "node": "StevenGerrerrard的Mac Studio"
       }
     },
     "port": 18789,
@@ -202,8 +233,8 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-05-07T15:44:44.781Z",
-    "lastTouchedVersion": "2026.5.6"
+    "lastTouchedAt": "2026-05-14T16:23:26.988Z",
+    "lastTouchedVersion": "2026.5.7"
   },
   "models": {
     "mode": "merge",
@@ -317,6 +348,28 @@
             "maxTokens": 8192
           }
         ]
+      },
+      "openai-codex": {
+        "api": "openai-completions",
+        "baseUrl": "https://chatgpt.com",
+        "models": [
+          {
+            "id": "gpt-5.5",
+            "name": "GPT-5.5 (Codex)"
+          },
+          {
+            "id": "gpt-5.4",
+            "name": "GPT-5.4 (Codex)"
+          },
+          {
+            "id": "gpt-5.3-codex",
+            "name": "GPT-5.3 Codex"
+          },
+          {
+            "id": "gpt-5.5-pro",
+            "name": "GPT-5.5 Pro (Codex)"
+          }
+        ]
       }
     }
   },
@@ -337,15 +390,15 @@
       }
     },
     "exec": {
-      "host": "gateway"
+      "host": "auto"
     },
     "deny": []
   },
   "wizard": {
-    "lastRunAt": "2026-05-07T15:44:44.316Z",
-    "lastRunCommand": "onboard",
+    "lastRunAt": "2026-05-14T16:23:26.457Z",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local",
-    "lastRunVersion": "2026.5.6"
+    "lastRunVersion": "2026.5.7"
   },
   "acp": {
     "enabled": true,
@@ -391,11 +444,19 @@
         "channel": "feishu",
         "accountId": "finance"
       }
+    },
+    {
+      "type": "route",
+      "agentId": "void",
+      "match": {
+        "channel": "feishu",
+        "accountId": "void"
+      }
     }
   ],
   "messages": {
     "groupChat": {
-      "visibleReplies": "message_tool"
+      "visibleReplies": "automatic"
     }
   },
   "skills": {

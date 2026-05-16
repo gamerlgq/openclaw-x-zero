@@ -2,19 +2,20 @@
   "version": 1,
   "jobs": {
     "6d0015b5-0498-44a9-b2d8-faa615885204": {
-      "updatedAtMs": 1778687967870,
+      "updatedAtMs": 1778864497276,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"59 23 * * *\",\"tz\":\"Asia/Shanghai\"}}",
       "state": {
-        "lastRunAtMs": 1778687940006,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 27864,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "nextRunAtMs": 1778774340000,
+        "lastRunAtMs": 1778860740002,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 3757274,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "nextRunAtMs": 1778947140000,
         "consecutiveSkipped": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1778774340020
+        "lastDelivered": false,
+        "lastDeliveryError": "cron: job interrupted by gateway restart",
+        "runningAtMs": 1778947140001
       }
     }
   }
