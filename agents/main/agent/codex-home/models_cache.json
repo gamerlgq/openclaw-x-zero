@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-05-18T15:59:43.841896044Z",
-  "etag": "W/\"873700a10f77b476ca3c14095cbb5270\"",
+  "fetched_at": "2026-05-19T16:00:26.286309178Z",
+  "etag": "W/\"ded94703e0f764d2b456e45fcc6dd14f\"",
   "client_version": "0.128.0",
   "models": [
     {
@@ -29,7 +29,7 @@
       "shell_type": "shell_command",
       "visibility": "list",
       "supported_in_api": true,
-      "priority": 0,
+      "priority": 9,
       "additional_speed_tiers": [],
       "availability_nux": {
         "message": "GPT-5.5 is now available in Codex. It's our strongest agentic coding model yet, built to reason through large codebases, check assumptions with tools, and keep going until the work is done.\n\nLearn more: https://openai.com/index/introducing-gpt-5-5/\n\n"
@@ -92,7 +92,7 @@
       "shell_type": "shell_command",
       "visibility": "list",
       "supported_in_api": true,
-      "priority": 2,
+      "priority": 16,
       "additional_speed_tiers": [],
       "availability_nux": null,
       "upgrade": null,
@@ -153,7 +153,7 @@
       "shell_type": "shell_command",
       "visibility": "list",
       "supported_in_api": true,
-      "priority": 4,
+      "priority": 23,
       "additional_speed_tiers": [],
       "availability_nux": null,
       "upgrade": null,
@@ -214,7 +214,7 @@
       "shell_type": "shell_command",
       "visibility": "list",
       "supported_in_api": true,
-      "priority": 6,
+      "priority": 25,
       "additional_speed_tiers": [],
       "availability_nux": null,
       "upgrade": {
@@ -278,7 +278,7 @@
       "shell_type": "shell_command",
       "visibility": "list",
       "supported_in_api": true,
-      "priority": 10,
+      "priority": 29,
       "additional_speed_tiers": [],
       "availability_nux": null,
       "upgrade": {
@@ -334,7 +334,7 @@
       "shell_type": "shell_command",
       "visibility": "hide",
       "supported_in_api": true,
-      "priority": 29,
+      "priority": 43,
       "additional_speed_tiers": [],
       "availability_nux": null,
       "upgrade": null,
