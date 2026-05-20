@@ -18,21 +18,31 @@ function createCodexAppServerAgentHarness(options) {
 			};
 		},
 		runAttempt: async (params) => {
-			const { runCodexAppServerAttempt } = await import("./run-attempt-iMdlA1m8.js");
-			return runCodexAppServerAttempt(params, { pluginConfig: options?.pluginConfig });
+			const { runCodexAppServerAttempt } = await import("./run-attempt-DyLQRA61.js");
+			return runCodexAppServerAttempt(params, {
+				pluginConfig: options?.pluginConfig,
+				nativeHookRelay: { enabled: true }
+			});
+		},
+		runSideQuestion: async (params) => {
+			const { runCodexAppServerSideQuestion } = await import("./side-question-CfRPUq5X.js");
+			return runCodexAppServerSideQuestion(params, {
+				pluginConfig: options?.pluginConfig,
+				nativeHookRelay: { enabled: true }
+			});
 		},
 		compact: async (params) => {
-			const { maybeCompactCodexAppServerSession } = await import("./compact-DcR5aTxd.js");
+			const { maybeCompactCodexAppServerSession } = await import("./compact-UKyG6Pw2.js");
 			return maybeCompactCodexAppServerSession(params, { pluginConfig: options?.pluginConfig });
 		},
 		reset: async (params) => {
 			if (params.sessionFile) {
-				const { clearCodexAppServerBinding } = await import("./session-binding-DuJYTJQy.js").then((n) => n.a);
+				const { clearCodexAppServerBinding } = await import("./session-binding-DqApZIgD.js").then((n) => n.a);
 				await clearCodexAppServerBinding(params.sessionFile);
 			}
 		},
 		dispose: async () => {
-			const { clearSharedCodexAppServerClientAndWait } = await import("./shared-client-Dfk3Enm-.js").then((n) => n.r);
+			const { clearSharedCodexAppServerClientAndWait } = await import("./shared-client-DlvmoLBJ.js").then((n) => n.a);
 			await clearSharedCodexAppServerClientAndWait();
 		}
 	};

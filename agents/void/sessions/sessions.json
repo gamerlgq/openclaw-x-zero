@@ -9,15 +9,12 @@
       "to": "user:ou_c58332b5dc5315bbdc2170fc9f9679cd",
       "accountId": "void"
     },
-    "sessionId": "787bc827-0346-4b97-82cf-b2737d7a1a08",
-    "updatedAt": 1778775826962,
-    "sessionStartedAt": 1778752732610,
-    "lastInteractionAt": 1778775826961,
-    "systemSent": true,
+    "sessionId": "cf387586-c2c2-47c5-ae8b-ccd5bd675b25",
+    "updatedAt": 1779246764222,
+    "sessionStartedAt": 1779246764222,
+    "lastInteractionAt": 1779246764222,
+    "systemSent": false,
     "abortedLastRun": false,
-    "authProfileOverride": "opencode-go:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
     "chatType": "direct",
     "deliveryContext": {
       "channel": "feishu",
@@ -27,74 +24,13 @@
     "lastChannel": "feishu",
     "lastTo": "user:ou_c58332b5dc5315bbdc2170fc9f9679cd",
     "lastAccountId": "void",
-    "sessionFile": "/home/ubuntu/.openclaw/agents/void/sessions/787bc827-0346-4b97-82cf-b2737d7a1a08.jsonl",
-    "skillsSnapshot": {
-      "prompt": "Remote macOS node available (StevenGerrard的Mac Studio). Run macOS-only skills via exec host=node on that node.\n\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather, rain, temperature, and forecasts for locations or travel planning.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "acp-router"
-        },
-        {
-          "name": "browser-automation"
-        },
-        {
-          "name": "clawhub",
-          "requiredEnv": []
-        },
-        {
-          "name": "feishu-doc"
-        },
-        {
-          "name": "feishu-drive"
-        },
-        {
-          "name": "feishu-perm"
-        },
-        {
-          "name": "feishu-wiki"
-        },
-        {
-          "name": "gh-issues",
-          "primaryEnv": "GH_TOKEN",
-          "requiredEnv": []
-        },
-        {
-          "name": "github",
-          "requiredEnv": []
-        },
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "node-connect"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "taskflow"
-        },
-        {
-          "name": "taskflow-inbox-triage"
-        },
-        {
-          "name": "tmux",
-          "requiredEnv": []
-        },
-        {
-          "name": "weather",
-          "requiredEnv": []
-        }
-      ],
-      "version": 0
-    },
+    "sessionFile": "/home/ubuntu/.openclaw/agents/void/sessions/cf387586-c2c2-47c5-ae8b-ccd5bd675b25.jsonl",
     "status": "done",
     "startedAt": 1778752745577,
     "endedAt": 1778752759141,
     "runtimeMs": 13564,
     "modelProvider": "opencode-go",
     "model": "glm-5.1",
-    "contextTokens": 202752,
     "systemPromptReport": {
       "source": "run",
       "generatedAt": 1778752745382,
@@ -533,11 +469,14 @@
         ]
       }
     },
-    "inputTokens": 27014,
-    "outputTokens": 11,
     "cacheRead": 32,
     "cacheWrite": 0,
-    "totalTokens": 27046,
-    "totalTokensFresh": true
+    "totalTokensFresh": true,
+    "usageFamilyKey": "agent:void:feishu:direct:ou_c58332b5dc5315bbdc2170fc9f9679cd",
+    "usageFamilySessionIds": [
+      "787bc827-0346-4b97-82cf-b2737d7a1a08",
+      "cf387586-c2c2-47c5-ae8b-ccd5bd675b25"
+    ],
+    "compactionCount": 0
   }
 }

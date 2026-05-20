@@ -1,5 +1,5 @@
 import { CODEX_APP_SERVER_AUTH_MARKER, CODEX_BASE_URL, CODEX_PROVIDER_ID, FALLBACK_CODEX_MODELS, buildCodexModelDefinition, buildCodexProviderConfig } from "./provider-catalog.js";
-import { i as resolveCodexAppServerRuntimeOptions, r as readCodexPluginConfig } from "./config-ByrA30No.js";
+import { c as resolveCodexAppServerRuntimeOptions, s as readCodexPluginConfig } from "./config-B5pq6hEz.js";
 import { resolveCodexSystemPromptContribution } from "./prompt-overlay.js";
 import { resolvePluginConfigObject } from "openclaw/plugin-sdk/plugin-config-runtime";
 import { createSubsystemLogger } from "openclaw/plugin-sdk/core";
@@ -123,7 +123,7 @@ async function listModelsBestEffort(params) {
 	}
 }
 async function listCodexAppServerModelsLazy(options) {
-	const { listCodexAppServerModels } = await import("./models-CkowdYbm.js").then((n) => n.r);
+	const { listCodexAppServerModels } = await import("./models-C1zn2RN0.js").then((n) => n.r);
 	return listCodexAppServerModels(options);
 }
 function normalizeTimeoutMs(value) {

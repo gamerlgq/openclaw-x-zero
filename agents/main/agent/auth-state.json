@@ -9,38 +9,38 @@
   },
   "usageStats": {
     "google:default": {
+      "lastUsed": 1775371498216,
       "errorCount": 0,
-      "lastFailureAt": 1775371491731,
-      "lastUsed": 1775371498216
+      "lastFailureAt": 1775371491731
     },
     "deepseek:default": {
-      "errorCount": 1,
       "lastUsed": 1775879398170,
+      "disabledUntil": 1776018499334,
+      "disabledReason": "billing",
+      "errorCount": 1,
       "failureCounts": {
         "billing": 1
       },
-      "lastFailureAt": 1776000499334,
-      "disabledUntil": 1776018499334,
-      "disabledReason": "billing"
+      "lastFailureAt": 1776000499334
     },
     "ollama:default": {
-      "errorCount": 0,
       "lastUsed": 1776959622899,
+      "errorCount": 0,
       "lastFailureAt": 1776959622381
     },
     "opencode-go:default": {
-      "errorCount": 0,
-      "lastUsed": 1778759103413
+      "lastUsed": 1779246775298,
+      "errorCount": 0
     },
     "openai-codex:18664778270@163.com": {
-      "errorCount": 2,
       "lastUsed": 1778198470640,
+      "cooldownUntil": 1778739144614,
+      "cooldownReason": "rate_limit",
+      "errorCount": 2,
       "failureCounts": {
         "rate_limit": 2
       },
-      "lastFailureAt": 1778724744614,
-      "cooldownUntil": 1778739144614,
-      "cooldownReason": "rate_limit"
+      "lastFailureAt": 1778724744614
     }
   }
 }

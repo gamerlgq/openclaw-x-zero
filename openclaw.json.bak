@@ -17,7 +17,7 @@
         }
       },
       "model": {
-        "primary": "openai-codex/gpt-5.3-codex",
+        "primary": "openai/gpt-5.3-codex",
         "fallbacks": [
           "openai/gpt-5.3-codex",
           "openai/gpt-5.4",
@@ -54,15 +54,15 @@
           "alias": "opencode-deepseek"
         },
         "openai/gpt-5.5": {},
-        "openai/gpt-5.3-codex": {},
+        "openai/gpt-5.3-codex": {
+          "agentRuntime": {
+            "id": "codex"
+          }
+        },
         "openai/gpt-5.4": {},
-        "openai/gpt-5.5-pro": {},
-        "openai-codex/gpt-5.3-codex": {}
+        "openai/gpt-5.5-pro": {}
       },
-      "workspace": "/home/ubuntu/.openclaw/workspace",
-      "agentRuntime": {
-        "id": "codex"
-      }
+      "workspace": "/home/ubuntu/.openclaw/workspace"
     },
     "list": [
       {
@@ -184,7 +184,11 @@
           },
           "requireMention": true
         }
-      }
+      },
+      "webhookPath": "/feishu/events",
+      "reactionNotifications": "own",
+      "typingIndicator": true,
+      "resolveSenderNames": true
     }
   },
   "commands": {
@@ -234,7 +238,7 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-05-15T06:33:21.577Z",
+    "lastTouchedAt": "2026-05-20T02:29:09.141Z",
     "lastTouchedVersion": "2026.5.7"
   },
   "models": {
@@ -396,10 +400,10 @@
     "deny": []
   },
   "wizard": {
-    "lastRunAt": "2026-05-14T16:23:26.457Z",
+    "lastRunAt": "2026-05-20T02:29:08.951Z",
     "lastRunCommand": "doctor",
     "lastRunMode": "local",
-    "lastRunVersion": "2026.5.7"
+    "lastRunVersion": "2026.5.18"
   },
   "acp": {
     "enabled": true,
@@ -411,28 +415,46 @@
   "plugins": {
     "entries": {
       "deepseek": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "acpx": {
-        "enabled": true
+        "enabled": true,
+        "config": {
+          "timeoutSeconds": 120
+        }
       },
       "opencode-go": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "feishu": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "codex": {
-        "enabled": true
+        "enabled": true,
+        "config": {
+          "codexDynamicToolsProfile": "native-first",
+          "codexDynamicToolsExclude": []
+        }
       },
       "browser": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "device-pair": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "openai": {
-        "enabled": true
+        "enabled": true,
+        "config": {
+          "personality": "friendly"
+        }
+      },
+      "memory-core": {
+        "config": {}
       }
     },
     "bundledDiscovery": "compat"

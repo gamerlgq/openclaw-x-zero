@@ -1,10 +1,11 @@
-import { i as resolveCodexAppServerRuntimeOptions } from "./config-ByrA30No.js";
-import { a as buildTurnStartParams, c as createCodexDynamicToolBridge, i as buildThreadStartParams, l as applyCodexDynamicToolProfile, n as buildDeveloperInstructions, r as buildThreadResumeParams } from "./thread-lifecycle-CzllX4PU.js";
+import { c as resolveCodexAppServerRuntimeOptions } from "./config-B5pq6hEz.js";
+import { S as filterCodexDynamicTools, a as buildThreadResumeParams, b as createCodexDynamicToolBridge, i as buildDeveloperInstructions, o as buildThreadStartParams, s as buildTurnStartParams } from "./thread-lifecycle-5SBrtWFl.js";
 //#region extensions/codex/test-api.ts
 function resolveCodexPromptSnapshotAppServerOptions(pluginConfig) {
 	return resolveCodexAppServerRuntimeOptions({
 		pluginConfig,
-		env: {}
+		env: {},
+		requirementsToml: null
 	});
 }
 function buildCodexHarnessPromptSnapshot(params) {
@@ -34,8 +35,10 @@ function buildCodexHarnessPromptSnapshot(params) {
 }
 function createCodexDynamicToolSpecsForPromptSnapshot(params) {
 	return createCodexDynamicToolBridge({
-		tools: applyCodexDynamicToolProfile(params.tools, params.pluginConfig ?? {}),
-		signal: new AbortController().signal
+		tools: filterCodexDynamicTools(params.tools, params.pluginConfig ?? {}),
+		signal: new AbortController().signal,
+		loading: params.pluginConfig?.codexDynamicToolsLoading ?? "searchable",
+		directToolNames: params.directToolNames
 	}).specs;
 }
 //#endregion

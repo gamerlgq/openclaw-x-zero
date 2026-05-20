@@ -1,7 +1,37 @@
 {
   "private": true,
   "dependencies": {
-    "@openclaw/acpx": "2026.5.6",
-    "@openclaw/feishu": "2026.5.6"
+    "@openclaw/acpx": "2026.5.18",
+    "@openclaw/feishu": "2026.5.18",
+    "ajv": "8.20.0",
+    "bare-events": "2.8.3",
+    "express": "5.2.1",
+    "hono": "4.12.21",
+    "zod": "4.4.3"
+  },
+  "overrides": {
+    "axios": "1.16.0",
+    "fast-uri": "3.1.2",
+    "follow-redirects": "1.16.0",
+    "ip-address": "10.2.0",
+    "node-domexception": "npm:@nolyfill/domexception@1.0.28",
+    "uuid": "14.0.0"
+  },
+  "openclaw": {
+    "managedOverrides": [
+      "axios",
+      "fast-uri",
+      "follow-redirects",
+      "ip-address",
+      "node-domexception",
+      "uuid"
+    ],
+    "managedPeerDependencies": [
+      "ajv",
+      "bare-events",
+      "express",
+      "hono",
+      "zod"
+    ]
   }
 }
