@@ -2,20 +2,20 @@
   "version": 1,
   "jobs": {
     "6d0015b5-0498-44a9-b2d8-faa615885204": {
-      "updatedAtMs": 1779292774260,
+      "updatedAtMs": 1779379165136,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"59 23 * * *\",\"tz\":\"Asia/Shanghai\"}}",
       "state": {
-        "lastRunAtMs": 1779292740006,
+        "lastRunAtMs": 1779379140006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 34254,
+        "lastDurationMs": 25130,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "nextRunAtMs": 1779379140000,
+        "nextRunAtMs": 1779465540000,
         "consecutiveSkipped": 0,
         "lastDelivered": true,
         "lastFailureNotificationDeliveryStatus": "not-requested",
-        "runningAtMs": 1779379140000
+        "runningAtMs": 1779465540000
       }
     }
   }
