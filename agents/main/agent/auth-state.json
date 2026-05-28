@@ -5,7 +5,7 @@
     "deepseek": "deepseek:default",
     "ollama": "ollama:default",
     "opencode-go": "opencode-go:default",
-    "openai-codex": "openai-codex:18664778270@163.com"
+    "openai-codex": "openai-codex:liu382201998@gmail.com"
   },
   "usageStats": {
     "google:default": {
@@ -29,18 +29,12 @@
       "lastFailureAt": 1776959622381
     },
     "opencode-go:default": {
-      "lastUsed": 1779551957032,
+      "lastUsed": 1779948856646,
       "errorCount": 0
     },
-    "openai-codex:18664778270@163.com": {
-      "lastUsed": 1778198470640,
-      "cooldownUntil": 1778739144614,
-      "cooldownReason": "rate_limit",
-      "errorCount": 2,
-      "failureCounts": {
-        "rate_limit": 2
-      },
-      "lastFailureAt": 1778724744614
+    "openai-codex:liu382201998@gmail.com": {
+      "lastUsed": 1779956441968,
+      "errorCount": 0
     }
   }
 }

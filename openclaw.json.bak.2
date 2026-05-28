@@ -17,21 +17,13 @@
         }
       },
       "model": {
-        "primary": "openai-codex/gpt-5.3-codex",
+        "primary": "openai/gpt-5.5",
         "fallbacks": [
           "openai/gpt-5.3-codex",
-          "openai/gpt-5.4",
-          "openai/gpt-5.5",
           "openai/gpt-5.5-pro"
         ]
       },
       "models": {
-        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
-          "alias": "seed-code-2.0"
-        },
-        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-pro": {
-          "alias": "seed-pro-2.0"
-        },
         "custom-ark-cn-beijing-volces-com/Kimi-K2.6": {
           "alias": "kimi-2.6"
         },
@@ -40,9 +32,6 @@
         },
         "custom-ark-cn-beijing-volces-com/glm-5.1": {
           "alias": "ark-glm"
-        },
-        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Lite": {
-          "alias": "seed-2.0-lite"
         },
         "opencode-go/kimi-k2.6": {
           "alias": "opencode-kimi"
@@ -54,15 +43,29 @@
           "alias": "opencode-deepseek"
         },
         "openai/gpt-5.5": {},
-        "openai/gpt-5.3-codex": {},
-        "openai/gpt-5.4": {},
+        "openai/gpt-5.3-codex": {
+          "agentRuntime": {
+            "id": "codex"
+          }
+        },
         "openai/gpt-5.5-pro": {},
-        "openai-codex/gpt-5.3-codex": {}
+        "custom-ark-cn-beijing-volces-com/deepseek-v4-pro": {
+          "alias": "ark-deepseek-pro"
+        },
+        "custom-ark-cn-beijing-volces-com/deepseek-v4-flash": {
+          "alias": "ark-deepseek-flash"
+        },
+        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Code": {
+          "alias": "seed-code-2.0"
+        },
+        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-pro": {
+          "alias": "seed-pro-2.0"
+        },
+        "custom-ark-cn-beijing-volces-com/Doubao-Seed-2.0-Lite": {
+          "alias": "seed-2.0-lite"
+        }
       },
-      "workspace": "/home/ubuntu/.openclaw/workspace",
-      "agentRuntime": {
-        "id": "codex"
-      }
+      "workspace": "/home/ubuntu/.openclaw/workspace"
     },
     "list": [
       {
@@ -102,6 +105,11 @@
         "provider": "openai-codex",
         "mode": "oauth",
         "email": "18664778270@163.com"
+      },
+      "openai-codex:liu382201998@gmail.com": {
+        "provider": "openai-codex",
+        "mode": "oauth",
+        "email": "liu382201998@gmail.com"
       }
     }
   },
@@ -118,7 +126,8 @@
       ],
       "groupPolicy": "allowlist",
       "groupAllowFrom": [
-        "ou_22bcccc95a09d7521b0d7a59992738da"
+        "ou_22bcccc95a09d7521b0d7a59992738da",
+        "oc_a6f6ff2503ac4f061c086b2212f5b172"
       ],
       "groups": {
         "*": {
@@ -138,7 +147,8 @@
           ],
           "groupPolicy": "allowlist",
           "groupAllowFrom": [
-            "ou_22bcccc95a09d7521b0d7a59992738da"
+            "ou_22bcccc95a09d7521b0d7a59992738da",
+            "oc_a6f6ff2503ac4f061c086b2212f5b172"
           ],
           "groups": {
             "*": {
@@ -184,7 +194,11 @@
           },
           "requireMention": true
         }
-      }
+      },
+      "webhookPath": "/feishu/events",
+      "reactionNotifications": "own",
+      "typingIndicator": true,
+      "resolveSenderNames": true
     }
   },
   "commands": {
@@ -212,7 +226,7 @@
       ],
       "browser": {
         "mode": "manual",
-        "node": "StevenGerrerrard的Mac Studio"
+        "node": "StevenGerrerrard\u7684Mac Studio"
       }
     },
     "port": 18789,
@@ -234,8 +248,8 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-05-15T06:33:21.577Z",
-    "lastTouchedVersion": "2026.5.7"
+    "lastTouchedAt": "2026-05-28T04:07:27.338Z",
+    "lastTouchedVersion": "2026.5.26"
   },
   "models": {
     "mode": "merge",
@@ -347,6 +361,40 @@
             },
             "contextWindow": 131072,
             "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-v4-pro",
+            "name": "DeepSeek-V4-Pro (Custom Provider)",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-v4-flash",
+            "name": "DeepSeek-V4-Flash (Custom Provider)",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 8192
           }
         ]
       },
@@ -396,10 +444,10 @@
     "deny": []
   },
   "wizard": {
-    "lastRunAt": "2026-05-14T16:23:26.457Z",
-    "lastRunCommand": "doctor",
+    "lastRunAt": "2026-05-28T04:07:27.244Z",
+    "lastRunCommand": "configure",
     "lastRunMode": "local",
-    "lastRunVersion": "2026.5.7"
+    "lastRunVersion": "2026.5.26"
   },
   "acp": {
     "enabled": true,
@@ -411,28 +459,42 @@
   "plugins": {
     "entries": {
       "deepseek": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "acpx": {
-        "enabled": true
+        "enabled": true,
+        "config": {
+          "timeoutSeconds": 120
+        }
       },
       "opencode-go": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "feishu": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "codex": {
         "enabled": true
       },
       "browser": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "device-pair": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "openai": {
-        "enabled": true
+        "enabled": true,
+        "config": {
+          "personality": "friendly"
+        }
+      },
+      "memory-core": {
+        "config": {}
       }
     },
     "bundledDiscovery": "compat"

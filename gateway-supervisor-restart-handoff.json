@@ -1,0 +1,1 @@
+{"kind":"gateway-supervisor-restart-handoff","version":1,"intentId":"c6f1533b-bccc-4f1b-abb8-c00bbe7cf381","pid":293411,"processInstanceId":"97298dc1-a02b-4a8e-96de-c4712b39b7a2","createdAt":1779956446940,"expiresAt":1779956506940,"reason":"为 story-director 飞书账号添加 allowFrom: [\"*\"]，修复私聊被拦截的问题","source":"unknown","restartKind":"full-process","supervisorMode":"systemd"}

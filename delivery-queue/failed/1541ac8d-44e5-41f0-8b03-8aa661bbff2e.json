@@ -1,0 +1,54 @@
+{
+  "id": "1541ac8d-44e5-41f0-8b03-8aa661bbff2e",
+  "enqueuedAt": 1779948856896,
+  "channel": "feishu",
+  "to": "user:ou_22bcccc95a09d7521b0d7a59992738da",
+  "accountId": "default",
+  "payloads": [
+    {
+      "text": "重启完成，漫剧群白名单已生效。去群里 @我试试 ⚡️",
+      "replyToTag": false,
+      "replyToId": "restart-sentinel:agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da:agentTurn:1779948803667",
+      "audioAsVoice": false
+    }
+  ],
+  "renderedBatchPlan": {
+    "payloadCount": 1,
+    "textCount": 1,
+    "mediaCount": 0,
+    "voiceCount": 0,
+    "presentationCount": 0,
+    "interactiveCount": 0,
+    "channelDataCount": 0,
+    "items": [
+      {
+        "index": 0,
+        "kinds": [
+          "text"
+        ],
+        "text": "重启完成，漫剧群白名单已生效。去群里 @我试试 ⚡️",
+        "mediaUrls": []
+      }
+    ]
+  },
+  "threadId": null,
+  "replyToId": "restart-sentinel:agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da:agentTurn:1779948803667",
+  "mirror": {
+    "sessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+    "agentId": "main",
+    "text": "重启完成，漫剧群白名单已生效。去群里 @我试试 ⚡️",
+    "mediaUrls": [],
+    "isGroup": false
+  },
+  "session": {
+    "key": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+    "policyKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+    "conversationType": "direct",
+    "agentId": "main"
+  },
+  "retryCount": 1,
+  "platformSendStartedAt": 1779948856901,
+  "recoveryState": "send_attempt_started",
+  "lastAttemptAt": 1779948857255,
+  "lastError": "Feishu reply failed: {\"message\":\"Request failed with status code 400\",\"code\":\"ERR_BAD_REQUEST\",\"method\":\"post\",\"url\":\"https://open.feishu.cn/open-apis/im/v1/messages/restart-sentinel:agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da:agentTurn:1779948803667/reply\",\"http_status\":400,\"feishu_code\":99992354,\"feishu_msg\":\"The request you send is not a valid {open_message_id} or not exists, and the example value is {om_da5****************dfe}. Invalid ids: [restart-sentinel:agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da:agentTurn:1779948803667] . Please see field_violations for details and refer to API documentation to correct accordingly and resubmit\",\"feishu_log_id\":\"202605281414161C52CBD49EC41DE0B94C\",\"feishu_troubleshooter\":\"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202605281414161C52CBD49EC41DE0B94C&code=99992354&method_id=6936075528891236380\"} | Request failed with status code 400 | Feishu reply failed: {\"message\":\"Request failed with status code 400\",\"code\":\"ERR_BAD_REQUEST\",\"method\":\"post\",\"url\":\"https://open.feishu.cn/open-apis/im/v1/messages/restart-sentinel:agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da:agentTurn:1779948803667/reply\",\"http_status\":400,\"feishu_code\":99992354,\"feishu_msg\":\"The request you send is not a valid {open_message_id} or not exists, and the example value is {om_da5****************dfe}. Invalid ids: [restart-sentinel:agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da:agentTurn:1779948803667] . Please see field_violations for details and refer to API documentation to correct accordingly and resubmit\",\"feishu_log_id\":\"202605281414161C52CBD49EC41DE0B94C\",\"feishu_troubleshooter\":\"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202605281414161C52CBD49EC41DE0B94C&code=99992354&method_id=6936075528891236380\"} | Request failed with status code 400"
+}

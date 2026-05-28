@@ -4,47 +4,32 @@ const CODEX_BASE_URL = "https://chatgpt.com/backend-api";
 const CODEX_APP_SERVER_AUTH_MARKER = "codex-app-server";
 const DEFAULT_CONTEXT_WINDOW = 272e3;
 const DEFAULT_MAX_TOKENS = 128e3;
-const FALLBACK_CODEX_MODELS = [
-	{
-		id: "gpt-5.5",
-		model: "gpt-5.5",
-		displayName: "gpt-5.5",
-		description: "Latest frontier agentic coding model.",
-		isDefault: true,
-		inputModalities: ["text", "image"],
-		supportedReasoningEfforts: [
-			"low",
-			"medium",
-			"high",
-			"xhigh"
-		]
-	},
-	{
-		id: "gpt-5.4-mini",
-		model: "gpt-5.4-mini",
-		displayName: "GPT-5.4-Mini",
-		description: "Smaller frontier agentic coding model.",
-		inputModalities: ["text", "image"],
-		supportedReasoningEfforts: [
-			"low",
-			"medium",
-			"high",
-			"xhigh"
-		]
-	},
-	{
-		id: "gpt-5.2",
-		model: "gpt-5.2",
-		displayName: "gpt-5.2",
-		inputModalities: ["text", "image"],
-		supportedReasoningEfforts: [
-			"low",
-			"medium",
-			"high",
-			"xhigh"
-		]
-	}
-];
+const FALLBACK_CODEX_MODELS = [{
+	id: "gpt-5.5",
+	model: "gpt-5.5",
+	displayName: "gpt-5.5",
+	description: "Latest frontier agentic coding model.",
+	isDefault: true,
+	inputModalities: ["text", "image"],
+	supportedReasoningEfforts: [
+		"low",
+		"medium",
+		"high",
+		"xhigh"
+	]
+}, {
+	id: "gpt-5.4-mini",
+	model: "gpt-5.4-mini",
+	displayName: "GPT-5.4-Mini",
+	description: "Smaller frontier agentic coding model.",
+	inputModalities: ["text", "image"],
+	supportedReasoningEfforts: [
+		"low",
+		"medium",
+		"high",
+		"xhigh"
+	]
+}];
 function buildCodexModelDefinition(model) {
 	const id = model.id.trim() || model.model.trim();
 	return {

@@ -1,0 +1,54 @@
+{
+  "id": "a708e676-a1c4-4ea9-aa0d-209ad283204e",
+  "enqueuedAt": 1779956307140,
+  "channel": "feishu",
+  "to": "chat:oc_a6f6ff2503ac4f061c086b2212f5b172",
+  "accountId": "default",
+  "payloads": [
+    {
+      "text": "验证结果：\n\n- `story-director` 路由正常：`feishu accountId=story-director`\n- 模型已生效：`opencode-go/deepseek-v4-flash`\n- Feishu `story-director` 通道：`enabled / configured / running / works`\n- 旧的卡死 session 现在不在 `sessions.json` 里了，等于已清掉运行态\n- 但 Gateway 有轻微 event loop degraded：`eventLoopDelayMaxMs=2140`\n\n结论：Nova 之前卡死的主因已处理。现在可以在群里重新 @ Nova 测一次；如果还不回，再看是否是飞书事件投递问题。",
+      "replyToTag": false,
+      "replyToId": "restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956206409",
+      "audioAsVoice": false
+    }
+  ],
+  "renderedBatchPlan": {
+    "payloadCount": 1,
+    "textCount": 1,
+    "mediaCount": 0,
+    "voiceCount": 0,
+    "presentationCount": 0,
+    "interactiveCount": 0,
+    "channelDataCount": 0,
+    "items": [
+      {
+        "index": 0,
+        "kinds": [
+          "text"
+        ],
+        "text": "验证结果：\n\n- `story-director` 路由正常：`feishu accountId=story-director`\n- 模型已生效：`opencode-go/deepseek-v4-flash`\n- Feishu `story-director` 通道：`enabled / configured / running / works`\n- 旧的卡死 session 现在不在 `sessions.json` 里了，等于已清掉运行态\n- 但 Gateway 有轻微 event loop degraded：`eventLoopDelayMaxMs=2140`\n\n结论：Nova 之前卡死的主因已处理。现在可以在群里重新 @ Nova 测一次；如果还不回，再看是否是飞书事件投递问题。",
+        "mediaUrls": []
+      }
+    ]
+  },
+  "threadId": null,
+  "replyToId": "restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956206409",
+  "mirror": {
+    "sessionKey": "agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172",
+    "agentId": "main",
+    "text": "验证结果：\n\n- `story-director` 路由正常：`feishu accountId=story-director`\n- 模型已生效：`opencode-go/deepseek-v4-flash`\n- Feishu `story-director` 通道：`enabled / configured / running / works`\n- 旧的卡死 session 现在不在 `sessions.json` 里了，等于已清掉运行态\n- 但 Gateway 有轻微 event loop degraded：`eventLoopDelayMaxMs=2140`\n\n结论：Nova 之前卡死的主因已处理。现在可以在群里重新 @ Nova 测一次；如果还不回，再看是否是飞书事件投递问题。",
+    "mediaUrls": [],
+    "isGroup": false
+  },
+  "session": {
+    "key": "agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172",
+    "policyKey": "agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172",
+    "conversationType": "group",
+    "agentId": "main"
+  },
+  "retryCount": 1,
+  "platformSendStartedAt": 1779956307145,
+  "recoveryState": "send_attempt_started",
+  "lastAttemptAt": 1779956307509,
+  "lastError": "Feishu reply failed: {\"message\":\"Request failed with status code 400\",\"code\":\"ERR_BAD_REQUEST\",\"method\":\"post\",\"url\":\"https://open.feishu.cn/open-apis/im/v1/messages/restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956206409/reply\",\"http_status\":400,\"feishu_code\":99992354,\"feishu_msg\":\"The request you send is not a valid {open_message_id} or not exists, and the example value is {om_da5****************dfe}. Invalid ids: [restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956206409] . Please see field_violations for details and refer to API documentation to correct accordingly and resubmit\",\"feishu_log_id\":\"2026052816182790F132C46273A1577007\",\"feishu_troubleshooter\":\"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2026052816182790F132C46273A1577007&code=99992354&method_id=6936075528891236380\"} | Request failed with status code 400 | Feishu reply failed: {\"message\":\"Request failed with status code 400\",\"code\":\"ERR_BAD_REQUEST\",\"method\":\"post\",\"url\":\"https://open.feishu.cn/open-apis/im/v1/messages/restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956206409/reply\",\"http_status\":400,\"feishu_code\":99992354,\"feishu_msg\":\"The request you send is not a valid {open_message_id} or not exists, and the example value is {om_da5****************dfe}. Invalid ids: [restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956206409] . Please see field_violations for details and refer to API documentation to correct accordingly and resubmit\",\"feishu_log_id\":\"2026052816182790F132C46273A1577007\",\"feishu_troubleshooter\":\"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2026052816182790F132C46273A1577007&code=99992354&method_id=6936075528891236380\"} | Request failed with status code 400"
+}

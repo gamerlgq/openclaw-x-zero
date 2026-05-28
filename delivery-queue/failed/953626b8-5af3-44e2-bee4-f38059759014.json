@@ -1,0 +1,54 @@
+{
+  "id": "953626b8-5af3-44e2-bee4-f38059759014",
+  "enqueuedAt": 1779954001107,
+  "channel": "feishu",
+  "to": "chat:oc_a6f6ff2503ac4f061c086b2212f5b172",
+  "accountId": "default",
+  "payloads": [
+    {
+      "text": "绑定成功。\n\n已验证：\n- `story-director` 账号存在\n- Secret 已写入本地配置\n- 路由存在：`feishu accountId=story-director -> story-director`\n- `openclaw agents list --bindings` 显示 `Routing rules: 1`\n- gateway 已重启生效\n\n没有回显或记录 Secret。",
+      "replyToTag": false,
+      "replyToId": "restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779953866661",
+      "audioAsVoice": false
+    }
+  ],
+  "renderedBatchPlan": {
+    "payloadCount": 1,
+    "textCount": 1,
+    "mediaCount": 0,
+    "voiceCount": 0,
+    "presentationCount": 0,
+    "interactiveCount": 0,
+    "channelDataCount": 0,
+    "items": [
+      {
+        "index": 0,
+        "kinds": [
+          "text"
+        ],
+        "text": "绑定成功。\n\n已验证：\n- `story-director` 账号存在\n- Secret 已写入本地配置\n- 路由存在：`feishu accountId=story-director -> story-director`\n- `openclaw agents list --bindings` 显示 `Routing rules: 1`\n- gateway 已重启生效\n\n没有回显或记录 Secret。",
+        "mediaUrls": []
+      }
+    ]
+  },
+  "threadId": null,
+  "replyToId": "restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779953866661",
+  "mirror": {
+    "sessionKey": "agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172",
+    "agentId": "main",
+    "text": "绑定成功。\n\n已验证：\n- `story-director` 账号存在\n- Secret 已写入本地配置\n- 路由存在：`feishu accountId=story-director -> story-director`\n- `openclaw agents list --bindings` 显示 `Routing rules: 1`\n- gateway 已重启生效\n\n没有回显或记录 Secret。",
+    "mediaUrls": [],
+    "isGroup": false
+  },
+  "session": {
+    "key": "agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172",
+    "policyKey": "agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172",
+    "conversationType": "group",
+    "agentId": "main"
+  },
+  "retryCount": 1,
+  "platformSendStartedAt": 1779954001113,
+  "recoveryState": "send_attempt_started",
+  "lastAttemptAt": 1779954001482,
+  "lastError": "Feishu reply failed: {\"message\":\"Request failed with status code 400\",\"code\":\"ERR_BAD_REQUEST\",\"method\":\"post\",\"url\":\"https://open.feishu.cn/open-apis/im/v1/messages/restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779953866661/reply\",\"http_status\":400,\"feishu_code\":99992354,\"feishu_msg\":\"The request you send is not a valid {open_message_id} or not exists, and the example value is {om_da5****************dfe}. Invalid ids: [restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779953866661] . Please see field_violations for details and refer to API documentation to correct accordingly and resubmit\",\"feishu_log_id\":\"2026052815400101A9694BD43089FC5BEF\",\"feishu_troubleshooter\":\"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2026052815400101A9694BD43089FC5BEF&code=99992354&method_id=6936075528891236380\"} | Request failed with status code 400 | Feishu reply failed: {\"message\":\"Request failed with status code 400\",\"code\":\"ERR_BAD_REQUEST\",\"method\":\"post\",\"url\":\"https://open.feishu.cn/open-apis/im/v1/messages/restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779953866661/reply\",\"http_status\":400,\"feishu_code\":99992354,\"feishu_msg\":\"The request you send is not a valid {open_message_id} or not exists, and the example value is {om_da5****************dfe}. Invalid ids: [restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779953866661] . Please see field_violations for details and refer to API documentation to correct accordingly and resubmit\",\"feishu_log_id\":\"2026052815400101A9694BD43089FC5BEF\",\"feishu_troubleshooter\":\"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2026052815400101A9694BD43089FC5BEF&code=99992354&method_id=6936075528891236380\"} | Request failed with status code 400"
+}

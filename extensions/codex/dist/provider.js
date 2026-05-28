@@ -1,9 +1,9 @@
 import { CODEX_APP_SERVER_AUTH_MARKER, CODEX_BASE_URL, CODEX_PROVIDER_ID, FALLBACK_CODEX_MODELS, buildCodexModelDefinition, buildCodexProviderConfig } from "./provider-catalog.js";
-import { c as resolveCodexAppServerRuntimeOptions, s as readCodexPluginConfig } from "./config-B5pq6hEz.js";
+import { c as readCodexPluginConfig, l as resolveCodexAppServerRuntimeOptions } from "./config-0-UN67Qg.js";
 import { resolveCodexSystemPromptContribution } from "./prompt-overlay.js";
 import { resolvePluginConfigObject } from "openclaw/plugin-sdk/plugin-config-runtime";
-import { createSubsystemLogger } from "openclaw/plugin-sdk/core";
 import { normalizeModelCompat } from "openclaw/plugin-sdk/provider-model-shared";
+import { createSubsystemLogger } from "openclaw/plugin-sdk/core";
 //#region extensions/codex/provider.ts
 const DEFAULT_DISCOVERY_TIMEOUT_MS = 2500;
 const LIVE_DISCOVERY_ENV = "OPENCLAW_CODEX_DISCOVERY_LIVE";
@@ -123,7 +123,7 @@ async function listModelsBestEffort(params) {
 	}
 }
 async function listCodexAppServerModelsLazy(options) {
-	const { listCodexAppServerModels } = await import("./models-C1zn2RN0.js").then((n) => n.r);
+	const { listCodexAppServerModels } = await import("./models-_XwpqjR8.js").then((n) => n.r);
 	return listCodexAppServerModels(options);
 }
 function normalizeTimeoutMs(value) {
@@ -144,7 +144,7 @@ function isKnownXHighCodexModel(modelId) {
 }
 function isModernCodexModel(modelId) {
 	const lower = modelId.trim().toLowerCase();
-	return lower === "gpt-5.5" || lower === "gpt-5.4" || lower === "gpt-5.4-mini" || lower === "gpt-5.2";
+	return lower === "gpt-5.5" || lower === "gpt-5.4" || lower === "gpt-5.4-mini" || lower === "gpt-5.3-codex-spark";
 }
 //#endregion
 export { buildCodexProvider, buildCodexProviderCatalog, isModernCodexModel };

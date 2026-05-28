@@ -55,12 +55,28 @@ _这里记录重要的事情、偏好、决定、教训_
 
 - **服务器位置**: 大陆（腾讯云），需翻墙访问 OpenAI
 - **Clash 代理**: `http://127.0.0.1:7890`
-- **OpenClaw 代理配置**: `proxy.enabled: true`, `proxy.proxyUrl: http://127.0.0.1:7890`
-- **⚠️ NO_PROXY Patch 必需**: OpenClaw `proxy.enabled=true` 时会清空 `NO_PROXY`，导致飞书 SDK 走代理触发 URL 循环拼接 bug
-  - Patch 文件: `/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/proxy-lifecycle-CTU4IpEB.js` 第73行
-  - 原代码: `for (const key of NO_PROXY_ENV_KEYS) process.env[key] = "";`
-  - 替换为保留 `NO_PROXY=open.feishu.cn,*.feishu.cn,*.larksuite.com,127.0.0.1,localhost` + `GLOBAL_AGENT_NO_PROXY`
-  - **OpenClaw 升级后需重新打 patch**
+- **OpenClaw 代理配置**: `proxy.enabled: true`（当前开启，VMess 节点可用）
+- **Clash 节点**: 已从 Trojan-SG 切换为 VMess-US（`190.92.207.174:39113`），旧配置备份为 `config.yaml.trojan.bak`
+- **Clash Restart=always**: 防止进程静默退出
+- **Clash 规则**: 国内 API + 飞书走 DIRECT，海外走 Proxy
+- **⚠️ NO_PROXY Patch**: OpenClaw `proxy.enabled=true` 时会清空 `NO_PROXY`
+  - 当前 patch 文件: `/home/ubuntu/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/dist/proxy-lifecycle-CZCC_XuX.js`
+  - 替换 `for (const key of NO_PROXY_ENV_KEYS) process.env[key] = "";` 为保留飞书+火山域名
+  - **OpenClaw 升级后文件名会变，需重新查找并打 patch**
+- **使用国内模型(opencode-go/glm-5.1等)时**: 不需要开代理，保持 `proxy.enabled=false` 也可以
+- **使用海外模型(OpenAI/Codex)时**: 需要开代理，VMess 节点可用
+
+## 火山引擎模型配置
+
+- **Provider**: custom-ark-cn-beijing-volces-com
+- **当前模型列表**:
+  - MiniMax-M2.7 (alias: minimax-2.7)
+  - Kimi-K2.6 (alias: kimi-2.6)
+  - glm-5.1 (alias: ark-glm)
+  - deepseek-v4-pro (alias: ark-deepseek-pro) ← 新增
+  - deepseek-v4-flash (alias: ark-deepseek-flash) ← 新增
+  - 已删除: Doubao-Seed-2.0-Code, Doubao-Seed-2.0-pro, Doubao-Seed-2.0-Lite
+  - 已删除: deepseek-v3.2（确认原本就不存在）
 
 ## Codex 账号
 

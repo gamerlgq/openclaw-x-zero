@@ -1,9 +1,12 @@
 import { CODEX_PROVIDER_ID, FALLBACK_CODEX_MODELS } from "./provider-catalog.js";
-import { c as resolveCodexAppServerRuntimeOptions } from "./config-B5pq6hEz.js";
-import { i as assertCodexTurnStartResponse, l as readCodexTurnCompletedNotification, o as readCodexErrorNotification, r as assertCodexThreadStartResponse } from "./protocol-validators-BGBspNmF.js";
-import { i as readModelListResult } from "./models-C1zn2RN0.js";
-import { t as isJsonObject } from "./protocol-C9UWI98H.js";
+import "./client-factory-fW4Hh9q_.js";
+import { l as resolveCodexAppServerRuntimeOptions } from "./config-0-UN67Qg.js";
+import { i as assertCodexTurnStartResponse, l as readCodexTurnCompletedNotification, o as readCodexErrorNotification, r as assertCodexThreadStartResponse } from "./protocol-validators-DtjYmUw_.js";
+import { i as readModelListResult } from "./models-_XwpqjR8.js";
+import { l as isJsonObject } from "./client-BVK_jmHW.js";
+import { r as buildCodexRuntimeThreadConfig } from "./thread-lifecycle-CUXQezJL.js";
 import { validateJsonSchemaValue } from "openclaw/plugin-sdk/json-schema-runtime";
+import "openclaw/plugin-sdk/media-understanding";
 //#region extensions/codex/media-understanding-provider.ts
 const DEFAULT_CODEX_IMAGE_MODEL = FALLBACK_CODEX_MODELS.find((model) => model.inputModalities.includes("image"))?.id ?? FALLBACK_CODEX_MODELS[0]?.id;
 const DEFAULT_CODEX_IMAGE_PROMPT = "Describe the image.";
@@ -62,7 +65,7 @@ async function runBoundedCodexVisionTurn(params) {
 	const appServer = resolveCodexAppServerRuntimeOptions({ pluginConfig: params.options.pluginConfig });
 	const timeoutMs = Math.max(100, params.timeoutMs);
 	const ownsClient = !params.options.clientFactory;
-	const client = params.options.clientFactory ? await params.options.clientFactory(appServer.start, params.profile) : await import("./shared-client-DlvmoLBJ.js").then((n) => n.a).then(({ createIsolatedCodexAppServerClient }) => createIsolatedCodexAppServerClient({
+	const client = params.options.clientFactory ? await params.options.clientFactory(appServer.start, params.profile) : await import("./shared-client-8kIrP817.js").then((n) => n.s).then(({ createIsolatedCodexAppServerClient }) => createIsolatedCodexAppServerClient({
 		startOptions: appServer.start,
 		timeoutMs,
 		authProfileId: params.profile
@@ -86,6 +89,8 @@ async function runBoundedCodexVisionTurn(params) {
 			sandbox: "read-only",
 			serviceName: "OpenClaw",
 			developerInstructions: params.developerInstructions,
+			config: buildCodexRuntimeThreadConfig(void 0, { nativeCodeModeEnabled: false }),
+			environments: [],
 			dynamicTools: [],
 			experimentalRawEvents: true,
 			persistExtendedHistory: false,

@@ -1,0 +1,54 @@
+{
+  "id": "4c210fe9-0e5b-49b8-a067-e4fe4d698ad3",
+  "enqueuedAt": 1779956211900,
+  "channel": "feishu",
+  "to": "chat:oc_a6f6ff2503ac4f061c086b2212f5b172",
+  "accountId": "default",
+  "payloads": [
+    {
+      "text": "已定位并处理一层核心故障：\n\nNova/story-director 不是没收到群消息。它收到了，但在调用工具后被模型侧打崩：\n\n`thinking is enabled but reasoning_content is missing...`\n\n这是 `opencode-go/kimi-k2.6` / Moonshot 的工具调用兼容问题，不是飞书权限问题。\n\n我已处理：\n- story-director 模型从 `opencode-go/kimi-k2.6`\n- 切到 `opencode-go/deepseek-v4-flash`\n- 已重启 Gateway 让配置生效\n\n下一步我继续验证通道和 session 状态。",
+      "replyToTag": false,
+      "replyToId": "restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956019797",
+      "audioAsVoice": false
+    }
+  ],
+  "renderedBatchPlan": {
+    "payloadCount": 1,
+    "textCount": 1,
+    "mediaCount": 0,
+    "voiceCount": 0,
+    "presentationCount": 0,
+    "interactiveCount": 0,
+    "channelDataCount": 0,
+    "items": [
+      {
+        "index": 0,
+        "kinds": [
+          "text"
+        ],
+        "text": "已定位并处理一层核心故障：\n\nNova/story-director 不是没收到群消息。它收到了，但在调用工具后被模型侧打崩：\n\n`thinking is enabled but reasoning_content is missing...`\n\n这是 `opencode-go/kimi-k2.6` / Moonshot 的工具调用兼容问题，不是飞书权限问题。\n\n我已处理：\n- story-director 模型从 `opencode-go/kimi-k2.6`\n- 切到 `opencode-go/deepseek-v4-flash`\n- 已重启 Gateway 让配置生效\n\n下一步我继续验证通道和 session 状态。",
+        "mediaUrls": []
+      }
+    ]
+  },
+  "threadId": null,
+  "replyToId": "restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956019797",
+  "mirror": {
+    "sessionKey": "agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172",
+    "agentId": "main",
+    "text": "已定位并处理一层核心故障：\n\nNova/story-director 不是没收到群消息。它收到了，但在调用工具后被模型侧打崩：\n\n`thinking is enabled but reasoning_content is missing...`\n\n这是 `opencode-go/kimi-k2.6` / Moonshot 的工具调用兼容问题，不是飞书权限问题。\n\n我已处理：\n- story-director 模型从 `opencode-go/kimi-k2.6`\n- 切到 `opencode-go/deepseek-v4-flash`\n- 已重启 Gateway 让配置生效\n\n下一步我继续验证通道和 session 状态。",
+    "mediaUrls": [],
+    "isGroup": false
+  },
+  "session": {
+    "key": "agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172",
+    "policyKey": "agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172",
+    "conversationType": "group",
+    "agentId": "main"
+  },
+  "retryCount": 1,
+  "platformSendStartedAt": 1779956211907,
+  "recoveryState": "send_attempt_started",
+  "lastAttemptAt": 1779956212223,
+  "lastError": "Feishu reply failed: {\"message\":\"Request failed with status code 400\",\"code\":\"ERR_BAD_REQUEST\",\"method\":\"post\",\"url\":\"https://open.feishu.cn/open-apis/im/v1/messages/restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956019797/reply\",\"http_status\":400,\"feishu_code\":99992354,\"feishu_msg\":\"The request you send is not a valid {open_message_id} or not exists, and the example value is {om_da5****************dfe}. Invalid ids: [restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956019797] . Please see field_violations for details and refer to API documentation to correct accordingly and resubmit\",\"feishu_log_id\":\"2026052816165107E78A9013F6D2F37D22\",\"feishu_troubleshooter\":\"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2026052816165107E78A9013F6D2F37D22&code=99992354&method_id=6936075528891236380\"} | Request failed with status code 400 | Feishu reply failed: {\"message\":\"Request failed with status code 400\",\"code\":\"ERR_BAD_REQUEST\",\"method\":\"post\",\"url\":\"https://open.feishu.cn/open-apis/im/v1/messages/restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956019797/reply\",\"http_status\":400,\"feishu_code\":99992354,\"feishu_msg\":\"The request you send is not a valid {open_message_id} or not exists, and the example value is {om_da5****************dfe}. Invalid ids: [restart-sentinel:agent:main:feishu:group:oc_a6f6ff2503ac4f061c086b2212f5b172:agentTurn:1779956019797] . Please see field_violations for details and refer to API documentation to correct accordingly and resubmit\",\"feishu_log_id\":\"2026052816165107E78A9013F6D2F37D22\",\"feishu_troubleshooter\":\"排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2026052816165107E78A9013F6D2F37D22&code=99992354&method_id=6936075528891236380\"} | Request failed with status code 400"
+}

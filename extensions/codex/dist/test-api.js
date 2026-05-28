@@ -1,5 +1,6 @@
-import { c as resolveCodexAppServerRuntimeOptions } from "./config-B5pq6hEz.js";
-import { S as filterCodexDynamicTools, a as buildThreadResumeParams, b as createCodexDynamicToolBridge, i as buildDeveloperInstructions, o as buildThreadStartParams, s as buildTurnStartParams } from "./thread-lifecycle-5SBrtWFl.js";
+import { l as resolveCodexAppServerRuntimeOptions } from "./config-0-UN67Qg.js";
+import { a as buildDeveloperInstructions, l as buildTurnStartParams, o as buildThreadResumeParams, s as buildThreadStartParams } from "./thread-lifecycle-CUXQezJL.js";
+import { n as filterCodexDynamicTools, t as createCodexDynamicToolBridge } from "./dynamic-tools-DlEefKNQ.js";
 //#region extensions/codex/test-api.ts
 function resolveCodexPromptSnapshotAppServerOptions(pluginConfig) {
 	return resolveCodexAppServerRuntimeOptions({
@@ -9,7 +10,7 @@ function resolveCodexPromptSnapshotAppServerOptions(pluginConfig) {
 	});
 }
 function buildCodexHarnessPromptSnapshot(params) {
-	const developerInstructions = buildDeveloperInstructions(params.attempt);
+	const developerInstructions = joinPresentSections(buildDeveloperInstructions(params.attempt, { dynamicTools: params.dynamicTools }), params.developerInstructionAdditions);
 	return {
 		developerInstructions,
 		threadStartParams: buildThreadStartParams(params.attempt, {
@@ -29,9 +30,14 @@ function buildCodexHarnessPromptSnapshot(params) {
 			threadId: params.threadId,
 			cwd: params.cwd,
 			appServer: params.appServer,
-			promptText: params.promptText
+			promptText: params.promptText,
+			turnScopedDeveloperInstructions: params.turnScopedDeveloperInstructions,
+			heartbeatCollaborationInstructions: params.heartbeatCollaborationInstructions
 		})
 	};
+}
+function joinPresentSections(...sections) {
+	return sections.filter((section) => Boolean(section?.trim())).join("\n\n");
 }
 function createCodexDynamicToolSpecsForPromptSnapshot(params) {
 	return createCodexDynamicToolBridge({
