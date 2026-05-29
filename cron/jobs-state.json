@@ -2,31 +2,20 @@
   "version": 1,
   "jobs": {
     "6d0015b5-0498-44a9-b2d8-faa615885204": {
-      "updatedAtMs": 1779898419023,
+      "updatedAtMs": 1779984445997,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"59 23 * * *\",\"tz\":\"Asia/Shanghai\"}}",
       "state": {
-        "lastRunAtMs": 1779897540007,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 879016,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 3,
-        "nextRunAtMs": 1779983940000,
+        "lastRunAtMs": 1779983940004,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 505993,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1780070340000,
         "consecutiveSkipped": 0,
-        "lastFailureNotificationDeliveryStatus": "unknown",
-        "lastDiagnostics": {
-          "summary": "stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)",
-          "entries": [
-            {
-              "ts": 1779898419015,
-              "source": "agent-run",
-              "severity": "error",
-              "message": "stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)"
-            }
-          ]
-        },
-        "lastDiagnosticSummary": "stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)",
-        "runningAtMs": 1779983940001
+        "lastFailureNotificationDeliveryStatus": "not-requested",
+        "lastDelivered": true,
+        "runningAtMs": 1780070340000
       }
     }
   }
