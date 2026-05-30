@@ -146,7 +146,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "jam",
@@ -170,7 +170,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "stripe",
@@ -194,7 +194,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "game-studio",
@@ -204,9 +204,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "superpowers",
@@ -216,9 +217,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "box",
@@ -241,7 +243,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "circleci",
@@ -253,7 +255,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "google-drive",
@@ -300,7 +302,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "sentry",
@@ -312,7 +314,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "build-ios-apps",
@@ -322,9 +324,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "build-macos-apps",
@@ -334,9 +337,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "build-web-apps",
@@ -346,9 +350,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_USE"
+        "authentication": "ON_USE",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "build-web-data-visualization",
@@ -358,9 +363,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_USE"
+        "authentication": "ON_USE",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "test-android-apps",
@@ -370,9 +376,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "life-science-research",
@@ -394,7 +401,8 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
       "category": "Research"
     },
@@ -406,9 +414,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "coderabbit",
@@ -418,9 +427,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "neon-postgres",
@@ -432,7 +442,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "remotion",
@@ -442,7 +452,8 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
       "category": "Design"
     },
@@ -454,9 +465,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "alpaca",
@@ -612,7 +624,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "cogedim",
@@ -876,7 +888,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "hubspot",
@@ -912,7 +924,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "mem",
@@ -1116,7 +1128,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "ranked-ai",
@@ -1212,7 +1224,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "setu-bharat-connect-billpay",
@@ -1260,7 +1272,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "streak",
@@ -1344,7 +1356,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "waldo",
@@ -1392,7 +1404,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "render",
@@ -1404,7 +1416,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "temporal",
@@ -1416,7 +1428,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "hyperframes",
@@ -1426,7 +1438,8 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
       "category": "Design"
     },
@@ -1452,7 +1465,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "codex-security",
@@ -1462,9 +1475,10 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
-      "category": "Coding"
+      "category": "Security"
     },
     {
       "name": "twilio-developer-kit",
@@ -1476,7 +1490,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Coding"
+      "category": "Developer Tools"
     },
     {
       "name": "openai-developers",
@@ -1486,7 +1500,8 @@
       },
       "policy": {
         "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
+        "authentication": "ON_INSTALL",
+        "products": ["CODEX"]
       },
       "category": "Engineering"
     },
@@ -1615,6 +1630,18 @@
       "source": {
         "source": "local",
         "path": "./plugins/mixpanel"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "mixpanel-headless",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mixpanel-headless"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -1753,6 +1780,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "convex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/convex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }
