@@ -759,18 +759,18 @@
     "totalTokens": 21126
   },
   "agent:story-director:feishu:direct:ou_9621ec0c31a28c992d3a42d6603940ac": {
-    "origin": {
-      "label": "feishu:ou_9621ec0c31a28c992d3a42d6603940ac",
-      "provider": "feishu",
-      "surface": "feishu",
-      "chatType": "direct",
-      "from": "feishu:ou_9621ec0c31a28c992d3a42d6603940ac",
-      "to": "ou_9621ec0c31a28c992d3a42d6603940ac",
-      "accountId": "story-director"
-    },
-    "sessionId": "6f8f5af0-2386-443f-b258-ba67c7a01c7e",
-    "updatedAt": 1780156727723,
-    "sessionStartedAt": 1780152197634,
+    "sessionId": "8b91e0f9-e35d-4f00-870f-25dd21742d37",
+    "updatedAt": 1780207240895,
+    "sessionStartedAt": 1780188638533,
+    "lastInteractionAt": 1780207082700,
+    "systemSent": true,
+    "abortedLastRun": false,
+    "usageFamilyKey": "agent:story-director:feishu:direct:ou_9621ec0c31a28c992d3a42d6603940ac",
+    "usageFamilySessionIds": [
+      "6f8f5af0-2386-443f-b258-ba67c7a01c7e",
+      "8b91e0f9-e35d-4f00-870f-25dd21742d37"
+    ],
+    "chatType": "direct",
     "route": {
       "channel": "feishu",
       "accountId": "story-director",
@@ -786,11 +786,17 @@
     "lastChannel": "feishu",
     "lastTo": "user:ou_9621ec0c31a28c992d3a42d6603940ac",
     "lastAccountId": "story-director",
-    "lastInteractionAt": 1780156576456,
-    "systemSent": true,
-    "abortedLastRun": false,
-    "chatType": "direct",
-    "sessionFile": "/home/ubuntu/.openclaw/agents/story-director/sessions/6f8f5af0-2386-443f-b258-ba67c7a01c7e.jsonl",
+    "origin": {
+      "label": "feishu:ou_9621ec0c31a28c992d3a42d6603940ac",
+      "provider": "feishu",
+      "surface": "feishu",
+      "chatType": "direct",
+      "from": "feishu:ou_9621ec0c31a28c992d3a42d6603940ac",
+      "to": "ou_9621ec0c31a28c992d3a42d6603940ac",
+      "accountId": "story-director"
+    },
+    "sessionFile": "/home/ubuntu/.openclaw/agents/story-director/sessions/8b91e0f9-e35d-4f00-870f-25dd21742d37.jsonl",
+    "compactionCount": 2,
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>acp-router</name>\n    <description>Route plain-language requests for Pi, Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (&quot;telephone game&quot; flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.</description>\n    <location>~/.openclaw/plugin-skills/acp-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>browser-automation</name>\n    <description>Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.</description>\n    <location>~/.openclaw/plugin-skills/browser-automation/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>canvas</name>\n    <description>Present HTML on connected OpenClaw node canvases, navigate/eval/snapshot, and debug canvas host URLs.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/canvas/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>diagram-maker</name>\n    <description>Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/diagram-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.</description>\n    <location>~/.openclaw/plugin-skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.</description>\n    <location>~/.openclaw/plugin-skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.</description>\n    <location>~/.openclaw/plugin-skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, select candidates, spawn background fix agents, open PRs, and optionally process PR review comments.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>GitHub CLI for issues, PRs, CI/check logs, comments, reviews, releases, repos, and gh api queries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Audit/harden OpenClaw hosts: SSH, firewall, updates, exposure, backups, disk encryption, gateway security.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>meme-maker</name>\n    <description>Search meme templates, suggest formats, and generate local or hosted image memes.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/meme-maker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-inspect-debugger</name>\n    <description>Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/node-inspect-debugger/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>python-debugpy</name>\n    <description>Debug Python with pdb, breakpoint(), post-mortem inspection, and debugpy remote attach.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/python-debugpy/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, audit, tidy, validate, or restructure AgentSkills and SKILL.md files.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>spike</name>\n    <description>Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/spike/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow</name>\n    <description>Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>taskflow-inbox-triage</name>\n    <description>Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/taskflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Control tmux sessions/panes for interactive CLIs: list, capture output, send keys, paste text, monitor prompts.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Current weather and forecasts with wttr.in via curl for locations, rain, temperature, travel planning.</description>\n    <location>~/.nvm/versions/node/v24.14.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
@@ -873,21 +879,20 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1780156577146,
+    "startedAt": 1780207083319,
     "modelOverride": "gpt-5.5",
     "providerOverride": "openai",
     "modelOverrideSource": "user",
-    "liveModelSwitchPending": true,
     "authProfileOverride": "openai-codex:liu382201998@gmail.com",
     "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
+    "authProfileOverrideCompactionCount": 2,
     "modelProvider": "openai-codex",
     "model": "gpt-5.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1780156577525,
-      "sessionId": "6f8f5af0-2386-443f-b258-ba67c7a01c7e",
+      "generatedAt": 1780207083701,
+      "sessionId": "8b91e0f9-e35d-4f00-870f-25dd21742d37",
       "sessionKey": "agent:story-director:feishu:direct:ou_9621ec0c31a28c992d3a42d6603940ac",
       "provider": "openai-codex",
       "model": "gpt-5.5",
@@ -1369,14 +1374,16 @@
         ]
       }
     },
-    "inputTokens": 8516,
-    "outputTokens": 4,
-    "cacheRead": 134528,
-    "cacheWrite": 0,
     "estimatedCostUsd": 0,
-    "totalTokens": 143044,
+    "totalTokens": 238969,
     "totalTokensFresh": true,
-    "endedAt": 1780156727710,
-    "runtimeMs": 150564
+    "memoryFlushAt": 1780195122883,
+    "memoryFlushCompactionCount": 2,
+    "inputTokens": 4089,
+    "outputTokens": 4,
+    "cacheRead": 234880,
+    "cacheWrite": 0,
+    "endedAt": 1780207240886,
+    "runtimeMs": 157567
   }
 }

@@ -30,16 +30,16 @@
     },
     "opencode-go:default": {
       "lastUsed": 1780070364638,
-      "disabledUntil": 1780174742755,
+      "disabledUntil": 1780261143475,
       "disabledReason": "billing",
       "errorCount": 1,
       "failureCounts": {
         "billing": 1
       },
-      "lastFailureAt": 1780156742755
+      "lastFailureAt": 1780243143475
     },
     "openai-codex:liu382201998@gmail.com": {
-      "lastUsed": 1779956441968,
+      "lastUsed": 1780156775080,
       "errorCount": 0
     }
   }
