@@ -18,7 +18,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "执行仓库备份：cd /home/ubuntu/.openclaw && git add -A && git commit -m \"backup: $(date '+%Y-%m-%d %H:%M:%S')\" && git push origin master",
-        "model": "opencode-go/deepseek-v4-flash",
+        "model": "openai/gpt-5.3-codex",
         "lightContext": true
       },
       "delivery": {
