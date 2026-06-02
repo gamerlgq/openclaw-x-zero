@@ -27,6 +27,34 @@
         "channel": "feishu"
       },
       "state": {}
+    },
+    {
+      "id": "7bc1b4aa-c01a-4a68-af02-308807cec483",
+      "agentId": "story-director",
+      "name": "story-director-workspace-daily-backup",
+      "description": "每天 23:58 备份整个 story-director workspace 目录并上传到当前 Feishu 私聊。",
+      "enabled": true,
+      "createdAtMs": 1780366386909,
+      "schedule": {
+        "kind": "cron",
+        "expr": "58 23 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "model": "openai/gpt-5.3-codex",
+        "timeoutSeconds": 900,
+        "message": "你是 Story Director workspace 的每日备份任务。请执行：\n\n1. 备份目录：/home/ubuntu/.openclaw/workspace-story-director\n2. 备份输出目录：/home/ubuntu/.openclaw/backups/story-director-workspace\n3. 创建缺失目录。\n4. 生成文件名：story-director-workspace-YYYYMMDD-HHMMSS.tar.gz，时间使用 Asia/Shanghai 当前时间。\n5. 用 tar/gzip 打包整个 workspace 目录，保留相对路径名 workspace-story-director/。不要把备份文件输出到 workspace 内，避免递归备份。\n6. 校验备份文件存在且大小大于 0。\n7. 把生成的 tar.gz 作为文件上传/发送到当前 Feishu direct conversation；如果工具需要目标，使用当前会话默认目标即可。\n8. 回复备份结果：文件路径、文件大小、上传是否成功。\n\n注意：不要泄露 SVN 密码。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "to": "ou_5758c093caae0bf5f07fb3f26257d6b2",
+        "bestEffort": true
+      },
+      "state": {}
     }
   ]
 }

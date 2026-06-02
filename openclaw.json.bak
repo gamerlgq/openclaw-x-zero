@@ -94,7 +94,7 @@
         "name": "story-director",
         "workspace": "/home/ubuntu/.openclaw/workspace-story-director",
         "agentDir": "/home/ubuntu/.openclaw/agents/story-director/agent",
-        "model": "opencode-go/kimi-k2.6",
+        "model": "opencode-go/deepseek-v4-flash",
         "identity": {
           "name": "Story Director",
           "emoji": "🎬",
@@ -205,6 +205,21 @@
             }
           },
           "requireMention": true
+        },
+        "story-director": {
+          "appId": "cli_aa9d51fb7dfb1bb3",
+          "appSecret": "cIriAgPAlNypzpQrLdOGdh6L3gmUfl7k",
+          "domain": "feishu",
+          "connectionMode": "websocket",
+          "dmPolicy": "open",
+          "allowFrom": ["*"],
+          "groupPolicy": "open",
+          "groups": {
+            "*": {
+              "enabled": true
+            }
+          },
+          "requireMention": true
         }
       },
       "webhookPath": "/feishu/events",
@@ -260,7 +275,7 @@
     }
   },
   "meta": {
-    "lastTouchedAt": "2026-05-28T07:17:48.525Z",
+    "lastTouchedAt": "2026-05-28T07:29:51.659Z",
     "lastTouchedVersion": "2026.5.26"
   },
   "models": {
@@ -526,6 +541,14 @@
       "match": {
         "channel": "feishu",
         "accountId": "void"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "story-director",
+      "match": {
+        "channel": "feishu",
+        "accountId": "story-director"
       }
     }
   ],

@@ -2,20 +2,59 @@
   "version": 1,
   "jobs": {
     "6d0015b5-0498-44a9-b2d8-faa615885204": {
-      "updatedAtMs": 1780243174562,
+      "updatedAtMs": 1780417834881,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"59 23 * * *\",\"tz\":\"Asia/Shanghai\"}}",
       "state": {
-        "lastRunAtMs": 1780243140007,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 34555,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "nextRunAtMs": 1780329540000,
+        "lastRunAtMs": 1780417817094,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 17787,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "nextRunAtMs": 1780502340000,
         "consecutiveSkipped": 0,
-        "lastFailureNotificationDeliveryStatus": "not-requested",
-        "lastDelivered": true,
-        "runningAtMs": 1780329540001
+        "lastFailureNotificationDeliveryStatus": "unknown",
+        "lastError": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.5-pro' model is not supported when using Codex with a ChatGPT account.\"}}",
+        "lastDiagnostics": {
+          "summary": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.5-pro' model is not supported when using Codex with a ChatGPT account.\"}}",
+          "entries": [
+            {
+              "ts": 1780417834874,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.5-pro' model is not supported when using Codex with a ChatGPT account.\"}}"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.5-pro' model is not supported when using Codex with a ChatGPT account.\"}}"
+      }
+    },
+    "7bc1b4aa-c01a-4a68-af02-308807cec483": {
+      "updatedAtMs": 1780415897143,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"58 23 * * *\",\"tz\":\"Asia/Shanghai\"}}",
+      "state": {
+        "nextRunAtMs": 1780502280000,
+        "lastRunAtMs": 1780415880006,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 17137,
+        "lastError": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.3-codex' model is not supported when using Codex with a ChatGPT account.\"}}",
+        "lastDiagnostics": {
+          "summary": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.3-codex' model is not supported when using Codex with a ChatGPT account.\"}}",
+          "entries": [
+            {
+              "ts": 1780415897138,
+              "source": "agent-run",
+              "severity": "error",
+              "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.3-codex' model is not supported when using Codex with a ChatGPT account.\"}}"
+            }
+          ]
+        },
+        "lastDiagnosticSummary": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.3-codex' model is not supported when using Codex with a ChatGPT account.\"}}",
+        "lastDeliveryStatus": "unknown",
+        "lastFailureNotificationDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0
       }
     }
   }

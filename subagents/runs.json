@@ -123,6 +123,107 @@
       "endedReason": "subagent-error",
       "cleanupCompletedAt": 1779953817569,
       "endedHookEmittedAt": 1779953817562
+    },
+    "ce35f0bc-09c1-481f-8280-3a6d9d78836b": {
+      "runId": "ce35f0bc-09c1-481f-8280-3a6d9d78836b",
+      "childSessionKey": "agent:main:subagent:133b900f-6a08-4602-bb62-529fe0a87695",
+      "controllerSessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "requesterSessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "requesterOrigin": {
+        "channel": "feishu",
+        "to": "user:ou_22bcccc95a09d7521b0d7a59992738da",
+        "accountId": "default"
+      },
+      "requesterDisplayKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "task": "执行一次仓库备份推送。严格在 /home/ubuntu/.openclaw 执行：\n\n1. `git status --short` 查看待提交内容，记录摘要。\n2. `git add -A`\n3. `git commit -m \"backup: $(date '+%Y-%m-%d %H:%M:%S')\"`\n4. `git push origin master`\n5. 返回结果：提交哈希、提交信息、push 是否成功。如果没有变更导致 commit 失败，也要执行/确认 `git push origin master`，并说明没有新提交。\n\n不要修改任何文件内容，不要删除文件，不要改 cron 配置。只执行备份提交与推送。",
+      "taskName": "manual_backup_github_repo",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "spawnMode": "run",
+      "label": "manual-backup-github-repo",
+      "model": "opencode-go/deepseek-v4-flash",
+      "agentDir": "/home/ubuntu/.openclaw/agents/main/agent",
+      "workspaceDir": "/home/ubuntu/.openclaw",
+      "runTimeoutSeconds": 900,
+      "createdAt": 1780417864599,
+      "startedAt": 1780417867185,
+      "execution": {
+        "status": "terminal",
+        "startedAt": 1780417867185,
+        "endedAt": 1780417868495,
+        "outcome": {
+          "status": "error",
+          "error": "FailoverError: ⚠️ opencode-go (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your opencode-go billing dashboard and top up or switch to a different API key.",
+          "startedAt": 1780417867185,
+          "endedAt": 1780417868495,
+          "elapsedMs": 1310
+        }
+      },
+      "completion": {
+        "required": true,
+        "resultText": null,
+        "capturedAt": 1780417868524
+      },
+      "delivery": {
+        "status": "delivered",
+        "deliveredAt": 1780417934294,
+        "lastError": null,
+        "announcedAt": 1780417934294
+      },
+      "sessionStartedAt": 1780417864599,
+      "accumulatedRuntimeMs": 0,
+      "cleanupHandled": true,
+      "retainAttachmentsOnKeep": false,
+      "endedAt": 1780417868495,
+      "outcome": {
+        "status": "error",
+        "error": "FailoverError: ⚠️ opencode-go (deepseek-v4-flash) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your opencode-go billing dashboard and top up or switch to a different API key.",
+        "startedAt": 1780417867185,
+        "endedAt": 1780417868495,
+        "elapsedMs": 1310
+      },
+      "endedReason": "subagent-error",
+      "endedHookEmittedAt": 1780417934463,
+      "cleanupCompletedAt": 1780417934468
+    },
+    "8a789fa1-2523-48cc-b3f9-e7d4d7507b4e": {
+      "runId": "8a789fa1-2523-48cc-b3f9-e7d4d7507b4e",
+      "childSessionKey": "agent:main:subagent:9e70f3c0-74c7-4f53-87a9-86f4536f8a70",
+      "controllerSessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "requesterSessionKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "requesterOrigin": {
+        "channel": "feishu",
+        "to": "ou_22bcccc95a09d7521b0d7a59992738da",
+        "accountId": "default"
+      },
+      "requesterDisplayKey": "agent:main:feishu:direct:ou_22bcccc95a09d7521b0d7a59992738da",
+      "task": "执行一次仓库备份推送。严格在 /home/ubuntu/.openclaw 执行：\n\n1. `git status --short` 查看待提交内容，记录摘要。\n2. `git add -A`\n3. `git commit -m \"backup: $(date '+%Y-%m-%d %H:%M:%S')\"`\n4. `git push origin master`\n5. 返回结果：提交哈希、提交信息、push 是否成功。如果没有变更导致 commit 失败，也要执行/确认 `git push origin master`，并说明没有新提交。\n\n不要修改任何文件内容，不要删除文件，不要改 cron 配置。只执行备份提交与推送。",
+      "taskName": "manual_backup_github_repo_ark",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "spawnMode": "run",
+      "label": "manual-backup-github-repo-ark",
+      "model": "custom-ark-cn-beijing-volces-com/glm-5.1",
+      "agentDir": "/home/ubuntu/.openclaw/agents/main/agent",
+      "workspaceDir": "/home/ubuntu/.openclaw",
+      "runTimeoutSeconds": 900,
+      "createdAt": 1780417928193,
+      "startedAt": 1780417929693,
+      "execution": {
+        "status": "running",
+        "startedAt": 1780417928193
+      },
+      "completion": {
+        "required": true
+      },
+      "delivery": {
+        "status": "pending",
+        "lastError": null
+      },
+      "sessionStartedAt": 1780417928193,
+      "accumulatedRuntimeMs": 0,
+      "cleanupHandled": false,
+      "retainAttachmentsOnKeep": false
     }
   }
 }

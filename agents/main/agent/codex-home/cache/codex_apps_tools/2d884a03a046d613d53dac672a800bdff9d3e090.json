@@ -1079,109 +1079,6 @@
       "server_name": "codex_apps",
       "supports_parallel_tool_calls": false,
       "server_origin": null,
-      "tool_name": "_check_repo_initialized",
-      "tool_namespace": "mcp__codex_apps__github",
-      "namespace_description": "Access repositories, issues, and pull requests. Required for some features such as Codex",
-      "tool": {
-        "name": "github_check_repo_initialized",
-        "title": "check_repo_initialized",
-        "description": "Check if a GitHub repository has been set up.",
-        "inputSchema": {
-          "properties": {
-            "repository_full_name": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
-              "default": null,
-              "description": "Repository in `owner/name` form, such as `openai/openai`. This maps to GitHub REST `owner` and `repo` path parameters: https://docs.github.com/en/rest/repos/repos#get-a-repository",
-              "title": "Repository Full Name"
-            },
-            "repository_id": {
-              "anyOf": [
-                {
-                  "type": "integer"
-                },
-                {
-                  "type": "null"
-                }
-              ],
-              "default": null,
-              "description": "Numeric GitHub repository ID, such as `1296269`. Use this only when the stable repository `id` from a GitHub repository object is available: https://docs.github.com/en/rest/repos/repos#get-a-repository",
-              "title": "Repository Id"
-            },
-            "repository_url": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
-              "default": null,
-              "description": "GitHub repository URL, or a nested repository URL such as a pull request, issue, branch, or file URL. Examples: `https://github.com/openai/openai/pulls/123`, `https://api.github.com/repos/openai/openai`, `https://github.example.com/api/v3/repos/octo/repo`. Supports GitHub Enterprise Server custom hostnames and GHE.com API hosts. Docs: https://docs.github.com/en/rest/repos/repos#get-a-repository and https://docs.github.com/en/enterprise-server@latest/rest/using-the-rest-api/getting-started-with-the-rest-api and https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/about-github-enterprise-cloud-with-data-residency#api-access",
-              "title": "Repository Url"
-            }
-          },
-          "title": "check_repo_initialized_input",
-          "type": "object"
-        },
-        "outputSchema": {
-          "title": "check_repo_initialized_output",
-          "default": {},
-          "type": "object",
-          "properties": {
-            "result": {
-              "title": "CheckRepoInitializedResponse",
-              "default": {},
-              "type": "object",
-              "properties": {
-                "initialized": {
-                  "title": "Initialized",
-                  "description": "Whether the repository contains at least one commit.",
-                  "default": {},
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "initialized"
-              ]
-            }
-          },
-          "required": [
-            "result"
-          ]
-        },
-        "annotations": {
-          "readOnlyHint": true,
-          "destructiveHint": false,
-          "openWorldHint": false
-        },
-        "_meta": {
-          "resource_name": "GitHub_check_repo_initialized",
-          "_codex_apps": {
-            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_69d371a15d64819199767f6aa47c651e/check_repo_initialized",
-            "contains_mcp_source": false
-          },
-          "connector_id": "connector_76869538009648d5b282a4bb21c3d157",
-          "connector_name": "GitHub",
-          "connector_description": "Access repositories, issues, and pull requests. Required for some features such as Codex",
-          "link_id": "link_69d371a15d64819199767f6aa47c651e"
-        }
-      },
-      "connector_id": "connector_76869538009648d5b282a4bb21c3d157",
-      "connector_name": "GitHub",
-      "plugin_display_names": []
-    },
-    {
-      "server_name": "codex_apps",
-      "supports_parallel_tool_calls": false,
-      "server_origin": null,
       "tool_name": "_compare_commits",
       "tool_namespace": "mcp__codex_apps__github",
       "namespace_description": "Access repositories, issues, and pull requests. Required for some features such as Codex",
@@ -1463,7 +1360,7 @@
       "tool": {
         "name": "github_create_commit",
         "title": "create_commit",
-        "description": "Create a commit pointing to tree_sha with parent parent_sha.",
+        "description": "Create a commit pointing to tree_sha with one or more parents.",
         "inputSchema": {
           "properties": {
             "repository_full_name": {
@@ -1485,6 +1382,22 @@
               "description": "Parent commit SHA for the new commit.",
               "title": "Parent Sha",
               "type": "string"
+            },
+            "additional_parent_shas": {
+              "anyOf": [
+                {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Additional ordered commit parent SHAs. Defaults to no additional parents.",
+              "title": "Additional Parent Shas"
             }
           },
           "required": [
